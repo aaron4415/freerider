@@ -19,9 +19,23 @@
       margin: 0 auto;
       padding: 24px 16px 48px;
     }
+    .nav {
+      display: flex;
+      justify-content: flex-end;
+      gap: 16px;
+      font-size: 0.9rem;
+      margin-bottom: 8px;
+    }
+    .nav a {
+      color: #4b5563;
+      text-decoration: none;
+    }
+    .nav a:hover {
+      text-decoration: underline;
+    }
     header {
       text-align: center;
-      padding: 32px 0 24px;
+      padding: 24px 0 24px;
     }
     h1 {
       font-size: 2rem;
@@ -48,6 +62,7 @@
     }
     .badge-link img {
       height: 44px;
+      display: block;
     }
     .hero-note {
       margin-top: 10px;
@@ -79,11 +94,35 @@
       font-weight: 600;
       margin-right: 4px;
     }
+    .screenshots-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 12px;
+      margin-top: 12px;
+    }
+    .screenshots-grid img {
+      width: 100%;
+      border-radius: 12px;
+      border: 1px solid #e5e7eb;
+      background: #f3f4f6;
+      object-fit: cover;
+    }
     footer {
       margin-top: 32px;
       text-align: center;
       font-size: 0.85rem;
       color: #6b7280;
+    }
+    footer .footer-links {
+      margin-bottom: 4px;
+    }
+    footer .footer-links a {
+      color: #6b7280;
+      text-decoration: none;
+      margin: 0 6px;
+    }
+    footer .footer-links a:hover {
+      text-decoration: underline;
     }
     @media (min-width: 768px) {
       h1 { font-size: 2.4rem; }
@@ -94,19 +133,27 @@
 </head>
 <body>
   <div class="container">
+    <!-- Top navigation -->
+    <nav class="nav">
+      <a href="/">主頁</a>
+      <a href="/terms.html">使用條款</a>
+      <a href="/delete-account.html">刪除帳戶</a>
+    </nav>
+
     <header>
       <h1>FreeRider</h1>
       <p class="tagline">夾車・識朋友・慳錢，順手減少塞車，推動香港共享出行</p>
       <div class="badges">
-        <!-- TODO: 替換成你真實嘅 App Store / Google Play 連結同官方 badge 圖 -->
-        <a class="badge-link" href="YOUR_IOS_APP_STORE_LINK" target="_blank" rel="noopener">
-          <img src="YOUR_APP_STORE_BADGE_IMAGE" alt="下載 FreeRider（App Store）">
+        <!-- App Store official badge: replace src with your hosted asset from Apple's marketing kit -->
+        <a class="badge-link" href="https://apps.apple.com/us/app/freerider-%E9%A0%86%E9%A2%A8%E8%BB%8A%E7%A4%BE%E7%BE%A4%E5%B9%B3%E5%8F%B0/id6755711097" target="_blank" rel="noopener">
+          <img src="/assets/app-store-badge-hk.png" alt="Download on the App Store">
         </a>
-        <a class="badge-link" href="YOUR_GOOGLE_PLAY_LINK" target="_blank" rel="noopener">
-          <img src="YOUR_GOOGLE_PLAY_BADGE_IMAGE" alt="下載 FreeRider（Google Play）">
+        <!-- Google Play official badge: replace src with your hosted asset from Google Play marketing tools -->
+        <a class="badge-link" href="https://play.google.com/apps/testing/com.aaron.freerider_front" target="_blank" rel="noopener">
+          <img src="/assets/google-play-badge-hk.png" alt="Get it on Google Play">
         </a>
       </div>
-      <p class="hero-note">由香港工程師獨立開發 · 100% 免費 · 無廣告 · 無抽佣</p>
+      <p class="hero-note">獨立開發 · 100% 免費 · 無廣告 · 無抽佣</p>
     </header>
 
     <section class="section" id="about">
@@ -117,6 +164,19 @@
       <p>
         目標唔只係幫你慳車費，仲想減少一人一車、紓緩交通擠塞，推動共享經濟，令本來都會開出嚟嘅車位可以被更好咁善用。
       </p>
+    </section>
+
+    <!-- Screenshots section -->
+    <section class="section" id="screenshots">
+      <h2>App 介面預覽</h2>
+      <p>實際 App 介面 screenshot，畀你預先睇下點樣用 FreeRider 夾車同管理行程：</p>
+      <div class="screenshots-grid">
+        <!-- 用實際檔案名替換以下 src，例如 /assets/screenshot-home.png 等 -->
+        <img src="/assets/screenshot-home.png" alt="FreeRider 主畫面">
+        <img src="/assets/screenshot-route.png" alt="建立行程及路線規劃畫面">
+        <img src="/assets/screenshot-chat.png" alt="內置聊天室畫面">
+        <img src="/assets/screenshot-list.png" alt="瀏覽夾車行程列表畫面">
+      </div>
     </section>
 
     <section class="section" id="modes">
@@ -162,8 +222,13 @@
     </section>
 
     <footer>
+      <div class="footer-links">
+        <a href="/">主頁</a> ·
+        <a href="/terms.html">使用條款</a> ·
+        <a href="/privacy.html">私隱政策</a> ·
+        <a href="/delete-account.html">刪除帳戶</a>
+      </div>
       <p>© FreeRider · Hong Kong Community Carpool App</p>
-      <p>Built with ❤️ in Tin Shui Wai</p>
     </footer>
   </div>
 </body>
