@@ -187,19 +187,35 @@
       color: #6b7280;
     }
 
-    .screenshots-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-      gap: 12px;
-      margin-top: 12px;
-    }
-    .screenshots-grid img {
-      width: 100%;
-      border-radius: 12px;
-      border: 1px solid #e5e7eb;
-      background: #f3f4f6;
-      object-fit: cover;
-    }
+/* Screenshots: one-by-one vertical layout */
+.screenshots-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* force single column */
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.screenshot-item {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 14px;
+  background: #ffffff;
+}
+
+.screenshot-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  background: #f3f4f6;
+  object-fit: cover;
+}
+
+.screenshot-item figcaption {
+  margin-top: 10px;
+  color: #4b5563;
+  font-size: 0.95rem;
+}
 
     footer {
       margin-top: 32px;
@@ -336,56 +352,39 @@
     </section>
 
 <section class="section" id="screenshots">
-  <h2>App 介面預覽（夾車配對・聊天室・行程管理）</h2>
-  <p>
-    以下係 FreeRider 真實 App 介面截圖，示範點樣由「揀模式 → 建立/加入行程 → App 內傾集合點 → 出發」完成一次順風車/夾車配對流程。
-    想先了解玩法亦可以睇：<a href="/routes/">熱門通勤路線</a> 或 <a href="/guides/taxi-uber-split.html">夾 Taxi/Uber 分擔指南</a>。
-  </p>
+  <h2>App 介面預覽（逐張睇）</h2>
+  <p>以下係 FreeRider 真實 App 介面截圖：每張圖都會解釋你會喺嗰個頁面做到啲咩。</p>
 
-  <div class="screenshots-grid" role="list" aria-label="FreeRider app screenshots">
-    <figure role="listitem">
-      <img
-        src="/assets/screenshot-home.png"
-        alt="FreeRider 主畫面：選擇夾車模式、查看熱門通勤路線與入口"
-        width="720" height="1440"
-        loading="lazy" decoding="async"
-      >
+  <div class="screenshots-grid" aria-label="FreeRider app screenshots">
+    <figure class="screenshot-item">
+      <img src="/assets/screenshot-home.png"
+           alt="FreeRider 主畫面：選擇夾車模式、查看熱門通勤路線與入口"
+           loading="lazy" decoding="async">
       <figcaption>主畫面：快速進入「司機/乘客」模式，同時睇到熱門通勤路線入口。</figcaption>
     </figure>
 
-    <figure role="listitem">
-      <img
-        src="/assets/screenshot-route.png"
-        alt="建立行程與路線畫面：輸入出發地、目的地、時間窗，並可新增中途站"
-        width="720" height="1440"
-        loading="lazy" decoding="async"
-      >
+    <figure class="screenshot-item">
+      <img src="/assets/screenshot-route.png"
+           alt="建立行程與路線畫面：輸入出發地、目的地、時間窗，並可新增中途站"
+           loading="lazy" decoding="async">
       <figcaption>建立行程：用「時間窗」寫法，並可加中途站提升配對成功率。</figcaption>
     </figure>
 
-    <figure role="listitem">
-      <img
-        src="/assets/screenshot-chat.png"
-        alt="內置聊天室畫面：與同路司機或乘客討論集合點、上落車安排與分擔方式"
-        width="720" height="1440"
-        loading="lazy" decoding="async"
-      >
+    <figure class="screenshot-item">
+      <img src="/assets/screenshot-chat.png"
+           alt="內置聊天室畫面：與同路司機或乘客討論集合點、上落車安排與分擔方式"
+           loading="lazy" decoding="async">
       <figcaption>內置聊天室：唔使交換電話號碼，直接傾集合點、上落車位同分擔安排。</figcaption>
     </figure>
 
-    <figure role="listitem">
-      <img
-        src="/assets/screenshot-list.png"
-        alt="行程列表畫面：瀏覽可加入的夾車行程，按地區、時間或目的地篩選"
-        width="720" height="1440"
-        loading="lazy" decoding="async"
-      >
+    <figure class="screenshot-item">
+      <img src="/assets/screenshot-list.png"
+           alt="行程列表畫面：瀏覽可加入的夾車行程，按地區、時間或目的地篩選"
+           loading="lazy" decoding="async">
       <figcaption>行程列表：瀏覽同路行程，配合篩選更快搵到適合嘅通勤/出行。</figcaption>
     </figure>
   </div>
 </section>
-
-
     <section class="section" id="modes">
       <h2>四大夾車模式</h2>
       <p>不論你係司機定乘客，都可以喺 FreeRider 度搵到最適合你嘅夾車方式：</p>
