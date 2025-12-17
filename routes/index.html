@@ -147,6 +147,12 @@
       text-decoration: none;
     }
     .route-title a:hover { text-decoration: underline; }
+
+    /* ✅ For “準備中” items (no link yet) */
+    .route-title .disabled {
+      color: #6b7280;
+      cursor: default;
+    }
     .route-desc {
       margin: 0;
       color: #4b5563;
@@ -208,7 +214,7 @@
     <header>
       <h1>路線總覽</h1>
       <p class="tagline">
-        呢度集合 FreeRider 各種熱門路線頁：跨境（深圳）、去機場、週末玩樂等。
+        呢度集合 FreeRider 各種熱門路線頁：跨境（深圳）、去機場、通勤、週末玩樂等。
         入到去每條路線頁，你會見到發佈行程貼士、上車點建議同 FAQ，方便你更快搵到同路人。
       </p>
 
@@ -217,6 +223,8 @@
         <span class="chip">夾車 路線</span>
         <span class="chip">深圳 羅湖/福田/南山</span>
         <span class="chip">去機場</span>
+        <span class="chip">返工 通勤</span>
+        <span class="chip">週末 出去玩</span>
       </div>
 
       <div class="badges">
@@ -243,43 +251,90 @@
         </a>
       </div>
 
-      <p class="hero-note">小提示：每條路線頁都會 link 去其他相關指南，形成內鏈網絡，對 SEO 同用戶體驗都更好。[web:69][web:53]</p>
+      <p class="hero-note">小提示：由「路線總覽」連去每條路線頁，可以形成內鏈網絡，之後你新增頁面亦更易被發現。</p>
     </header>
 
     <section class="section" id="cross-border">
       <h2>跨境：香港 → 深圳（返大陸）</h2>
       <div class="routes-grid">
-        <!-- ✅ Existing page you already have -->
         <div class="route-card">
           <h3 class="route-title">
             <a href="/routes/tko-to-luohu.html">將軍澳 → 羅湖：順風車／夾車路線建議</a>
           </h3>
-          <p class="route-desc">適合北上辦事/探親/週末去玩；含中途站建議、上車點同 FAQ。</p>
+          <p class="route-desc">北上辦事/探親/週末去玩；含中途站建議、上車點同 FAQ。</p>
         </div>
 
-        <!-- Placeholders (create later, keep links only if files exist to avoid 404) -->
         <div class="route-card">
           <h3 class="route-title">
-            <a href="/routes/tko-to-futian.html">將軍澳 → 福田（準備中）</a>
+            <span class="disabled">將軍澳 → 福田（準備中）</span>
           </h3>
-          <p class="route-desc">返工返大陸熱門目的地；建議寫時間窗＋口岸偏好提升配對。</p>
+          <p class="route-desc">返工返大陸熱門方向；建議寫時間窗＋口岸偏好提升配對。</p>
         </div>
 
         <div class="route-card">
           <h3 class="route-title">
-            <a href="/routes/tko-to-nanshan.html">將軍澳 → 南山（準備中）</a>
+            <span class="disabled">將軍澳 → 南山（準備中）</span>
           </h3>
-          <p class="route-desc">南山/科技園方向；適合週末玩樂或見客。</p>
+          <p class="route-desc">南山/科技園方向；適合見客或週末探店。</p>
         </div>
 
         <div class="route-card">
           <h3 class="route-title">
-            <a href="/routes/east-kln-to-luohu.html">東九龍 → 羅湖（準備中）</a>
+            <span class="disabled">東九龍 → 羅湖（準備中）</span>
           </h3>
           <p class="route-desc">觀塘/九龍灣/彩虹一帶北上；方便加中途站集合。</p>
         </div>
+
+        <div class="route-card">
+          <h3 class="route-title">
+            <span class="disabled">東九龍 → 福田（準備中）</span>
+          </h3>
+          <p class="route-desc">適合返工/見客；可寫清楚「最遲出發時間」減少放飛機。</p>
+        </div>
+
+        <div class="route-card">
+          <h3 class="route-title">
+            <span class="disabled">東九龍 → 南山（準備中）</span>
+          </h3>
+          <p class="route-desc">適合週末玩樂/探店；可接受中途站會更易配對。</p>
+        </div>
       </div>
       <p class="hero-note">相關指南：<a href="/guides/cross-border-carpool.html">返大陸指南</a></p>
+    </section>
+
+    <section class="section" id="popular-commute">
+      <h2>香港通勤熱門（建議先做）</h2>
+      <div class="routes-grid">
+        <div class="route-card">
+          <h3 class="route-title"><span class="disabled">將軍澳 → 中環/金鐘（準備中）</span></h3>
+          <p class="route-desc">通勤核心線；適合用「時間窗」＋「觀塘/九龍灣中途站」。</p>
+        </div>
+
+        <div class="route-card">
+          <h3 class="route-title"><span class="disabled">將軍澳 → 鰂魚涌/太古（準備中）</span></h3>
+          <p class="route-desc">港島東通勤；可寫明「是否接受跨海隧道/路費分擔」。</p>
+        </div>
+
+        <div class="route-card">
+          <h3 class="route-title"><span class="disabled">元朗/天水圍 → 九龍東（準備中）</span></h3>
+          <p class="route-desc">新界西通勤；建議用固定星期一至五 post 建立長期圈。</p>
+        </div>
+
+        <div class="route-card">
+          <h3 class="route-title"><span class="disabled">沙田 → 金鐘/中環（準備中）</span></h3>
+          <p class="route-desc">新界東通勤；可設 1–2 個上車點減少兜路。</p>
+        </div>
+
+        <div class="route-card">
+          <h3 class="route-title"><span class="disabled">荃灣 → 中環/金鐘（準備中）</span></h3>
+          <p class="route-desc">西區通勤；適合朝早固定時間窗配對。</p>
+        </div>
+
+        <div class="route-card">
+          <h3 class="route-title"><span class="disabled">東九龍 → 灣仔/銅鑼灣（準備中）</span></h3>
+          <p class="route-desc">跨海通勤；事前講清楚「隧道費點分」最重要。</p>
+        </div>
+      </div>
     </section>
 
     <section class="section" id="airport">
@@ -290,6 +345,16 @@
             <a href="/guides/airport-carpool.html">夾車去機場（HKG）指南</a>
           </h3>
           <p class="route-desc">早機/夜機出發貼士、行李位溝通、點加中途站更易配對。</p>
+        </div>
+
+        <div class="route-card">
+          <h3 class="route-title"><span class="disabled">將軍澳 → 機場（準備中）</span></h3>
+          <p class="route-desc">建議寫到達機場目標時間 + 行李數量，更易配對。</p>
+        </div>
+
+        <div class="route-card">
+          <h3 class="route-title"><span class="disabled">東九龍 → 機場（準備中）</span></h3>
+          <p class="route-desc">可加「九龍灣/葵芳」作中途站，提升可 join 人數。</p>
         </div>
       </div>
     </section>
@@ -307,13 +372,28 @@
     </section>
 
     <section class="section" id="weekend">
-      <h2>週末玩樂</h2>
+      <h2>週末玩樂（建議先做）</h2>
       <div class="routes-grid">
         <div class="route-card">
           <h3 class="route-title">
             <a href="/guides/weekend-fun-rides.html">週末夾車出去玩・識新朋友</a>
           </h3>
           <p class="route-desc">教你點樣開週末行程、用時間窗＋中途站提升配對率。</p>
+        </div>
+
+        <div class="route-card">
+          <h3 class="route-title"><span class="disabled">九龍 → 西貢（準備中）</span></h3>
+          <p class="route-desc">週末郊遊熱門；建議講清楚集合點同回程大約時間。</p>
+        </div>
+
+        <div class="route-card">
+          <h3 class="route-title"><span class="disabled">市區 → 大澳（準備中）</span></h3>
+          <p class="route-desc">一日遊常見；可寫「chill 行程」吸引同路人。</p>
+        </div>
+
+        <div class="route-card">
+          <h3 class="route-title"><span class="disabled">市區 → 赤柱/淺水灣（準備中）</span></h3>
+          <p class="route-desc">打卡/海邊路線；適合開「下午出發」時間窗。</p>
         </div>
       </div>
     </section>
