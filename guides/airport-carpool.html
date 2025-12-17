@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>夾車去機場（HKG）指南｜FreeRider（香港社群順風車・夾車 App）</title>
+  <meta name="description" content="想夾車去香港國際機場（HKG）？FreeRider 教你點樣發佈行程、更易配對、早機/夜機出發貼士、行李位溝通，同埋點樣夾車分擔車費。完全免費、無廣告、無抽佣。" />
+
+  <link rel="canonical" href="https://www.freerider.hk/guides/airport-carpool.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="夾車去機場（HKG）指南｜FreeRider" />
+  <meta property="og:description" content="夾車去香港機場攻略：幾點出發、點寫 post、點加中途站、行李位點溝通、FAQ。FreeRider 完全免費・無廣告・無抽佣。" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://www.freerider.hk/guides/airport-carpool.html" />
+  <meta property="og:image" content="https://www.freerider.hk/assets/og-image.png" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="夾車去機場（HKG）指南｜FreeRider" />
+  <meta name="twitter:description" content="夾車去機場：早機/夜機貼士、行李位溝通、點加中途站更易配對。完全免費。" />
+  <meta name="twitter:image" content="https://www.freerider.hk/assets/og-image.png" />
+
+  <!-- Optional: FAQ structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "夾車去機場應該提早幾多出發？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "建議你用「到達機場時間」倒數：再預留路面交通浮動 + 上落車集合時間。寫 post 時用時間窗（例如 05:30–06:00 集合）會更易配對。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "有大行李點算？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "建議在行程描述寫清楚行李數量（例如 1 個 28 吋喼 + 1 個手提），並在聊天室確認車尾箱空間，避免臨上車先發現放唔落。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "可唔可以加中途站接人？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "可以。加入中途站（例如觀塘/九龍灣/葵芳）可提升配對機會，亦方便司機順路接載。"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #111827;
+      background-color: #f9fafb;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 24px 16px 48px;
+    }
+    .nav {
+      display: flex;
+      justify-content: flex-end;
+      gap: 16px;
+      font-size: 0.9rem;
+      margin-bottom: 8px;
+      flex-wrap: wrap;
+    }
+    .nav a {
+      color: #4b5563;
+      text-decoration: none;
+    }
+    .nav a:hover { text-decoration: underline; }
+
+    header {
+      text-align: center;
+      padding: 24px 0 10px;
+    }
+    h1 {
+      font-size: 1.9rem;
+      margin-bottom: 8px;
+      line-height: 1.25;
+    }
+    h2 {
+      font-size: 1.35rem;
+      margin-top: 28px;
+      margin-bottom: 8px;
+    }
+    h3 {
+      font-size: 1.05rem;
+      margin-top: 14px;
+      margin-bottom: 6px;
+    }
+    p { margin: 8px 0; }
+    .tagline {
+      font-size: 1.05rem;
+      color: #4b5563;
+      margin: 0 auto;
+      max-width: 60ch;
+    }
+
+    .badges {
+      margin-top: 18px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .store-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #000000;
+      color: #ffffff;
+      padding: 12px 20px;
+      border-radius: 0.75rem;
+      text-decoration: none;
+      border: 1px solid #374151;
+      min-width: 220px;
+      transition: background-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .store-button:hover {
+      background-color: #111827;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.35);
+      transform: translateY(-1px);
+    }
+    .store-button-icon {
+      width: 28px;
+      height: 28px;
+      margin-right: 12px;
+      fill: currentColor;
+    }
+    .store-button-text { text-align: left; }
+    .store-button-small { font-size: 0.7rem; }
+    .store-button-large {
+      font-size: 1.1rem;
+      font-weight: 700;
+      line-height: 1.1;
+    }
+
+    .hero-note {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      color: #6b7280;
+    }
+
+    .section {
+      margin-top: 18px;
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 20px 16px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    }
+
+    ul { padding-left: 1.2rem; margin: 8px 0; }
+    li { margin: 4px 0; }
+
+    .steps {
+      counter-reset: step;
+      list-style: none;
+      padding-left: 0;
+      margin: 8px 0;
+    }
+    .steps li::before {
+      counter-increment: step;
+      content: counter(step) "．";
+      font-weight: 600;
+      margin-right: 4px;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+      justify-content: center;
+    }
+    .chip {
+      font-size: 0.85rem;
+      background: #f3f4f6;
+      border: 1px solid #e5e7eb;
+      color: #374151;
+      padding: 6px 10px;
+      border-radius: 999px;
+    }
+
+    .note {
+      font-size: 0.92rem;
+      color: #4b5563;
+      background: #f9fafb;
+      border: 1px dashed #e5e7eb;
+      padding: 12px 12px;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+      margin-top: 10px;
+    }
+    .card {
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 14px 14px;
+      background: #ffffff;
+    }
+    .card p { margin: 6px 0; }
+
+    footer {
+      margin-top: 32px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: #6b7280;
+    }
+    footer .footer-links { margin-bottom: 4px; }
+    footer .footer-links a {
+      color: #6b7280;
+      text-decoration: none;
+      margin: 0 6px;
+    }
+    footer .footer-links a:hover { text-decoration: underline; }
+
+    @media (min-width: 768px) {
+      h1 { font-size: 2.2rem; }
+      .tagline { font-size: 1.15rem; }
+      .section { padding: 24px 20px; }
+      .two-col { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <nav class="nav">
+      <a href="/">主頁</a>
+      <a href="/routes/">路線</a>
+      <a href="/guides/cross-border-carpool.html">返大陸指南</a>
+      <a href="/guides/taxi-uber-split.html">夾 Taxi/Uber</a>
+      <a href="/guides/safety.html">安全提示</a>
+      <a href="/terms.html">使用條款</a>
+      <a href="/privacy.html">私隱政策</a>
+    </nav>
+
+    <header>
+      <h1>夾車去機場（HKG）指南</h1>
+      <p class="tagline">
+        無論你係早機、夜機、定係多人同行＋大行李，呢頁教你點樣用 FreeRider 發佈行程、加中途站、用聊天室傾清楚細節，令配對更快更順。
+      </p>
+
+      <div class="chips" aria-label="keywords">
+        <span class="chip">夾車 去 機場</span>
+        <span class="chip">香港機場 HKG</span>
+        <span class="chip">順風車 去機場</span>
+        <span class="chip">分擔車費</span>
+      </div>
+
+      <div class="badges">
+        <a href="https://apps.apple.com/us/app/freerider-%E9%A0%86%E9%A2%A8%E8%BB%8A%E7%A4%BE%E7%BE%A4%E5%B9%B3%E5%8F%B0/id6755711097"
+           class="store-button" aria-label="Download on the App Store">
+          <svg class="store-button-icon" viewBox="0 0 384 512" aria-hidden="true" focusable="false">
+            <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 46.9 126.7 98.9 126.7 25.8 0 32.2-19.1 75.5-19.1 42.9 0 43.8 19.1 89.6 19.1 29.6 0 68.9-68.7 97.6-118.9-33.2-17.7-49.4-44.5-51.3-93.8zm-69.7-183c21.8-27.1 36.5-62.7 31.8-100.3-33 2.9-71.1 22.1-92.4 47.9-20.9 25.5-35.3 64.9-30.8 98.5 35.5 2.7 72.8-19.6 91.4-46.1z"/>
+          </svg>
+          <div class="store-button-text">
+            <div class="store-button-small">Download on the</div>
+            <div class="store-button-large">App Store</div>
+          </div>
+        </a>
+
+        <a href="https://play.google.com/apps/testing/com.aaron.freerider_front"
+           class="store-button" aria-label="Get it on Google Play">
+          <svg class="store-button-icon" viewBox="0 0 512 512" aria-hidden="true" focusable="false">
+            <path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/>
+          </svg>
+          <div class="store-button-text">
+            <div class="store-button-small">GET IT ON</div>
+            <div class="store-button-large">Google Play</div>
+          </div>
+        </a>
+      </div>
+
+      <p class="hero-note">100% 免費 · 無廣告 · 無抽佣 · App 內聊天室協調</p>
+    </header>
+
+    <section class="section" id="who">
+      <h2>呢個指南適合邊啲人？</h2>
+      <ul>
+        <li>想夾車去機場慳錢，避免的士/Call 車獨自承擔全費。</li>
+        <li>早機／紅眼機，想搵同路人一齊出發，唔想一個人深夜搭車。</li>
+        <li>多人同行／有大行李，需要預先同司機溝通車尾箱空間。</li>
+      </ul>
+      <div class="note">
+        貼士：去機場最重要係「準時」同「行李位」——你寫得越清楚，配對越快、越少誤會。
+      </div>
+    </section>
+
+    <section class="section" id="how">
+      <h2>點樣用 FreeRider 夾車去機場？（最易配對寫法）</h2>
+      <ol class="steps">
+        <li><strong>揀模式：</strong>你係乘客就用「乘客搵司機」；你係司機就用「司機搵乘客」。</li>
+        <li><strong>用時間窗：</strong>例：05:30–06:00 集合（比寫「05:45」更易配對）。</li>
+        <li><strong>加中途站：</strong>例如觀塘／九龍灣／葵芳（司機可順路接多幾位）。</li>
+        <li><strong>寫清楚行李：</strong>例：1 個 28 吋喼 + 1 個背囊（避免到場先發現放唔落）。</li>
+        <li><strong>聊天室確認：</strong>集合點（邊個出口/地標）、落客點（T1/T2/出境大堂）、分擔方式。</li>
+      </ol>
+    </section>
+
+    <section class="section" id="timing">
+      <h2>早機／夜機：出發時間點樣估？</h2>
+      <div class="two-col">
+        <div class="card">
+          <h3>早機（例如 07:xx 起飛）</h3>
+          <p>建議你喺 post 寫「到達機場時間目標」，再反推集合時間，並預留路面交通浮動同上落車 buffer。</p>
+          <p class="hero-note">寫法例子：目標 05:50 到機場｜05:10–05:25 集合。</p>
+        </div>
+        <div class="card">
+          <h3>夜機／紅眼機（深夜出發）</h3>
+          <p>建議你註明「可接受集合地點」同「最遲出發時間」，避免拖到太夜影響航班。</p>
+          <p class="hero-note">寫法例子：23:30–00:00 集合｜最遲 00:10 開車。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="split">
+      <h2>分擔車費建議（清楚講就最少拗撬）</h2>
+      <ul>
+        <li><strong>平均分：</strong>總車費 ÷ 人數（最簡單，最常用）。</li>
+        <li><strong>按落車先後微調：</strong>如果有人中途落車（例如先落青衣/東涌），可在聊天室先講清楚比重。</li>
+        <li><strong>隧道/橋費：</strong>建議預先講明係咪一齊分擔（例如青嶼幹線/其他路費）。</li>
+      </ul>
+      <div class="note">
+        建議做法：上車前先喺聊天室「確認一次」分法，避免到埗先討論。
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <h2>常見問題</h2>
+
+      <h3>夾車去機場應該提早幾多出發？</h3>
+      <p>建議用「到達機場時間」倒數，再預留路面交通浮動 + 集合/上落車時間；寫 post 時用時間窗會更易配對。</p>
+
+      <h3>有大行李點算？</h3>
+      <p>請寫清楚行李數量同尺寸（例如 28 吋喼），並喺聊天室確認車尾箱空間；多人同行更要提早講。</p>
+
+      <h3>可唔可以加中途站接人？</h3>
+      <p>可以。加入中途站通常會提升配對機會，亦方便司機順路接載（例如觀塘/九龍灣/葵芳）。</p>
+    </section>
+
+    <section class="section" id="cta">
+      <h2>想即刻搵同路去機場？</h2>
+      <p>立即用 FreeRider 發佈你嘅出發區、時間窗同機場到達目標時間，等同路人 join。</p>
+      <ul>
+        <li><a href="https://apps.apple.com/us/app/freerider-%E9%A0%86%E9%A2%A8%E8%BB%8A%E7%A4%BE%E7%BE%A4%E5%B9%B3%E5%8F%B0/id6755711097">App Store 下載</a></li>
+        <li><a href="https://play.google.com/apps/testing/com.aaron.freerider_front">Google Play（測試版）</a></li>
+      </ul>
+      <p class="hero-note">下一頁我可以幫你出「夾 Taxi／Uber 分擔車費指南」。</p>
+    </section>
+
+    <footer>
+      <div class="footer-links">
+        <a href="/">主頁</a> ·
+        <a href="/terms.html">使用條款</a> ·
+        <a href="/privacy.html">私隱政策</a> ·
+        <a href="/delete-account.html">刪除帳戶</a>
+      </div>
+      <p>© FreeRider · Hong Kong Community Carpool App</p>
+    </footer>
+  </div>
+</body>
+</html>
