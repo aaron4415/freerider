@@ -1,25 +1,32 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh-Hant-HK">
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-37E3L0QJBH"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-37E3L0QJBH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-37E3L0QJBH');
+  </script>
 
-  gtag('config', 'G-37E3L0QJBH');
-</script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
- <link rel="icon" href="/favicon.ico">
-  <title>FreeRider｜香港順風車社群・夾車通勤 App</title>
-  <meta name="description" content="FreeRider 係香港本地順風車社群 App：通勤夾車、夾 Taxi/Uber 分擔車費、內置聊天室協調集合點。獨立開發，100% 免費、無廣告、無抽佣。" />
+  <link rel="icon" href="/favicon.ico">
 
+  <title>FreeRider｜香港拼車・順風車・共乘通勤 App</title>
+  <meta name="description" content="FreeRider 係香港拼車/順風車/共乘 App：通勤、去機場、夾 Taxi/Uber 分擔車費；App 內置聊天室約集合點。100% 免費，無廣告無抽佣。" />
+
+  <!-- Canonical -->
   <link rel="canonical" href="https://www.freerider.hk/" />
 
+  <!-- hreflang (add on BOTH language pages) -->
+  <link rel="alternate" hreflang="zh-Hant-HK" href="https://www.freerider.hk/" />
+  <link rel="alternate" hreflang="en-HK" href="https://www.freerider.hk/en/" />
+  <link rel="alternate" hreflang="x-default" href="https://www.freerider.hk/" />
+
   <!-- Open Graph -->
-  <meta property="og:title" content="FreeRider｜香港社群順風車・夾車通勤 App" />
+  <meta property="og:title" content="FreeRider｜香港拼車・順風車・共乘通勤 App" />
   <meta property="og:description" content="香港本地夾車平台：通勤順風車、夾 Taxi/Uber、內置聊天室協調集合點。100% 免費、無廣告、無抽佣。" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.freerider.hk/" />
@@ -27,20 +34,22 @@
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="FreeRider｜香港社群順風車・夾車通勤 App" />
+  <meta name="twitter:title" content="FreeRider｜香港拼車・順風車・共乘通勤 App" />
   <meta name="twitter:description" content="通勤夾車・夾 Taxi/Uber・內置聊天室。獨立開發，100% 免費。" />
   <meta name="twitter:image" content="https://www.freerider.hk/assets/og-image.png" />
 
-  <!-- Optional: JSON-LD -->
+  <!-- JSON-LD: SoftwareApplication (Google supported for “software app” results) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "MobileApplication",
+    "@type": "SoftwareApplication",
     "name": "FreeRider",
-    "operatingSystem": "iOS, Android",
     "applicationCategory": "TravelApplication",
-    "description": "香港本地社群順風車/夾車通勤 App，支援行程發佈、加入、內置聊天室協調集合點。",
+    "operatingSystem": "iOS, Android",
+    "description": "香港拼車/順風車/共乘通勤 App，支援行程發佈、加入、內置聊天室協調集合點。",
     "url": "https://www.freerider.hk/",
+    "image": "https://www.freerider.hk/assets/og-image.png",
+    "offers": { "@type": "Offer", "price": 0, "priceCurrency": "HKD" },
     "sameAs": [
       "https://apps.apple.com/us/app/freerider-%E9%A0%86%E9%A2%A8%E8%BB%8A%E7%A4%BE%E7%BE%A4%E5%B9%B3%E5%8F%B0/id6755711097",
       "https://play.google.com/apps/testing/com.aaron.freerider_front"
@@ -196,55 +205,45 @@
       color: #6b7280;
     }
 
-/* Screenshots: one-by-one vertical layout */
-.screenshots-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 16px;
-  margin-top: 12px;
-}
-
-/* card */
-.screenshot-item {
-  border: 1px solid #e5e7eb;
-  border-radius: 12px;
-  padding: 14px;
-  background: #ffffff;
-}
-
-/* image */
-.screenshot-item img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-  border: 1px solid #e5e7eb;
-  background: #f3f4f6;
-  object-fit: cover;
-
-  /* key: don't get huge on desktop */
-  max-width: 420px;
-  margin: 0 auto;
-}
-
-.screenshot-item figcaption {
-  margin-top: 10px;
-  color: #4b5563;
-  font-size: 0.95rem;
-  max-width: 60ch;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* optional: make the card itself not too wide on desktop */
-@media (min-width: 768px) {
-  .screenshot-item {
-    max-width: 620px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
+    /* Screenshots: one-by-one vertical layout */
+    .screenshots-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      margin-top: 12px;
+    }
+    .screenshot-item {
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 14px;
+      background: #ffffff;
+    }
+    .screenshot-item img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      border: 1px solid #e5e7eb;
+      background: #f3f4f6;
+      object-fit: cover;
+      max-width: 420px;
+      margin: 0 auto;
+    }
+    .screenshot-item figcaption {
+      margin-top: 10px;
+      color: #4b5563;
+      font-size: 0.95rem;
+      max-width: 60ch;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @media (min-width: 768px) {
+      .screenshot-item {
+        max-width: 620px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
 
     footer {
       margin-top: 32px;
@@ -279,11 +278,12 @@
       <a href="/guides/weekend-fun-rides.html">週末出去玩</a>
       <a href="/terms.html">使用條款</a>
       <a href="/privacy.html">私隱政策</a>
+      <a href="/en/" lang="en" hreflang="en-HK">English</a>
     </nav>
 
     <header>
-      <h1>FreeRider</h1>
-      <p class="tagline">夾車・識朋友・慳錢，順手減少塞車，推動香港共享出行</p>
+      <h1>FreeRider — 香港拼車・順風車・共乘 App</h1>
+      <p class="tagline">通勤、去機場、週末出行都可以夾車：司機/乘客配對＋App 內置聊天室，慳錢又方便。</p>
 
       <div class="badges">
         <a href="https://apps.apple.com/us/app/freerider-%E9%A0%86%E9%A2%A8%E8%BB%8A%E7%A4%BE%E7%BE%A4%E5%B9%B3%E5%8F%B0/id6755711097"
@@ -380,40 +380,41 @@
       </div>
     </section>
 
-<section class="section" id="screenshots">
-  <h2>App 介面預覽（逐張睇）</h2>
-  <p>以下係 FreeRider 真實 App 介面截圖：每張圖都會解釋你會喺嗰個頁面做到啲咩。</p>
+    <section class="section" id="screenshots">
+      <h2>App 介面預覽（逐張睇）</h2>
+      <p>以下係 FreeRider 真實 App 介面截圖：每張圖都會解釋你會喺嗰個頁面做到啲咩。</p>
 
-  <div class="screenshots-grid" aria-label="FreeRider app screenshots">
-    <figure class="screenshot-item">
-      <img src="/assets/screenshot-home.png"
-           alt="FreeRider 主畫面：選擇夾車模式、查看熱門通勤路線與入口"
-           loading="lazy" decoding="async">
-      <figcaption>主畫面：快速進入「司機/乘客」模式，同時睇到熱門通勤路線入口。</figcaption>
-    </figure>
+      <div class="screenshots-grid" aria-label="FreeRider app screenshots">
+        <figure class="screenshot-item">
+          <img src="/assets/screenshot-home.png"
+               alt="FreeRider 主畫面：選擇夾車模式、查看熱門通勤路線與入口"
+               loading="lazy" decoding="async">
+          <figcaption>主畫面：快速進入「司機/乘客」模式，同時睇到熱門通勤路線入口。</figcaption>
+        </figure>
 
-    <figure class="screenshot-item">
-      <img src="/assets/screenshot-route.png"
-           alt="建立行程與路線畫面：輸入出發地、目的地、時間窗，並可新增中途站"
-           loading="lazy" decoding="async">
-      <figcaption>建立行程：用「時間窗」寫法，並可加中途站提升配對成功率。</figcaption>
-    </figure>
+        <figure class="screenshot-item">
+          <img src="/assets/screenshot-route.png"
+               alt="建立行程與路線畫面：輸入出發地、目的地、時間窗，並可新增中途站"
+               loading="lazy" decoding="async">
+          <figcaption>建立行程：用「時間窗」寫法，並可加中途站提升配對成功率。</figcaption>
+        </figure>
 
-    <figure class="screenshot-item">
-      <img src="/assets/screenshot-chat.png"
-           alt="內置聊天室畫面：與同路司機或乘客討論集合點、上落車安排與分擔方式"
-           loading="lazy" decoding="async">
-      <figcaption>內置聊天室：唔使交換電話號碼，直接傾集合點、上落車位同分擔安排。</figcaption>
-    </figure>
+        <figure class="screenshot-item">
+          <img src="/assets/screenshot-chat.png"
+               alt="內置聊天室畫面：與同路司機或乘客討論集合點、上落車安排與分擔方式"
+               loading="lazy" decoding="async">
+          <figcaption>內置聊天室：唔使交換電話號碼，直接傾集合點、上落車位同分擔安排。</figcaption>
+        </figure>
 
-    <figure class="screenshot-item">
-      <img src="/assets/screenshot-list.png"
-           alt="行程列表畫面：瀏覽可加入的夾車行程，按地區、時間或目的地篩選"
-           loading="lazy" decoding="async">
-      <figcaption>行程列表：瀏覽同路行程，配合篩選更快搵到適合嘅通勤/出行。</figcaption>
-    </figure>
-  </div>
-</section>
+        <figure class="screenshot-item">
+          <img src="/assets/screenshot-list.png"
+               alt="行程列表畫面：瀏覽可加入的夾車行程，按地區、時間或目的地篩選"
+               loading="lazy" decoding="async">
+          <figcaption>行程列表：瀏覽同路行程，配合篩選更快搵到適合嘅通勤/出行。</figcaption>
+        </figure>
+      </div>
+    </section>
+
     <section class="section" id="modes">
       <h2>四大夾車模式</h2>
       <p>不論你係司機定乘客，都可以喺 FreeRider 度搵到最適合你嘅夾車方式：</p>
