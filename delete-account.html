@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-HK">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="/favicon.ico">
+  
+  <title>刪除帳戶 - FreeRider</title>
+  <meta name="description" content="了解如何刪除您的 FreeRider 帳戶及相關數據。" />
+  
+  <link rel="canonical" href="https://www.freerider.hk/delete-account.html" />
+  
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #111827;
+      background-color: #f9fafb;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 24px 16px 48px;
+    }
+    .nav {
+      display: flex;
+      justify-content: flex-end;
+      gap: 16px;
+      font-size: 0.9rem;
+      margin-bottom: 8px;
+    }
+    .nav a {
+      color: #4b5563;
+      text-decoration: none;
+    }
+    .nav a:hover { text-decoration: underline; }
+    
+    header {
+      text-align: center;
+      padding: 24px 0;
+      border-bottom: 2px solid #e5e7eb;
+      margin-bottom: 32px;
+    }
+    h1 {
+      font-size: 2rem;
+      margin: 0 0 8px;
+      color: #111827;
+    }
+    h2 {
+      font-size: 1.4rem;
+      margin-top: 32px;
+      margin-bottom: 12px;
+      color: #111827;
+    }
+    h3 {
+      font-size: 1.1rem;
+      margin: 20px 0 8px;
+      color: #374151;
+    }
+    
+    .section {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 24px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    }
+    
+    .warning-box {
+      background: #fef3c7;
+      border-left: 4px solid #f59e0b;
+      padding: 16px;
+      margin: 20px 0;
+      border-radius: 8px;
+    }
+    
+    .info-box {
+      background: #dbeafe;
+      border-left: 4px solid #3b82f6;
+      padding: 16px;
+      margin: 20px 0;
+      border-radius: 8px;
+    }
+    
+    .steps {
+      counter-reset: step;
+      list-style: none;
+      padding-left: 0;
+      margin: 16px 0;
+    }
+    .steps li {
+      counter-increment: step;
+      margin: 12px 0;
+      padding-left: 32px;
+      position: relative;
+    }
+    .steps li::before {
+      content: counter(step);
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: #3b82f6;
+      color: white;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      font-size: 0.85rem;
+    }
+    
+    ul { 
+      padding-left: 1.5rem; 
+      margin: 12px 0; 
+    }
+    li { margin: 6px 0; }
+    
+    .button-group {
+      margin: 24px 0;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    
+    .cta-button {
+      display: inline-block;
+      background-color: #ef4444;
+      color: #ffffff;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.15s ease;
+    }
+    .cta-button:hover {
+      background-color: #dc2626;
+    }
+    
+    .secondary-button {
+      display: inline-block;
+      background-color: #6b7280;
+      color: #ffffff;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.15s ease;
+    }
+    .secondary-button:hover {
+      background-color: #4b5563;
+    }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+    }
+    th, td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    th {
+      background-color: #f3f4f6;
+      font-weight: 600;
+    }
+    
+    footer {
+      margin-top: 48px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: #6b7280;
+      padding-top: 24px;
+      border-top: 1px solid #e5e7eb;
+    }
+    footer a {
+      color: #6b7280;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+    footer a:hover { text-decoration: underline; }
+    
+    @media (min-width: 768px) {
+      h1 { font-size: 2.4rem; }
+      .section { padding: 32px; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="/">主頁</a>
+      <a href="/terms.html">使用條款</a>
+      <a href="/privacy.html">私隱政策</a>
+      <a href="/en/delete-account.html" lang="en" hreflang="en-HK">English</a>
+    </nav>
+
+    <header>
+      <h1>刪除 FreeRider 帳戶</h1>
+      <p style="color: #6b7280; margin-top: 8px;">Account Deletion for FreeRider App</p>
+    </header>
+
+    <section class="section">
+      <h2>如何刪除您的 FreeRider 帳戶</h2>
+      <p>FreeRider 尊重您的數據權利 [web:22][web:25]。您可以隨時要求刪除您的帳戶及相關數據。以下是完整的刪除步驟及數據處理說明。</p>
+      
+      <div class="warning-box">
+        <strong>⚠️ 重要提示：</strong>刪除帳戶後，您將無法恢復任何數據。請在刪除前確認您已備份所有需要保留的資訊。
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>方法一：在 App 內刪除（推薦）</h2>
+      <p>最快捷的方式是直接在 FreeRider App 內刪除帳戶 [web:22][web:23]：</p>
+      
+      <ol class="steps">
+        <li><strong>打開 FreeRider App</strong> 並登入您的帳戶</li>
+        <li><strong>進入「個人設定」</strong>（通常在主選單或個人檔案頁面）</li>
+        <li><strong>找到「帳戶管理」</strong>或「Account Management」選項</li>
+        <li><strong>點擊「刪除帳戶」</strong>按鈕 [web:33]</li>
+        <li><strong>確認刪除</strong>：系統會要求您確認此操作，請仔細閱讀提示後確認</li>
+        <li><strong>完成</strong>：您的帳戶將立即開始刪除程序</li>
+      </ol>
+      
+      <div class="button-group">
+        <a href="https://apps.apple.com/us/app/freerider-%E9%A0%86%E9%A2%A8%E8%BB%8A%E7%A4%BE%E7%BE%A4%E5%B9%B3%E5%8F%B0/id6755711097" class="secondary-button">下載 iOS App</a>
+        <a href="https://play.google.com/apps/testing/com.aaron.freerider_front" class="secondary-button">下載 Android App</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>方法二：如果您已卸載 App</h2>
+      <p>如果您已經卸載了 FreeRider App，仍然可以透過網頁要求刪除帳戶 [web:22][web:24]：</p>
+      
+      <div class="info-box">
+        <p><strong>聯絡我們以刪除帳戶：</strong></p>
+        <p>請發送電郵至：<strong>support@freerider.hk</strong></p>
+        <p>郵件主旨：<strong>要求刪除 FreeRider 帳戶</strong></p>
+        <p>郵件內容請包含：</p>
+        <ul style="margin-top: 8px;">
+          <li>您註冊時使用的電郵地址或電話號碼</li>
+          <li>您的顯示名稱（如適用）</li>
+          <li>確認您要求刪除帳戶及所有相關數據</li>
+        </ul>
+      </div>
+      
+      <p>我們會在收到您的要求後 <strong>7 個工作天內</strong>處理您的刪除請求，並以電郵通知您 [web:32]。</p>
+    </section>
+
+    <section class="section">
+      <h2>將被刪除的數據類型</h2>
+      <p>當您刪除 FreeRider 帳戶時，以下數據將被永久刪除 [web:22][web:32]：</p>
+      
+      <table>
+        <thead>
+          <tr>
+            <th>數據類型</th>
+            <th>處理方式</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>個人資料</strong></td>
+            <td>您的姓名、電郵、電話號碼、頭像等個人識別資訊將被完全刪除</td>
+          </tr>
+          <tr>
+            <td><strong>行程記錄</strong></td>
+            <td>您發布或加入的所有行程記錄將被刪除</td>
+          </tr>
+          <tr>
+            <td><strong>聊天記錄</strong></td>
+            <td>您在 App 內的所有聊天訊息將被刪除</td>
+          </tr>
+          <tr>
+            <td><strong>偏好設定</strong></td>
+            <td>您的 App 設定、通知偏好等將被刪除</td>
+          </tr>
+          <tr>
+            <td><strong>登入憑證</strong></td>
+            <td>您的登入資訊及 session 將立即失效</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="section">
+      <h2>可能保留的數據及原因</h2>
+      <p>根據法律要求及合理業務需要，以下數據可能會保留一段時間 [web:22][web:32]：</p>
+      
+      <h3>1. 法律或監管要求的數據（保留最多 7 年）</h3>
+      <ul>
+        <li><strong>交易記錄：</strong>如涉及金錢交易或支付記錄，可能需保留以符合稅務及會計法規</li>
+        <li><strong>安全日誌：</strong>與安全事件、欺詐調查相關的匿名化日誌</li>
+      </ul>
+      
+      <h3>2. 匿名化統計數據（無限期）</h3>
+      <ul>
+        <li><strong>聚合分析：</strong>完全匿名化的使用統計（例如：路線熱度分析），無法追溯至個人</li>
+      </ul>
+      
+      <h3>3. 備份系統數據（最多 30 天）</h3>
+      <ul>
+        <li><strong>備份副本：</strong>數據庫備份中的數據將在下一次備份週期後完全清除（通常 30 天內）[web:32]</li>
+      </ul>
+      
+      <div class="info-box">
+        <strong>透明承諾：</strong>除上述情況外，我們不會保留任何可識別您身份的個人數據。所有保留的數據均符合 GDPR 及香港《個人資料（私隱）條例》的要求 [web:32]。
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>刪除帳戶的後果</h2>
+      <p>在您刪除帳戶後：</p>
+      <ul>
+        <li>✓ 您將無法登入 FreeRider App</li>
+        <li>✓ 其他用戶將無法找到或聯絡您</li>
+        <li>✓ 您發布的行程將被取消並移除</li>
+        <li>✓ 您已加入的行程將自動退出</li>
+        <li>✓ 所有聊天記錄將對您不可見（其他用戶的聊天記錄中您的訊息會顯示為「已刪除用戶」）</li>
+        <li>✓ 您需要重新註冊才能再次使用服務</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>需要協助？</h2>
+      <p>如果您在刪除帳戶過程中遇到任何問題，或對數據刪除有任何疑問，請隨時聯絡我們：</p>
+      <ul>
+        <li><strong>電郵：</strong>support@freerider.hk</li>
+        <li><strong>回覆時間：</strong>通常 2-3 個工作天內回覆</li>
+      </ul>
+      
+      <p style="margin-top: 20px;">如果您只是暫時不想使用 FreeRider，建議您可以選擇「登出」而非刪除帳戶，這樣您的數據會被保留，方便日後再次使用。</p>
+    </section>
+
+    <footer>
+      <div>
+        <a href="/">主頁</a> ·
+        <a href="/terms.html">使用條款</a> ·
+        <a href="/privacy.html">私隱政策</a> ·
+        <a href="/delete-account.html">刪除帳戶</a>
+      </div>
+      <p style="margin-top: 12px;">© FreeRider · Hong Kong Community Carpool App</p>
+      <p style="margin-top: 4px; font-size: 0.8rem;">此頁面符合 Google Play 帳戶刪除要求 (Updated 2026)</p>
+    </footer>
+  </div>
+</body>
+</html>
