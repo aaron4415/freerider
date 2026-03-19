@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en-HK">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-37E3L0QJBH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-37E3L0QJBH');
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="/favicon.ico">
+
+  <title>FreeRider | Hong Kong Carpool & Rideshare App</title>
+  <meta name="description" content="FreeRider is a Hong Kong carpool/rideshare app for commuting and airport trips. Split taxi/uber fares, post rides, and chat in-app. 100% free, no ads, no commission." />
+
+  <!-- Canonical for THIS language page -->
+  <link rel="canonical" href="https://www.freerider.hk/en/" />
+
+  <!-- hreflang (reciprocal cluster) -->
+  <link rel="alternate" hreflang="zh-Hant-HK" href="https://www.freerider.hk/" />
+  <link rel="alternate" hreflang="en-HK" href="https://www.freerider.hk/en/" />
+  <link rel="alternate" hreflang="x-default" href="https://www.freerider.hk/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="FreeRider | Hong Kong Carpool & Rideshare App" />
+  <meta property="og:description" content="Carpool for commuting and airport trips in Hong Kong. Split taxi/uber fares and coordinate pickups in-app. 100% free." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.freerider.hk/en/" />
+  <meta property="og:image" content="https://www.freerider.hk/assets/og-image.png" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="FreeRider | Hong Kong Carpool & Rideshare App" />
+  <meta name="twitter:description" content="Commute and airport carpooling in Hong Kong. In-app chat. 100% free." />
+  <meta name="twitter:image" content="https://www.freerider.hk/assets/og-image.png" />
+
+  <!-- JSON-LD: SoftwareApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "FreeRider",
+    "applicationCategory": "TravelApplication",
+    "operatingSystem": "iOS, Android",
+    "description": "Hong Kong carpool and rideshare app for commuting and airport trips. Post rides, join trips, and chat in-app to coordinate pickup points.",
+    "url": "https://www.freerider.hk/en/",
+    "image": "https://www.freerider.hk/assets/og-image.png",
+    "offers": { "@type": "Offer", "price": 0, "priceCurrency": "HKD" },
+    "sameAs": [
+      "https://apps.apple.com/us/app/freerider-%E9%A0%86%E9%A2%A8%E8%BB%8A%E7%A4%BE%E7%BE%A4%E5%B9%B3%E5%8F%B0/id6755711097",
+      "https://play.google.com/apps/testing/com.aaron.freerider_front"
+    ]
+  }
+  </script>
+
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #111827;
+      background-color: #f9fafb;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 24px 16px 48px;
+    }
+    .nav {
+      display: flex;
+      justify-content: flex-end;
+      gap: 16px;
+      font-size: 0.9rem;
+      margin-bottom: 8px;
+      flex-wrap: wrap;
+    }
+    .nav a {
+      color: #4b5563;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .nav a:hover { text-decoration: underline; }
+
+    header {
+      text-align: center;
+      padding: 24px 0 24px;
+    }
+    h1 {
+      font-size: 2rem;
+      margin: 0 0 8px;
+      line-height: 1.2;
+    }
+    h2 {
+      font-size: 1.4rem;
+      margin-top: 32px;
+      margin-bottom: 8px;
+    }
+    h3 {
+      font-size: 1.05rem;
+      margin: 0 0 6px;
+    }
+    p { margin: 8px 0; }
+    .tagline {
+      font-size: 1.1rem;
+      color: #4b5563;
+      margin: 0 auto;
+      max-width: 60ch;
+    }
+
+    .badges {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .store-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #000000;
+      color: #ffffff;
+      padding: 12px 20px;
+      border-radius: 0.75rem;
+      text-decoration: none;
+      border: 1px solid #374151;
+      min-width: 220px;
+      transition: background-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .store-button:hover {
+      background-color: #111827;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.35);
+      transform: translateY(-1px);
+    }
+    .store-button-icon {
+      width: 28px;
+      height: 28px;
+      margin-right: 12px;
+      fill: currentColor;
+    }
+    .store-button-text { text-align: left; }
+    .store-button-small { font-size: 0.7rem; }
+    .store-button-large { font-size: 1.1rem; font-weight: 700; line-height: 1.1; }
+
+    .hero-note {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      color: #6b7280;
+    }
+
+    .section {
+      margin-top: 32px;
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 20px 16px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    }
+
+    ul { padding-left: 1.2rem; margin: 8px 0; }
+    li { margin: 4px 0; }
+
+    .steps {
+      counter-reset: step;
+      list-style: none;
+      padding-left: 0;
+      margin: 8px 0 0;
+    }
+    .steps li::before {
+      counter-increment: step;
+      content: counter(step) ". ";
+      font-weight: 600;
+      margin-right: 4px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 12px;
+      margin-top: 12px;
+    }
+    .card {
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 14px 14px;
+      background: #ffffff;
+    }
+    .card a {
+      color: #111827;
+      text-decoration: none;
+    }
+    .card a:hover { text-decoration: underline; }
+    .card p {
+      margin: 6px 0 0;
+      color: #4b5563;
+      font-size: 0.95rem;
+    }
+    .card .meta {
+      margin-top: 10px;
+      font-size: 0.85rem;
+      color: #6b7280;
+    }
+
+    .screenshots-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      margin-top: 12px;
+    }
+    .screenshot-item {
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 14px;
+      background: #ffffff;
+    }
+    .screenshot-item img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      border: 1px solid #e5e7eb;
+      background: #f3f4f6;
+      object-fit: cover;
+      max-width: 420px;
+      margin: 0 auto;
+    }
+    .screenshot-item figcaption {
+      margin-top: 10px;
+      color: #4b5563;
+      font-size: 0.95rem;
+      max-width: 60ch;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @media (min-width: 768px) {
+      .screenshot-item {
+        max-width: 620px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    footer {
+      margin-top: 32px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: #6b7280;
+    }
+    footer .footer-links { margin-bottom: 4px; }
+    footer .footer-links a {
+      color: #6b7280;
+      text-decoration: none;
+      margin: 0 6px;
+    }
+    footer .footer-links a:hover { text-decoration: underline; }
+
+    @media (min-width: 768px) {
+      h1 { font-size: 2.4rem; }
+      .tagline { font-size: 1.2rem; }
+      .section { padding: 24px 20px; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="/en/">Home</a>
+      <a href="/routes/">Popular routes</a>
+      <a href="/guides/cross-border-carpool.html">Mainland guide</a>
+      <a href="/guides/airport-carpool.html">Airport guide</a>
+      <a href="/guides/taxi-uber-split.html">Split Taxi/Uber</a>
+      <a href="/guides/weekend-fun-rides.html">Weekend trips</a>
+      <a href="/terms.html">Terms</a>
+      <a href="/privacy.html">Privacy</a>
+      <a href="/" lang="zh-Hant" hreflang="zh-Hant-HK">繁體中文</a>
+    </nav>
+
+    <header>
+      <h1>FreeRider — Hong Kong Carpool & Rideshare App</h1>
+      <p class="tagline">Carpool for commuting, airport trips, and weekend rides. Match drivers and passengers, then coordinate pickup points via in-app chat.</p>
+
+      <div class="badges">
+        <a href="https://apps.apple.com/us/app/freerider-%E9%A0%86%E9%A2%A8%E8%BB%8A%E7%A4%BE%E7%BE%A4%E5%B9%B3%E5%8F%B0/id6755711097"
+           class="store-button" aria-label="Download FreeRider on the App Store">
+          <svg class="store-button-icon" viewBox="0 0 384 512" aria-hidden="true" focusable="false">
+            <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 46.9 126.7 98.9 126.7 25.8 0 32.2-19.1 75.5-19.1 42.9 0 43.8 19.1 89.6 19.1 29.6 0 68.9-68.7 97.6-118.9-33.2-17.7-49.4-44.5-51.3-93.8zm-69.7-183c21.8-27.1 36.5-62.7 31.8-100.3-33 2.9-71.1 22.1-92.4 47.9-20.9 25.5-35.3 64.9-30.8 98.5 35.5 2.7 72.8-19.6 91.4-46.1z"/>
+          </svg>
+          <div class="store-button-text">
+            <div class="store-button-small">Download on the</div>
+            <div class="store-button-large">App Store</div>
+          </div>
+        </a>
+
+        <a href="https://play.google.com/apps/testing/com.aaron.freerider_front"
+           class="store-button" aria-label="Get FreeRider on Google Play">
+          <svg class="store-button-icon" viewBox="0 0 512 512" aria-hidden="true" focusable="false">
+            <path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/>
+          </svg>
+          <div class="store-button-text">
+            <div class="store-button-small">GET IT ON</div>
+            <div class="store-button-large">Google Play</div>
+          </div>
+        </a>
+      </div>
+
+      <p class="hero-note">Indie-built · 100% free · No ads · No commission</p>
+      <p class="hero-note"><a href="/routes/">See popular commute routes →</a></p>
+    </header>
+
+    <section class="section" id="about">
+      <h2>What is FreeRider?</h2>
+      <p>FreeRider is a Hong Kong carpooling community that connects drivers and passengers for smarter, cheaper, and more social rides.</p>
+      <p>Use it for daily commutes, airport trips, or splitting Taxi/Uber fares—coordinate pickup points in-app without sharing phone numbers.</p>
+    </section>
+
+    <section class="section" id="modes">
+      <h2>4 ways to carpool</h2>
+      <ul>
+        <li><strong>Drivers find passengers:</strong> Share petrol and tunnel costs.</li>
+        <li><strong>Drivers find co-drivers:</strong> Take turns driving for long commutes.</li>
+        <li><strong>Passengers find drivers:</strong> A more comfortable commute than crowded public transport.</li>
+        <li><strong>Split Taxi/Uber:</strong> Ride together and cut costs.</li>
+      </ul>
+    </section>
+
+    <section class="section" id="how-it-works">
+      <h2>How it works</h2>
+      <ol class="steps">
+        <li><strong>Post or search a trip:</strong> Set origin, destination, and time window.</li>
+        <li><strong>Find matches:</strong> Browse rides or wait for others to join.</li>
+        <li><strong>Chat in-app:</strong> Agree on pickup point, seats, and cost split.</li>
+        <li><strong>Go:</strong> Ride together and split the fare.</li>
+      </ol>
+    </section>
+
+    <footer>
+      <div class="footer-links">
+        <a href="/en/">Home</a> ·
+        <a href="/terms.html">Terms</a> ·
+        <a href="/privacy.html">Privacy</a>
+      </div>
+      <p>© FreeRider · Hong Kong Community Carpool App</p>
+    </footer>
+  </div>
+</body>
+</html>
