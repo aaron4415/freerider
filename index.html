@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-HK">
 <head>
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-37E3L0QJBH"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -12,24 +11,24 @@
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  /favicon.ico">
+  <link rel="icon" href="/favicon.ico">
 
-  <title>FreeRider｜香港拼車・順風車・共乘通勤 App</title>
-  <meta name="description" content="FreeRider 係香港拼車/順風車/共乘 App：通勤、去機場、夾 Taxi/Uber 分擔車費；App 內置聊天室約集合點。100% 免費，無廣告無抽佣。" />
+  <title>FreeRider｜香港拼車・順風車・共乘返工 App</title>
+  <meta name="description" content="FreeRider 係香港拼車/順風車/共乘 App：返工、去機場、夾 Taxi/Uber 分擔車費；App 內置聊天室約集合點。100% 免費，無廣告無抽佣。" />
 
-  //www.freerider.hk/" />
-  //www.freerider.hk/" />
-  //www.freerider.hk/en/" />
-  //www.freerider.hk/" />
+  <link rel="canonical" href="https://www.freerider.hk/" />
+  <link rel="alternate" hreflang="zh-Hant-HK" href="https://www.freerider.hk/" />
+  <link rel="alternate" hreflang="en-HK" href="https://www.freerider.hk/en/" />
+  <link rel="alternate" hreflang="x-default" href="https://www.freerider.hk/" />
 
-  <meta property="og:title" content="FreeRider｜香港拼車・順風車・共乘通勤 App" />
-  <meta property="og:description" content="香港本地夾車平台：通勤順風車、夾 Taxi/Uber、內置聊天室協調集合點。100% 免費、無廣告、無抽佣。" />
+  <meta property="og:title" content="FreeRider｜香港拼車・順風車・共乘返工 App" />
+  <meta property="og:description" content="香港本地夾車平台：返工順風車、夾 Taxi/Uber、內置聊天室協調集合點。100% 免費、無廣告、無抽佣。" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.freerider.hk/" />
   <meta property="og:image" content="https://www.freerider.hk/assets/og-image.png" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="FreeRider｜香港拼車・順風車・共乘通勤 App" />
-  <meta name="twitter:description" content="通勤夾車・夾 Taxi/Uber・內置聊天室。獨立開發，100% 免費。" />
+  <meta name="twitter:title" content="FreeRider｜香港拼車・順風車・共乘返工 App" />
+  <meta name="twitter:description" content="返工夾車・夾 Taxi/Uber・內置聊天室。獨立開發，100% 免費。" />
   <meta name="twitter:image" content="https://www.freerider.hk/assets/og-image.png" />
 
   <script type="application/ld+json">
@@ -39,7 +38,7 @@
     "name": "FreeRider",
     "applicationCategory": "TravelApplication",
     "operatingSystem": "iOS, Android",
-    "description": "香港拼車/順風車/共乘通勤 App，支援行程發佈、加入、內置聊天室協調集合點。",
+    "description": "香港拼車/順風車/共乘返工 App，支援行程發佈、加入、內置聊天室協調集合點。",
     "url": "https://www.freerider.hk/",
     "image": "https://www.freerider.hk/assets/og-image.png",
     "offers": { "@type": "Offer", "price": 0, "priceCurrency": "HKD" },
@@ -64,7 +63,7 @@
       --gray-300: #d4d4d4;
       --gray-500: #737373;
       --gray-700: #404040;
-      --accent: #f59e0b; /* amber — stands out on dark video */
+      --accent: #f59e0b;
       --font-display: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
     }
 
@@ -91,7 +90,7 @@
       align-items: center;
       padding: 20px 40px;
       background: linear-gradient(to bottom, rgba(0,0,0,0.55), transparent);
-      transition: background 0.4s ease;
+      transition: background 0.4s ease, padding 0.3s ease;
     }
     .nav.scrolled {
       background: rgba(10,10,10,0.92);
@@ -99,14 +98,23 @@
       -webkit-backdrop-filter: blur(12px);
       padding: 14px 40px;
     }
+
+    /* ── Logo: pure text, no emoji ── */
     .nav-logo {
-      font-size: 1.3rem;
-      font-weight: 800;
+      font-size: 1.25rem;
+      font-weight: 900;
       letter-spacing: -0.5px;
       color: var(--white);
+      line-height: 1;
     }
+    .nav-logo span {
+      color: var(--accent);
+    }
+
+    /* ── Desktop links ── */
     .nav-links {
       display: flex;
+      align-items: center;
       gap: 28px;
       font-size: 0.88rem;
       font-weight: 500;
@@ -115,13 +123,78 @@
     .nav-links a:hover { color: var(--white); }
     .nav-links a.lang {
       border: 1px solid rgba(255,255,255,0.4);
-      padding: 4px 10px;
+      padding: 4px 12px;
       border-radius: 20px;
+      transition: border-color 0.2s, color 0.2s;
     }
-    @media (max-width: 640px) {
+    .nav-links a.lang:hover {
+      border-color: var(--white);
+      color: var(--white);
+    }
+
+    /* ── Hamburger button (mobile only) ── */
+    .nav-hamburger {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+      width: 36px;
+      height: 36px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+    }
+    .nav-hamburger span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: var(--white);
+      border-radius: 2px;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    .nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .nav-hamburger.open span:nth-child(2) { opacity: 0; }
+    .nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    /* ── Mobile drawer ── */
+    .nav-drawer {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 99;
+      background: rgba(10,10,10,0.97);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      padding: 80px 32px 40px;
+      flex-direction: column;
+      gap: 0;
+    }
+    .nav-drawer.open { display: flex; }
+    .nav-drawer a {
+      display: block;
+      padding: 18px 0;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: rgba(255,255,255,0.85);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      transition: color 0.2s;
+    }
+    .nav-drawer a:last-child { border-bottom: none; }
+    .nav-drawer a:hover { color: var(--white); }
+    .nav-drawer a.lang {
+      margin-top: 16px;
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 8px;
+      padding: 12px 16px;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
       .nav { padding: 16px 20px; }
-      .nav-links { gap: 14px; font-size: 0.78rem; }
-      .nav-links .hide-mobile { display: none; }
+      .nav.scrolled { padding: 12px 20px; }
+      .nav-links { display: none; }
+      .nav-hamburger { display: flex; }
     }
 
     /* ===================== HERO — FULLSCREEN VIDEO ===================== */
@@ -137,7 +210,6 @@
       overflow: hidden;
     }
 
-    /* Background Video */
     .hero-video {
       position: absolute;
       inset: 0;
@@ -148,7 +220,6 @@
       z-index: 0;
     }
 
-    /* Fallback gradient if video fails / not provided */
     .hero-video-fallback {
       position: absolute;
       inset: 0;
@@ -156,7 +227,6 @@
       z-index: 0;
     }
 
-    /* Dark overlay for text legibility */
     .hero-overlay {
       position: absolute;
       inset: 0;
@@ -169,7 +239,6 @@
       z-index: 1;
     }
 
-    /* Hero Content */
     .hero-content {
       position: relative;
       z-index: 2;
@@ -201,10 +270,7 @@
       letter-spacing: -1.5px;
       margin-bottom: 20px;
     }
-
-    .hero-title span {
-      color: var(--accent);
-    }
+    .hero-title span { color: var(--accent); }
 
     .hero-subtitle {
       font-size: clamp(1rem, 2.2vw, 1.3rem);
@@ -214,7 +280,7 @@
       line-height: 1.65;
     }
 
-    /* Store Buttons */
+    /* ── Store Buttons: solid black ── */
     .hero-badges {
       display: flex;
       justify-content: center;
@@ -226,25 +292,30 @@
     .store-btn {
       display: flex;
       align-items: center;
-      background: rgba(255,255,255,0.12);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      border: 1.5px solid rgba(255,255,255,0.3);
+      background: #000000;
+      border: 1.5px solid #3a3a3a;
       color: var(--white);
-      padding: 12px 22px;
+      padding: 11px 22px;
       border-radius: 14px;
-      min-width: 200px;
-      transition: background 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+      min-width: 185px;
+      transition: background 0.2s ease, transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
     }
     .store-btn:hover {
-      background: rgba(255,255,255,0.22);
-      border-color: rgba(255,255,255,0.65);
+      background: #1a1a1a;
+      border-color: #666;
       transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.5);
     }
-    .store-btn svg { width: 26px; height: 26px; fill: currentColor; margin-right: 12px; flex-shrink: 0; }
+    .store-btn svg {
+      width: 26px;
+      height: 26px;
+      fill: var(--white);
+      margin-right: 12px;
+      flex-shrink: 0;
+    }
     .store-btn-text { text-align: left; }
-    .store-btn-small { font-size: 0.68rem; opacity: 0.75; }
-    .store-btn-large { font-size: 1.05rem; font-weight: 700; line-height: 1.1; }
+    .store-btn-small { font-size: 0.68rem; opacity: 0.65; letter-spacing: 0.3px; }
+    .store-btn-large { font-size: 1.05rem; font-weight: 700; line-height: 1.2; }
 
     .hero-note {
       font-size: 0.82rem;
@@ -276,11 +347,8 @@
     }
 
     /* ===================== MAIN CONTENT ===================== */
-    main {
-      background: var(--white);
-    }
+    main { background: var(--white); }
 
-    /* Section base */
     .section {
       max-width: 1040px;
       margin: 0 auto;
@@ -293,7 +361,6 @@
       margin: 0;
     }
 
-    /* Section Number + Title layout (dontboardme style) */
     .section-header {
       display: flex;
       align-items: flex-start;
@@ -320,7 +387,7 @@
       color: var(--accent);
     }
 
-    /* ===================== MODES SECTION ===================== */
+    /* ===================== MODES ===================== */
     .modes-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -365,6 +432,7 @@
       display: grid;
       grid-template-columns: 1fr;
       gap: 0;
+      list-style: none;
     }
     .step-item {
       display: flex;
@@ -393,7 +461,7 @@
       line-height: 1.65;
     }
 
-    /* ===================== ROUTES SECTION ===================== */
+    /* ===================== ROUTES ===================== */
     .routes-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -438,6 +506,7 @@
       display: flex;
       flex-direction: column;
       gap: 0;
+      list-style: none;
     }
     .guide-item {
       display: flex;
@@ -445,7 +514,6 @@
       align-items: center;
       padding: 24px 0;
       border-bottom: 1px solid var(--gray-300);
-      transition: background 0.15s ease;
       gap: 16px;
     }
     .guide-item:last-child { border-bottom: none; }
@@ -462,7 +530,7 @@
       font-size: 1.4rem;
       color: var(--gray-500);
       flex-shrink: 0;
-      transition: transform 0.2s ease;
+      transition: transform 0.2s ease, color 0.2s ease;
     }
     .guide-item:hover .guide-arrow { transform: translateX(4px); color: var(--black); }
 
@@ -543,13 +611,6 @@
       margin-right: auto;
     }
     .cta-strip .hero-badges { justify-content: center; }
-    .cta-strip .store-btn {
-      border-color: rgba(255,255,255,0.25);
-    }
-    .cta-strip .store-btn:hover {
-      border-color: rgba(255,255,255,0.7);
-      background: rgba(255,255,255,0.15);
-    }
 
     /* ===================== FOOTER ===================== */
     footer {
@@ -582,25 +643,38 @@
 
   <!-- ===== FLOATING NAV ===== -->
   <nav class="nav" id="mainNav" aria-label="Main navigation">
-    <div class="nav-logo">FreeRider 🚗</div>
-    <ul class="nav-links">
-      ><a href="/routes/">熱門路線</a></li>
-      ><a href="#modes">夾車模式</a></li>
-      ><a href="#how">點樣用</a></li>
-      ><a href="#guides">使用指南</a></li>
-      ><a href="/en/" lang="en" hreflang="en-HK" class="lang">EN</a></li>
+    <div class="nav-logo">Free<span>Rider</span></div>
+
+    <!-- Desktop links -->
+    <ul class="nav-links" role="list">
+      <li><a href="/routes/">熱門路線</a></li>
+      <li><a href="#modes">夾車模式</a></li>
+      <li><a href="#how">點樣用</a></li>
+      <li><a href="#guides">使用指南</a></li>
+      <li><a href="/en/" lang="en" hreflang="en-HK" class="lang">EN</a></li>
     </ul>
+
+    <!-- Hamburger (mobile) -->
+    <button class="nav-hamburger" id="navHamburger" aria-label="開啟選單" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
   </nav>
+
+  <!-- Mobile Drawer -->
+  <div class="nav-drawer" id="navDrawer" role="dialog" aria-label="手機導航">
+    <a href="/routes/" onclick="closeDrawer()">熱門路線</a>
+    <a href="#modes" onclick="closeDrawer()">夾車模式</a>
+    <a href="#how" onclick="closeDrawer()">點樣用</a>
+    <a href="#guides" onclick="closeDrawer()">使用指南</a>
+    <a href="#screenshots" onclick="closeDrawer()">App 截圖</a>
+    <a href="#social" onclick="closeDrawer()">關注我哋</a>
+    <a href="/en/" lang="en" class="lang" onclick="closeDrawer()">English</a>
+  </div>
 
   <!-- ===== HERO: FULLSCREEN VIDEO ===== -->
   <section class="hero" aria-label="Hero">
-
-    <!--
-      BACKGROUND VIDEO — replace src with your Hong Kong city timelapse video file.
-      Recommended: MP4 (H.264) + WebM for browser support.
-      Video should loop seamlessly from morning sunrise to night skyline.
-      Free sources: Pexels / Coverr / your own footage.
-    -->
     <div class="hero-video-fallback" aria-hidden="true"></div>
     <video
       class="hero-video"
@@ -612,7 +686,6 @@
       aria-hidden="true"
       poster="/assets/hk-city-poster.jpg"
     >
-      <!-- Place your Hong Kong city timelapse video here -->
       <source src="/assets/hk-city-timelapse.webm" type="video/webm" />
       <source src="/assets/hk-city-timelapse.mp4"  type="video/mp4" />
     </video>
@@ -625,7 +698,7 @@
         每一程，<br>都可以<span>夾住去</span>。
       </h1>
       <p class="hero-subtitle">
-        通勤、去機場、週末出行 —— 司機乘客配對＋App 內置聊天室，慳錢又方便。
+        返工、去機場、週末出行 —— 司機乘客配對＋App 內置聊天室，慳錢又方便。
       </p>
 
       <div class="hero-badges">
@@ -655,7 +728,6 @@
       <p class="hero-note">獨立開發 · 100% 免費 · 無廣告 · 無抽佣</p>
     </div>
 
-    <!-- Scroll Down Indicator -->
     <div class="scroll-indicator" aria-hidden="true">
       <span>Scroll</span>
       <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -713,32 +785,32 @@
           <h2 class="section-title">點樣<em>用？</em></h2>
         </div>
         <ol class="steps-list">
-          >
+          <li class="step-item">
             <div class="step-num-large">01</div>
             <div class="step-body">
               <h3>發佈或搜尋行程</h3>
               <p>揀司機／乘客模式，輸入出發地、目的地同時間窗。</p>
             </div>
           </li>
-          >
+          <li class="step-item">
             <div class="step-num-large">02</div>
             <div class="step-body">
               <h3>尋找配對</h3>
               <p>瀏覽同路行程，或等其他用戶 join 你嘅行程。</p>
             </div>
           </li>
-          >
+          <li class="step-item">
             <div class="step-num-large">03</div>
             <div class="step-body">
               <h3>App 內傾好細節</h3>
               <p>唔使交換電話，直接喺內置聊天室傾集合點、上落車位、車費分擔方式。</p>
             </div>
           </li>
-          >
+          <li class="step-item">
             <div class="step-num-large">04</div>
             <div class="step-body">
               <h3>出發</h3>
-              <p>一齊上車，分享車費，通勤都可以變得更舒服。</p>
+              <p>一齊上車，分享車費，返工都可以變得更舒服。</p>
             </div>
           </li>
         </ol>
@@ -752,38 +824,38 @@
       <div class="section">
         <div class="section-header">
           <span class="section-number">03</span>
-          <h2 class="section-title"><em>熱門</em>通勤路線</h2>
+          <h2 class="section-title"><em>熱門</em>返工路線</h2>
         </div>
         <div class="routes-grid">
           <div class="route-card">
             <div class="route-arrow">ROUTE →</div>
             <h3><a href="/routes/tko-to-central-admiralty.html">將軍澳 → 中環/金鐘</a></h3>
-            <p>通勤核心線；適合用「時間窗」＋「觀塘/九龍灣中途站」。</p>
+            <p>返工核心線；適合用「時間窗」＋「觀塘/九龍灣中途站」。</p>
           </div>
           <div class="route-card">
             <div class="route-arrow">ROUTE →</div>
             <h3><a href="/routes/tko-to-quarrybay-taikoo.html">將軍澳 → 鰂魚涌/太古</a></h3>
-            <p>港島東通勤；可寫明「是否接受跨海隧道/路費分擔」。</p>
+            <p>港島東返工；可寫明「是否接受跨海隧道/路費分擔」。</p>
           </div>
           <div class="route-card">
             <div class="route-arrow">ROUTE →</div>
             <h3><a href="/routes/tsw-yuenlong-to-kowloon-east.html">元朗/天水圍 → 九龍東</a></h3>
-            <p>新界西通勤；建議用固定星期一至五 post 建立長期圈。</p>
+            <p>新界西返工；建議用固定星期一至五 post 建立長期圈。</p>
           </div>
           <div class="route-card">
             <div class="route-arrow">ROUTE →</div>
             <h3><a href="/routes/sha-tin-to-central-admiralty.html">沙田 → 金鐘/中環</a></h3>
-            <p>新界東通勤；可設 1–2 個上車點減少兜路。</p>
+            <p>新界東返工；可設 1–2 個上車點減少兜路。</p>
           </div>
           <div class="route-card">
             <div class="route-arrow">ROUTE →</div>
             <h3><a href="/routes/tsuen-wan-to-central-admiralty.html">荃灣 → 中環/金鐘</a></h3>
-            <p>西區通勤；適合朝早固定時間窗配對。</p>
+            <p>西區返工；適合朝早固定時間窗配對。</p>
           </div>
           <div class="route-card">
             <div class="route-arrow">ROUTE →</div>
             <h3><a href="/routes/east-kowloon-to-wanchai-causewaybay.html">東九龍 → 灣仔/銅鑼灣</a></h3>
-            <p>跨海通勤；事前講清楚「隧道費點分」最重要。</p>
+            <p>跨海返工；事前講清楚「隧道費點分」最重要。</p>
           </div>
         </div>
       </div>
@@ -799,28 +871,28 @@
           <h2 class="section-title">熱門<em>使用指南</em></h2>
         </div>
         <ul class="guides-list">
-          >
+          <li class="guide-item">
             <div class="guide-item-left">
               <h3><a href="/guides/taxi-uber-split.html">夾 Taxi / Uber 分擔</a></h3>
               <p>同路一齊搭，車費平啲，集合點同分帳先講清楚。</p>
             </div>
             <span class="guide-arrow" aria-hidden="true">→</span>
           </li>
-          >
+          <li class="guide-item">
             <div class="guide-item-left">
               <h3><a href="/guides/airport-carpool.html">去機場夾車</a></h3>
               <p>行李、上車點、出發時間：三樣寫清楚就容易夾。</p>
             </div>
             <span class="guide-arrow" aria-hidden="true">→</span>
           </li>
-          >
+          <li class="guide-item">
             <div class="guide-item-left">
               <h3><a href="/guides/cross-border-carpool.html">返大陸拼車/順風</a></h3>
               <p>跨境行程更要先約好證件/集合地標/分擔方式。</p>
             </div>
             <span class="guide-arrow" aria-hidden="true">→</span>
           </li>
-          >
+          <li class="guide-item">
             <div class="guide-item-left">
               <h3><a href="/guides/weekend-fun-rides.html">週末出去玩</a></h3>
               <p>郊遊、行山、去沙灘，一齊夾車出發更好玩。</p>
@@ -843,9 +915,9 @@
         <div class="screenshots-grid">
           <div class="screenshot-item">
             <img src="/assets/screenshot-home.png"
-                 alt="FreeRider 主畫面：選擇夾車模式、查看熱門通勤路線"
+                 alt="FreeRider 主畫面：選擇夾車模式、查看熱門返工路線"
                  loading="lazy" decoding="async">
-            <p class="screenshot-caption">主畫面：快速進入「司機/乘客」模式，同時睇到熱門通勤路線入口。</p>
+            <p class="screenshot-caption">主畫面：快速進入「司機/乘客」模式，同時睇到熱門返工路線入口。</p>
           </div>
           <div class="screenshot-item">
             <img src="/assets/screenshot-route.png"
@@ -863,7 +935,7 @@
             <img src="/assets/screenshot-list.png"
                  alt="行程列表畫面：瀏覽可加入的夾車行程"
                  loading="lazy" decoding="async">
-            <p class="screenshot-caption">行程列表：瀏覽同路行程，配合篩選更快搵到適合嘅通勤/出行。</p>
+            <p class="screenshot-caption">行程列表：瀏覽同路行程，配合篩選更快搵到適合嘅返工/出行。</p>
           </div>
         </div>
       </div>
@@ -890,7 +962,6 @@
               <div class="social-btn-handle">FreeRider HK</div>
             </div>
           </a>
-
           <a href="https://www.instagram.com/freerider.app"
              class="social-btn" target="_blank" rel="noopener noreferrer"
              aria-label="Follow FreeRider on Instagram">
@@ -902,7 +973,6 @@
               <div class="social-btn-handle">@freerider.app</div>
             </div>
           </a>
-
           <a href="https://www.threads.com/@freerider.app"
              class="social-btn" target="_blank" rel="noopener noreferrer"
              aria-label="Follow FreeRider on Threads">
@@ -922,7 +992,7 @@
   <!-- ===== DARK CTA STRIP ===== -->
   <div class="cta-strip">
     <h2>立即免費下載</h2>
-    <p>通勤、去機場、週末出行 —— 每一程都可以夾住去。</p>
+    <p>返工、去機場、週末出行 —— 每一程都可以夾住去。</p>
     <div class="hero-badges">
       <a href="https://apps.apple.com/us/app/freerider-%E9%A0%86%E9%A2%A8%E8%BB%8A%E7%A4%BE%E7%BE%A4%E5%B9%B3%E5%8F%B0/id6755711097"
          class="store-btn" aria-label="Download on App Store">
@@ -961,11 +1031,38 @@
 
   <!-- ===== SCRIPTS ===== -->
   <script>
-    // Shrink nav on scroll
+    // Nav shrink on scroll
     const nav = document.getElementById('mainNav');
     window.addEventListener('scroll', () => {
       nav.classList.toggle('scrolled', window.scrollY > 60);
     }, { passive: true });
+
+    // Hamburger menu toggle
+    const hamburger = document.getElementById('navHamburger');
+    const drawer = document.getElementById('navDrawer');
+
+    hamburger.addEventListener('click', () => {
+      const isOpen = drawer.classList.toggle('open');
+      hamburger.classList.toggle('open', isOpen);
+      hamburger.setAttribute('aria-expanded', isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+
+    function closeDrawer() {
+      drawer.classList.remove('open');
+      hamburger.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+
+    // Close drawer on outside click
+    document.addEventListener('click', (e) => {
+      if (drawer.classList.contains('open') &&
+          !drawer.contains(e.target) &&
+          !hamburger.contains(e.target)) {
+        closeDrawer();
+      }
+    });
   </script>
 
 </body>
