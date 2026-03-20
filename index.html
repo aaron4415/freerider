@@ -1143,14 +1143,17 @@
     }
   });
 
-  // ── Video Loading Screen ──
+  // ── Video Loading Screen (全平台統一) ──
   const loadingScreen = document.getElementById('loadingScreen');
   const loadingBar    = document.getElementById('loadingBar');
   const video         = document.getElementById('heroVideo');
   let loaderDismissed = false;
 
+  // 鎖定 scroll 等 video 載入
+  document.body.style.overflow = 'hidden';
+
   function hideLoader() {
-    if (loaderDismissed) return; // 防止重複觸發
+    if (loaderDismissed) return;
     loaderDismissed = true;
     loadingBar.style.width = '100%';
     setTimeout(() => {
@@ -1159,32 +1162,22 @@
     }, 350);
   }
 
-  // Mobile: skip video loading, show immediately
-  if (window.innerWidth < 768) {
-    video.removeAttribute('autoplay');
-    video.preload = 'none';
-    hideLoader();
-  } else {
-    // Prevent scroll while loading
-    document.body.style.overflow = 'hidden';
+  // Progress bar 跟 buffer 走
+  video.addEventListener('progress', () => {
+    if (video.buffered.length > 0 && video.duration) {
+      const pct = (video.buffered.end(0) / video.duration) * 100;
+      loadingBar.style.width = Math.min(pct, 90) + '%';
+    }
+  });
 
-    // Update progress bar
-    video.addEventListener('progress', () => {
-      if (video.buffered.length > 0 && video.duration) {
-        const pct = (video.buffered.end(0) / video.duration) * 100;
-        loadingBar.style.width = Math.min(pct, 90) + '%';
-      }
-    });
+  // 可以流暢播放就收起 loading
+  video.addEventListener('canplaythrough', hideLoader);
 
-    // Video ready to play smoothly
-    video.addEventListener('canplaythrough', hideLoader);
+  // 已經開始播（快取情況）
+  video.addEventListener('playing', hideLoader);
 
-    // Fallback: video already playing (cached)
-    video.addEventListener('playing', hideLoader);
-
-    // Hard timeout: max 8s wait regardless
-    setTimeout(hideLoader, 8000);
-  }
+  // 安全網：最多等 8 秒
+  setTimeout(hideLoader, 8000);
 </script>
 
 </body>
