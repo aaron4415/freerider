@@ -636,6 +636,69 @@
       font-size: 0.78rem;
       color: rgba(255,255,255,0.25);
     }
+    /* ===================== LOADING SCREEN ===================== */
+.loading-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: #0a0a0a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  transition: opacity 0.8s ease, visibility 0.8s ease;
+}
+.loading-screen.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* Logo during loading */
+.loading-logo {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: #ffffff;
+  letter-spacing: -0.5px;
+}
+.loading-logo span { color: #f59e0b; }
+
+/* Spinner */
+.loading-spinner {
+  width: 36px;
+  height: 36px;
+  border: 3px solid rgba(255,255,255,0.12);
+  border-top-color: #f59e0b;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Loading bar (optional, shows below spinner) */
+.loading-bar-wrap {
+  width: 160px;
+  height: 2px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 2px;
+  overflow: hidden;
+}
+.loading-bar {
+  height: 100%;
+  width: 0%;
+  background: #f59e0b;
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+.loading-text {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.35);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
   </style>
 </head>
 
@@ -673,68 +736,85 @@
     <a href="/en/" lang="en" class="lang" onclick="closeDrawer()">English</a>
   </div>
 
-  <!-- ===== HERO: FULLSCREEN VIDEO ===== -->
-  <section class="hero" aria-label="Hero">
-    <div class="hero-video-fallback" aria-hidden="true"></div>
-    <video
-      class="hero-video"
-      autoplay
-      muted
-      loop
-      playsinline
-      preload="auto"
-      aria-hidden="true"
-      poster="/assets/hk-city-poster.jpg"
-    >
-      <source src="/assets/hk-city-timelapse.webm" type="video/webm" />
-      <source src="/assets/hk-city-timelapse.mp4"  type="video/mp4" />
-    </video>
+<!-- ===== LOADING SCREEN ===== -->
+<div class="loading-screen" id="loadingScreen" role="status" aria-live="polite">
+  <div class="loading-logo">Free<span>Rider</span></div>
+  <div class="loading-spinner" aria-hidden="true"></div>
+  <div class="loading-bar-wrap">
+    <div class="loading-bar" id="loadingBar"></div>
+  </div>
+  <p class="loading-text">載入中…</p>
+</div>
 
-    <div class="hero-overlay" aria-hidden="true"></div>
+<!-- ===== HERO: FULLSCREEN VIDEO ===== -->
+<section class="hero" aria-label="Hero">
+  <div class="hero-video-fallback" aria-hidden="true"></div>
 
-    <div class="hero-content">
-      <p class="hero-eyebrow">香港 · 拼車 · 共乘</p>
-      <h1 class="hero-title">
-        每一程，<br>都可以<span>夾住去</span>。
-      </h1>
-      <p class="hero-subtitle">
-        返工、去機場、週末出行 —— 司機乘客配對＋App 內置聊天室，慳錢又方便。
-      </p>
+  <video
+    class="hero-video"
+    id="heroVideo"
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="auto"
+    aria-hidden="true"
+    poster="/assets/hk-city-poster.webp"
+  >
+    <!--
+      WebP video is NOT a thing — video uses MP4/WebM.
+      But poster image CAN be WebP (modern browsers all support it).
+      Serve smaller WebM first, MP4 as fallback.
+    -->
+    <source src="/assets/hk-city-timelapse.webm" type="video/webm" />
+    <source src="/assets/hk-city-timelapse.mp4"  type="video/mp4" />
+  </video>
 
-      <div class="hero-badges">
-        <a href="https://apps.apple.com/us/app/freerider-%E9%A0%86%E9%A2%A8%E8%BB%8A%E7%A4%BE%E7%BE%A4%E5%B9%B3%E5%8F%B0/id6755711097"
-           class="store-btn" aria-label="Download on App Store">
-          <svg viewBox="0 0 384 512" aria-hidden="true">
-            <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 46.9 126.7 98.9 126.7 25.8 0 32.2-19.1 75.5-19.1 42.9 0 43.8 19.1 89.6 19.1 29.6 0 68.9-68.7 97.6-118.9-33.2-17.7-49.4-44.5-51.3-93.8zm-69.7-183c21.8-27.1 36.5-62.7 31.8-100.3-33 2.9-71.1 22.1-92.4 47.9-20.9 25.5-35.3 64.9-30.8 98.5 35.5 2.7 72.8-19.6 91.4-46.1z"/>
-          </svg>
-          <div class="store-btn-text">
-            <div class="store-btn-small">Download on the</div>
-            <div class="store-btn-large">App Store</div>
-          </div>
-        </a>
+  <div class="hero-overlay" aria-hidden="true"></div>
 
-        <a href="https://play.google.com/store/apps/details?id=com.aaron.freerider_front"
-           class="store-btn" aria-label="Get it on Google Play">
-          <svg viewBox="0 0 512 512" aria-hidden="true">
-            <path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/>
-          </svg>
-          <div class="store-btn-text">
-            <div class="store-btn-small">GET IT ON</div>
-            <div class="store-btn-large">Google Play</div>
-          </div>
-        </a>
-      </div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">香港 · 拼車 · 共乘</p>
+    <h1 class="hero-title">
+      每一程，<br>都可以<span>夾住去</span>。
+    </h1>
+    <p class="hero-subtitle">
+      返工、去機場、週末出行 —— 司機乘客配對＋App 內置聊天室，慳錢又方便。
+    </p>
 
-      <p class="hero-note">獨立開發 · 100% 免費 · 無廣告 · 無抽佣</p>
+    <div class="hero-badges">
+      <a href="https://apps.apple.com/us/app/freerider-%E9%A0%86%E9%A2%A8%E8%BB%8A%E7%A4%BE%E7%BE%A4%E5%B9%B3%E5%8F%B0/id6755711097"
+         class="store-btn" aria-label="Download on App Store">
+        <svg viewBox="0 0 384 512" aria-hidden="true">
+          <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 46.9 126.7 98.9 126.7 25.8 0 32.2-19.1 75.5-19.1 42.9 0 43.8 19.1 89.6 19.1 29.6 0 68.9-68.7 97.6-118.9-33.2-17.7-49.4-44.5-51.3-93.8zm-69.7-183c21.8-27.1 36.5-62.7 31.8-100.3-33 2.9-71.1 22.1-92.4 47.9-20.9 25.5-35.3 64.9-30.8 98.5 35.5 2.7 72.8-19.6 91.4-46.1z"/>
+        </svg>
+        <div class="store-btn-text">
+          <div class="store-btn-small">Download on the</div>
+          <div class="store-btn-large">App Store</div>
+        </div>
+      </a>
+
+      <a href="https://play.google.com/store/apps/details?id=com.aaron.freerider_front"
+         class="store-btn" aria-label="Get it on Google Play">
+        <svg viewBox="0 0 512 512" aria-hidden="true">
+          <path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/>
+        </svg>
+        <div class="store-btn-text">
+          <div class="store-btn-small">GET IT ON</div>
+          <div class="store-btn-large">Google Play</div>
+        </div>
+      </a>
     </div>
 
-    <div class="scroll-indicator" aria-hidden="true">
-      <span>Scroll</span>
-      <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M12 5v14M5 12l7 7 7-7"/>
-      </svg>
-    </div>
-  </section>
+    <p class="hero-note">獨立開發 · 100% 免費 · 無廣告 · 無抽佣</p>
+  </div>
+
+  <div class="scroll-indicator" aria-hidden="true">
+    <span>Scroll</span>
+    <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 5v14M5 12l7 7 7-7"/>
+    </svg>
+  </div>
+</section>
 
   <!-- ===== MAIN CONTENT ===== -->
   <main>
@@ -1064,6 +1144,87 @@
       }
     });
   </script>
+<script>
+  // ── Nav shrink on scroll ──
+  const nav = document.getElementById('mainNav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+  }, { passive: true });
+
+  // ── Hamburger menu ──
+  const hamburger = document.getElementById('navHamburger');
+  const drawer    = document.getElementById('navDrawer');
+
+  hamburger.addEventListener('click', () => {
+    const isOpen = drawer.classList.toggle('open');
+    hamburger.classList.toggle('open', isOpen);
+    hamburger.setAttribute('aria-expanded', isOpen);
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  });
+
+  function closeDrawer() {
+    drawer.classList.remove('open');
+    hamburger.classList.remove('open');
+    hamburger.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }
+
+  document.addEventListener('click', (e) => {
+    if (drawer.classList.contains('open') &&
+        !drawer.contains(e.target) &&
+        !hamburger.contains(e.target)) {
+      closeDrawer();
+    }
+  });
+
+  // ── Video Loading Screen ──
+  const loadingScreen = document.getElementById('loadingScreen');
+  const loadingBar    = document.getElementById('loadingBar');
+  const video         = document.getElementById('heroVideo');
+
+  function hideLoader() {
+    loadingScreen.classList.add('hidden');
+    document.body.style.overflow = '';
+  }
+
+  // Animate loading bar with video progress
+  video.addEventListener('progress', () => {
+    if (video.buffered.length > 0 && video.duration) {
+      const pct = (video.buffered.end(0) / video.duration) * 100;
+      loadingBar.style.width = Math.min(pct, 95) + '%';
+    }
+  });
+
+  // Hide loader when video can play smoothly
+  video.addEventListener('canplaythrough', () => {
+    loadingBar.style.width = '100%';
+    setTimeout(hideLoader, 400); // short pause so bar completes visually
+  });
+
+  // Fallback: if video loads fast (cached) or browser skips events
+  video.addEventListener('playing', () => {
+    loadingBar.style.width = '100%';
+    setTimeout(hideLoader, 300);
+  });
+
+  // Safety net: hide loader after 6s max (slow connection / video missing)
+  setTimeout(() => {
+    if (!loadingScreen.classList.contains('hidden')) {
+      hideLoader();
+    }
+  }, 6000);
+
+  // Mobile: skip video, show site immediately to save data
+  if (window.innerWidth < 768) {
+    video.removeAttribute('autoplay');
+    video.preload = 'none';
+    video.pause();
+    hideLoader(); // no loading screen needed on mobile
+  }
+
+  // Prevent body scroll while loading
+  document.body.style.overflow = 'hidden';
+</script>
 
 </body>
 </html>
