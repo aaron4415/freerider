@@ -1110,40 +1110,6 @@
   </footer>
 
   <!-- ===== SCRIPTS ===== -->
-  <script>
-    // Nav shrink on scroll
-    const nav = document.getElementById('mainNav');
-    window.addEventListener('scroll', () => {
-      nav.classList.toggle('scrolled', window.scrollY > 60);
-    }, { passive: true });
-
-    // Hamburger menu toggle
-    const hamburger = document.getElementById('navHamburger');
-    const drawer = document.getElementById('navDrawer');
-
-    hamburger.addEventListener('click', () => {
-      const isOpen = drawer.classList.toggle('open');
-      hamburger.classList.toggle('open', isOpen);
-      hamburger.setAttribute('aria-expanded', isOpen);
-      document.body.style.overflow = isOpen ? 'hidden' : '';
-    });
-
-    function closeDrawer() {
-      drawer.classList.remove('open');
-      hamburger.classList.remove('open');
-      hamburger.setAttribute('aria-expanded', 'false');
-      document.body.style.overflow = '';
-    }
-
-    // Close drawer on outside click
-    document.addEventListener('click', (e) => {
-      if (drawer.classList.contains('open') &&
-          !drawer.contains(e.target) &&
-          !hamburger.contains(e.target)) {
-        closeDrawer();
-      }
-    });
-  </script>
 <script>
   // ── Nav shrink on scroll ──
   const nav = document.getElementById('mainNav');
@@ -1181,49 +1147,44 @@
   const loadingScreen = document.getElementById('loadingScreen');
   const loadingBar    = document.getElementById('loadingBar');
   const video         = document.getElementById('heroVideo');
+  let loaderDismissed = false;
 
   function hideLoader() {
-    loadingScreen.classList.add('hidden');
-    document.body.style.overflow = '';
+    if (loaderDismissed) return; // 防止重複觸發
+    loaderDismissed = true;
+    loadingBar.style.width = '100%';
+    setTimeout(() => {
+      loadingScreen.classList.add('hidden');
+      document.body.style.overflow = '';
+    }, 350);
   }
 
-  // Animate loading bar with video progress
-  video.addEventListener('progress', () => {
-    if (video.buffered.length > 0 && video.duration) {
-      const pct = (video.buffered.end(0) / video.duration) * 100;
-      loadingBar.style.width = Math.min(pct, 95) + '%';
-    }
-  });
-
-  // Hide loader when video can play smoothly
-  video.addEventListener('canplaythrough', () => {
-    loadingBar.style.width = '100%';
-    setTimeout(hideLoader, 400); // short pause so bar completes visually
-  });
-
-  // Fallback: if video loads fast (cached) or browser skips events
-  video.addEventListener('playing', () => {
-    loadingBar.style.width = '100%';
-    setTimeout(hideLoader, 300);
-  });
-
-  // Safety net: hide loader after 6s max (slow connection / video missing)
-  setTimeout(() => {
-    if (!loadingScreen.classList.contains('hidden')) {
-      hideLoader();
-    }
-  }, 6000);
-
-  // Mobile: skip video, show site immediately to save data
+  // Mobile: skip video loading, show immediately
   if (window.innerWidth < 768) {
     video.removeAttribute('autoplay');
     video.preload = 'none';
-    video.pause();
-    hideLoader(); // no loading screen needed on mobile
-  }
+    hideLoader();
+  } else {
+    // Prevent scroll while loading
+    document.body.style.overflow = 'hidden';
 
-  // Prevent body scroll while loading
-  document.body.style.overflow = 'hidden';
+    // Update progress bar
+    video.addEventListener('progress', () => {
+      if (video.buffered.length > 0 && video.duration) {
+        const pct = (video.buffered.end(0) / video.duration) * 100;
+        loadingBar.style.width = Math.min(pct, 90) + '%';
+      }
+    });
+
+    // Video ready to play smoothly
+    video.addEventListener('canplaythrough', hideLoader);
+
+    // Fallback: video already playing (cached)
+    video.addEventListener('playing', hideLoader);
+
+    // Hard timeout: max 8s wait regardless
+    setTimeout(hideLoader, 8000);
+  }
 </script>
 
 </body>
