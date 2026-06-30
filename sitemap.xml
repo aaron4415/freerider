@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- ── Home (zh-Hant-HK) ── -->
+  <url>
+    <loc>https://www.freerider.hk/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant-HK" href="https://www.freerider.hk/" />
+    <xhtml:link rel="alternate" hreflang="en-HK"     href="https://www.freerider.hk/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.freerider.hk/" />
+  </url>
+
+  <!-- ── Home (en-HK) ── -->
+  <url>
+    <loc>https://www.freerider.hk/en/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant-HK" href="https://www.freerider.hk/" />
+    <xhtml:link rel="alternate" hreflang="en-HK"     href="https://www.freerider.hk/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.freerider.hk/" />
+  </url>
+
+  <!-- ── Routes hub (zh only — no /en/routes/ yet) ── -->
+  <url>
+    <loc>https://www.freerider.hk/routes/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ── Route pages ── -->
+  <url>
+    <loc>https://www.freerider.hk/routes/tko-to-central-admiralty.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.freerider.hk/routes/tko-to-quarrybay-taikoo.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.freerider.hk/routes/tko-to-luohu.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.freerider.hk/routes/tsuen-wan-to-central-admiralty.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.freerider.hk/routes/tsw-yuenlong-to-kowloon-east.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.freerider.hk/routes/sha-tin-to-central-admiralty.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.freerider.hk/routes/east-kowloon-to-wanchai-causewaybay.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ── Guide pages ── -->
+  <url>
+    <loc>https://www.freerider.hk/guides/airport-carpool.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.freerider.hk/guides/taxi-uber-split.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.freerider.hk/guides/cross-border-carpool.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.freerider.hk/guides/weekend-fun-rides.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ── Legal / utility pages ── -->
+  <url>
+    <loc>https://www.freerider.hk/terms.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.freerider.hk/privacy.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.freerider.hk/delete-account.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+
+</urlset>
