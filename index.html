@@ -16,6 +16,9 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="application-name" content="FreeRider" />
   <meta name="apple-mobile-web-app-title" content="FreeRider" />
+  <meta name="revised" content="2026-07-09" />
+  <meta property="article:modified_time" content="2026-07-09T16:30:00+08:00" />
+  <meta property="article:published_time" content="2026-07-09T16:30:00+08:00" />
   <link rel="icon" href="/favicon.ico">
 
   <title>FreeRider｜香港拼車・順風車・共乘返工 App — 100% 免費無抽佣</title>
@@ -164,6 +167,31 @@
     ]
   }
   </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "FreeRider 香港拼車 App",
+    "datePublished": "2026-07-09T16:30:00+08:00",
+    "dateModified": "2026-07-09T16:30:00+08:00",
+    "inLanguage": "zh-Hant-HK",
+    "author": {
+      "@type": "Organization",
+      "name": "FreeRider",
+      "url": "https://www.freerider.hk/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "FreeRider",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.freerider.hk/assets/og-image.png"
+      }
+    }
+  }
+  </script>
+
 
   <style>
     /* ===================== RESET & BASE ===================== */
@@ -566,6 +594,61 @@
     .intro-section p:last-child { margin-bottom: 0; }
     .intro-section strong { color: var(--black); font-weight: 700; }
 
+    /* ===================== WHY FREERIDER STRIP ===================== */
+    .why-section {
+      background: linear-gradient(180deg, #fafaf9 0%, #f5f5f4 100%);
+      border-top: 1px solid var(--gray-300);
+      border-bottom: 1px solid var(--gray-300);
+    }
+    .why-section .section {
+      padding-top: 64px;
+      padding-bottom: 64px;
+    }
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 36px 32px;
+      margin-top: 8px;
+    }
+    .why-card {
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+    }
+    .why-icon {
+      width: 48px;
+      height: 48px;
+      flex-shrink: 0;
+      border-radius: 14px;
+      background: linear-gradient(135deg, #fef3c7 0%, #fcd34d 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 8px rgba(245, 158, 11, 0.15);
+    }
+    .why-icon svg {
+      width: 26px;
+      height: 26px;
+      stroke: var(--black);
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .why-text { flex: 1; }
+    .why-title {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--black);
+      margin-bottom: 6px;
+      letter-spacing: -0.3px;
+    }
+    .why-desc {
+      font-size: 0.93rem;
+      color: var(--gray-500);
+      line-height: 1.6;
+    }
+
     /* ===================== FAQ (people-also-ask, AI Overviews) ===================== */
     .faq-list {
       max-width: 860px;
@@ -637,9 +720,23 @@
       margin-bottom: 16px;
     }
     .mode-icon {
-      font-size: 2rem;
-      margin-bottom: 14px;
-      display: block;
+      width: 48px;
+      height: 48px;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      background: var(--black);
+    }
+    .mode-icon svg {
+      width: 26px;
+      height: 26px;
+      stroke: var(--white);
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
     }
     .mode-title {
       font-size: 1.1rem;
@@ -1010,7 +1107,10 @@
     muted
     loop
     playsinline
-    preload="auto"
+    preload="metadata"
+    loading="lazy"
+    poster="/assets/hk-city-timelapse-poster.webp"
+    data-poster-fallback="/assets/hk-city-timelapse-poster.jpg"
     aria-hidden="true"
   >
     <!--
@@ -1036,6 +1136,7 @@
     <div class="hero-badges" data-store-btns></div>
 
     <p class="hero-note">獨立開發 · 100% 免費 · 無抽佣</p>
+      <p class="updated-stamp">🟢 最後更新：2026年7月9日</p>
   </div>
 
   <div class="scroll-indicator" aria-hidden="true">
@@ -1060,6 +1161,56 @@
 
     <hr class="section-divider" />
 
+    <!-- 01b — WHY FREERIDER -->
+    <section class="why-section" aria-label="Why FreeRider">
+      <div class="section">
+        <div class="section-header">
+          <span class="section-number">WHY</span>
+          <h2 class="section-title">點解用<em>FreeRider？</em></h2>
+        </div>
+        <div class="why-grid">
+          <div class="why-card">
+            <div class="why-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83 0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/>
+                <line x1="7" y1="7" x2="7.01" y2="7"/>
+              </svg>
+            </div>
+            <div class="why-text">
+              <div class="why-title">100% 免費</div>
+              <p class="why-desc">無廣告、無抽佣，由香港獨立開發者維護。司機同乘客都唔使畀錢。</p>
+            </div>
+          </div>
+          <div class="why-card">
+            <div class="why-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/>
+              </svg>
+            </div>
+            <div class="why-text">
+              <div class="why-title">唔使交換電話</div>
+              <p class="why-desc">內置聊天室傾集合點、車費分擔、預計到達時間，全程有對話記錄可翻查。</p>
+            </div>
+          </div>
+          <div class="why-card">
+            <div class="why-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/>
+                <line x1="8" y1="2" x2="8" y2="18"/>
+                <line x1="16" y1="6" x2="16" y2="22"/>
+              </svg>
+            </div>
+            <div class="why-text">
+              <div class="why-title">路線配對自由</div>
+              <p class="why-desc">揀司機 / 乘客 / 夾 Taxi / Uber，任何時間、任何路線由你決定。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
     <!-- 01 — MODES -->
     <section id="modes" aria-labelledby="title-modes">
       <div class="section">
@@ -1070,25 +1221,55 @@
         <div class="modes-grid">
           <div class="mode-card">
             <div class="mode-num">01</div>
-            <span class="mode-icon">🚗</span>
+            <div class="mode-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M5 17h14"/>
+                <path d="M5 17H3v-3l2-5h14l2 5v3h-2"/>
+                <circle cx="7.5" cy="17.5" r="1.5"/>
+                <circle cx="16.5" cy="17.5" r="1.5"/>
+                <path d="M7 12h10"/>
+              </svg>
+            </div>
             <div class="mode-title">司機搵乘客</div>
             <p class="mode-desc">分享你固定或即興路線，分擔油費同隧道費。</p>
           </div>
           <div class="mode-card">
             <div class="mode-num">02</div>
-            <span class="mode-icon">🔄</span>
+            <div class="mode-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M7 4v12"/>
+                <path d="M3 8l4-4 4 4"/>
+                <path d="M17 20V8"/>
+                <path d="M21 16l-4 4-4-4"/>
+              </svg>
+            </div>
             <div class="mode-title">司機搵司機</div>
             <p class="mode-desc">同另一位司機輪流揸，長途返工放工冇咁攰。</p>
           </div>
           <div class="mode-card">
             <div class="mode-num">03</div>
-            <span class="mode-icon">🙋</span>
+            <div class="mode-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="7" r="3"/>
+                <path d="M5 21v-1a4 4 0 014-4h6a4 4 0 014 4v1"/>
+                <path d="M16 4l2 2-2 2"/>
+              </svg>
+            </div>
             <div class="mode-title">乘客搵司機</div>
             <p class="mode-desc">搵到順風車，少啲迫地鐵／巴士。</p>
           </div>
           <div class="mode-card">
             <div class="mode-num">04</div>
-            <span class="mode-icon">🚕</span>
+            <div class="mode-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <rect x="6" y="3" width="12" height="3" rx="0.5"/>
+                <path d="M5 17h14"/>
+                <path d="M5 17H3v-3l2-5h14l2 5v3h-2"/>
+                <circle cx="7.5" cy="17.5" r="1.5"/>
+                <circle cx="16.5" cy="17.5" r="1.5"/>
+                <path d="M9 9h6"/>
+              </svg>
+            </div>
             <div class="mode-title">夾 Taxi / Uber</div>
             <p class="mode-desc">同路乘客一齊搭，車費可以平好多。</p>
           </div>
@@ -1150,32 +1331,42 @@
         <div class="routes-grid">
           <div class="route-card">
             <div class="route-arrow">ROUTE →</div>
-            <h3><a href="/routes/tko-to-central-admiralty.html">將軍澳 → 中環/金鐘</a></h3>
+            <h3><a href="/routes/tseung-kwan-o-to-central-and-western/">將軍澳 → 中環/金鐘</a></h3>
             <p>返工核心線；適合用「時間窗」＋「觀塘/九龍灣中途站」。</p>
           </div>
           <div class="route-card">
             <div class="route-arrow">ROUTE →</div>
-            <h3><a href="/routes/tko-to-quarrybay-taikoo.html">將軍澳 → 鰂魚涌/太古</a></h3>
+            <h3><a href="/routes/yuen-long-to-kwun-tong/">元朗 → 觀塘（九龍東）</a></h3>
+            <p>西北返九東；社群實證 5 trips 嘅 top 路線，IT/金融人返工必睇。</p>
+          </div>
+          <div class="route-card">
+            <div class="route-arrow">ROUTE →</div>
+            <h3><a href="/routes/yuen-long-to-yau-tsim-mong/">元朗 → 油尖旺</a></h3>
+            <p>西北返九龍核心；5 trips 實證熱門，返工/購物/睇戲都夾到。</p>
+          </div>
+          <div class="route-card">
+            <div class="route-arrow">ROUTE →</div>
+            <h3><a href="/routes/tseung-kwan-o-to-quarry-bay/">將軍澳 → 鰂魚涌/太古</a></h3>
             <p>港島東返工；可寫明「是否接受跨海隧道/路費分擔」。</p>
           </div>
           <div class="route-card">
             <div class="route-arrow">ROUTE →</div>
-            <h3><a href="/routes/tsw-yuenlong-to-kowloon-east.html">元朗/天水圍 → 九龍東</a></h3>
+            <h3><a href="/routes/yuen-long-to-kowloon-east/">元朗/天水圍 → 九龍東</a></h3>
             <p>新界西返工；建議用固定星期一至五 post 建立長期圈。</p>
           </div>
           <div class="route-card">
             <div class="route-arrow">ROUTE →</div>
-            <h3><a href="/routes/sha-tin-to-central-admiralty.html">沙田 → 金鐘/中環</a></h3>
+            <h3><a href="/routes/sha-tin-to-central-and-western/">沙田 → 金鐘/中環</a></h3>
             <p>新界東返工；可設 1–2 個上車點減少兜路。</p>
           </div>
           <div class="route-card">
             <div class="route-arrow">ROUTE →</div>
-            <h3><a href="/routes/tsuen-wan-to-central-admiralty.html">荃灣 → 中環/金鐘</a></h3>
+            <h3><a href="/routes/tsuen-wan-to-central-and-western/">荃灣 → 中環/金鐘</a></h3>
             <p>西區返工；適合朝早固定時間窗配對。</p>
           </div>
           <div class="route-card">
             <div class="route-arrow">ROUTE →</div>
-            <h3><a href="/routes/east-kowloon-to-wanchai-causewaybay.html">東九龍 → 灣仔/銅鑼灣</a></h3>
+            <h3><a href="/routes/east-kowloon-to-wan-chai/">東九龍 → 灣仔/銅鑼灣</a></h3>
             <p>跨海返工；事前講清楚「隧道費點分」最重要。</p>
           </div>
         </div>
@@ -1386,7 +1577,8 @@
       <a href="/privacy.html">私隱政策</a>
       <a href="/en/" lang="en">English</a>
     </div>
-    <p>© FreeRider · Hong Kong Community Carpool App</p>
+    <p class="footer-meta">最後更新：2026年7月9日 · 持續更新中</p>
+      <p>© FreeRider · Hong Kong Community Carpool App</p>
   </footer>
 
   <!-- ===== SCRIPTS ===== -->
@@ -1449,6 +1641,16 @@
   const video         = document.getElementById('heroVideo');
   let loaderDismissed = false;
 
+  // ── WebP poster fallback (Safari < 14, 舊 Edge 等) ──
+  (function() {
+    const supportsWebP = document.createElement('canvas')
+      .toDataURL('image/webp').indexOf('data:image/webp') === 0;
+    if (!supportsWebP) {
+      const fallback = video.getAttribute('data-poster-fallback');
+      if (fallback) video.poster = fallback;
+    }
+  })();
+
   // 鎖定 scroll 等 video 載入
   document.body.style.overflow = 'hidden';
 
@@ -1476,8 +1678,13 @@
   // 已經開始播（快取情況）
   video.addEventListener('playing', hideLoader);
 
-  // 安全網：reduced-motion 用戶 2 秒；一般用戶 8 秒
-  setTimeout(hideLoader, prefersReducedMotion ? 2000 : 8000);
+  // Poster + metadata loaded = 夠快 dismiss(用戶見到 hero)
+  video.addEventListener('loadedmetadata', () => {
+    setTimeout(hideLoader, 600);
+  });
+
+  // 安全網：reduced-motion 用戶 1.5 秒；一般用戶 6 秒(縮短,因為 poster 已有 fallback)
+  setTimeout(hideLoader, prefersReducedMotion ? 1500 : 6000);
 </script>
 
 </body>

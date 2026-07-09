@@ -1,28 +1,113 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh-Hant-HK">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="revised" content="2026-07-09" />
+  <meta property="article:modified_time" content="2026-07-09T16:30:00+08:00" />
+  <meta property="article:published_time" content="2026-07-09T16:30:00+08:00" />
 
-  <title>路線總覽｜香港順風車/夾車路線｜FreeRider</title>
-  <meta name="description" content="FreeRider 路線總覽：跨境（深圳羅湖/福田/南山）、去機場、通勤、週末玩樂等夾車路線指南。點入每條路線頁，睇發佈行程貼士、上車點建議、常見問題。完全免費、無廣告、無抽佣。" />
+  <title>路線總覽｜29 條香港拼車／順風車路線（社群實證 + 政府公開數據）｜FreeRider</title>
+  <meta name="description" content="FreeRider 路線總覽：29 條香港拼車／順風車路線，包括跨境（羅湖/皇崗/深圳灣/蓮塘）、去機場、通勤（元朗/沙田/荃灣/屯門/將軍澳/上水→中環/觀塘/油尖旺）。社群實證 + 邊檢公佈人流數據。" />
 
   <link rel="canonical" href="https://www.freerider.hk/routes/" />
   <link rel="alternate" hreflang="zh-Hant-HK" href="https://www.freerider.hk/routes/" />
   <link rel="alternate" hreflang="x-default" href="https://www.freerider.hk/routes/" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="路線總覽｜FreeRider" />
-  <meta property="og:description" content="搵同路人更容易：路線總覽集合跨境/機場/通勤/玩樂路線頁，一 click 入去就睇到夾車貼士。" />
+  <meta property="og:title" content="路線總覽｜17 條香港拼車／順風車路線｜FreeRider" />
+  <meta property="og:description" content="17 條香港拼車／順風車路線，社群實證熱門。元朗/將軍澳/沙田/荃灣/屯門 出發去中環/觀塘/油尖旺/機場都有。" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.freerider.hk/routes/" />
   <meta property="og:image" content="https://www.freerider.hk/assets/og-image.png" />
+  <meta property="og:image:width" content="1469" />
+  <meta property="og:image:height" content="1484" />
+  <meta property="og:locale" content="zh_HK" />
+  <meta property="og:site_name" content="FreeRider" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="路線總覽｜FreeRider" />
-  <meta name="twitter:description" content="跨境/機場/通勤/玩樂路線總覽，一 click 入去睇夾車攻略。" />
+  <meta name="twitter:title" content="路線總覽｜17 條香港拼車／順風車路線｜FreeRider" />
+  <meta name="twitter:description" content="17 條香港拼車／順風車路線，社群實證熱門。" />
   <meta name="twitter:image" content="https://www.freerider.hk/assets/og-image.png" />
+
+  <!-- ItemList schema for the route catalog — 29 routes -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "FreeRider 香港拼車路線總覽",
+    "dateModified": "2026-07-09T16:30:00+08:00",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"元朗 → 大埔","url":"https://www.freerider.hk/routes/yuen-long-to-tai-po/"},
+      {"@type":"ListItem","position":2,"name":"元朗 → 油尖旺","url":"https://www.freerider.hk/routes/yuen-long-to-yau-tsim-mong/"},
+      {"@type":"ListItem","position":3,"name":"元朗 → 觀塘","url":"https://www.freerider.hk/routes/yuen-long-to-kwun-tong/"},
+      {"@type":"ListItem","position":4,"name":"元朗 → 九龍城","url":"https://www.freerider.hk/routes/yuen-long-to-kowloon-city/"},
+      {"@type":"ListItem","position":5,"name":"元朗 → 離島（東涌/機場）","url":"https://www.freerider.hk/routes/yuen-long-to-islands/"},
+      {"@type":"ListItem","position":6,"name":"元朗 → 九龍東","url":"https://www.freerider.hk/routes/yuen-long-to-kowloon-east/"},
+      {"@type":"ListItem","position":7,"name":"元朗 → 機場","url":"https://www.freerider.hk/routes/yuen-long-to-airport/"},
+      {"@type":"ListItem","position":8,"name":"元朗 → 皇崗口岸","url":"https://www.freerider.hk/routes/yuen-long-to-huanggang/"},
+      {"@type":"ListItem","position":9,"name":"元朗 → 蓮塘口岸","url":"https://www.freerider.hk/routes/yuen-long-to-liantang/"},
+      {"@type":"ListItem","position":10,"name":"屯門 → 東區","url":"https://www.freerider.hk/routes/tuen-mun-to-eastern/"},
+      {"@type":"ListItem","position":11,"name":"屯門 → 深圳灣口岸","url":"https://www.freerider.hk/routes/tuen-mun-to-shenzhen-bay/"},
+      {"@type":"ListItem","position":12,"name":"屯門 → 機場","url":"https://www.freerider.hk/routes/tuen-mun-to-airport/"},
+      {"@type":"ListItem","position":13,"name":"荃灣 → 觀塘","url":"https://www.freerider.hk/routes/tsuen-wan-to-kwun-tong/"},
+      {"@type":"ListItem","position":14,"name":"沙田 → 觀塘","url":"https://www.freerider.hk/routes/sha-tin-to-kwun-tong/"},
+      {"@type":"ListItem","position":15,"name":"沙田 → 機場","url":"https://www.freerider.hk/routes/sha-tin-to-airport/"},
+      {"@type":"ListItem","position":16,"name":"大埔 → 機場","url":"https://www.freerider.hk/routes/tai-po-to-airport/"},
+      {"@type":"ListItem","position":17,"name":"上水/粉嶺 → 機場","url":"https://www.freerider.hk/routes/sheung-shui-to-airport/"},
+      {"@type":"ListItem","position":18,"name":"上水/粉嶺 → 羅湖","url":"https://www.freerider.hk/routes/sheung-shui-to-luohu/"},
+      {"@type":"ListItem","position":19,"name":"將軍澳 → 中環/金鐘","url":"https://www.freerider.hk/routes/tseung-kwan-o-to-central-and-western/"},
+      {"@type":"ListItem","position":20,"name":"將軍澳 → 鰂魚涌/太古","url":"https://www.freerider.hk/routes/tseung-kwan-o-to-quarry-bay/"},
+      {"@type":"ListItem","position":21,"name":"將軍澳 → 羅湖","url":"https://www.freerider.hk/routes/tseung-kwan-o-to-luohu/"},
+      {"@type":"ListItem","position":22,"name":"將軍澳 → 機場","url":"https://www.freerider.hk/routes/tseung-kwan-o-to-airport/"},
+      {"@type":"ListItem","position":23,"name":"灣仔 → 皇崗口岸","url":"https://www.freerider.hk/routes/wan-chai-to-huanggang/"},
+      {"@type":"ListItem","position":24,"name":"旺角 → 皇崗口岸","url":"https://www.freerider.hk/routes/mong-kok-to-huanggang/"},
+      {"@type":"ListItem","position":25,"name":"觀塘 → 皇崗口岸","url":"https://www.freerider.hk/routes/kwun-tong-to-huanggang/"},
+      {"@type":"ListItem","position":26,"name":"荃灣 → 中環/金鐘","url":"https://www.freerider.hk/routes/tsuen-wan-to-central-and-western/"},
+      {"@type":"ListItem","position":27,"name":"沙田 → 中環/金鐘","url":"https://www.freerider.hk/routes/sha-tin-to-central-and-western/"},
+      {"@type":"ListItem","position":28,"name":"東九龍 → 灣仔/銅鑼灣","url":"https://www.freerider.hk/routes/east-kowloon-to-wan-chai/"},
+      {"@type":"ListItem","position":29,"name":"西貢 → 中環/金鐘（週末行山）","url":"https://www.freerider.hk/routes/sai-kung-to-central/"}
+    ]
+  }
+  </script>
+
+  <!-- Breadcrumb structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"主頁","item":"https://www.freerider.hk/"},
+      {"@type":"ListItem","position":2,"name":"熱門路線","item":"https://www.freerider.hk/routes/"}
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "FreeRider 香港拼車 App",
+    "datePublished": "2026-07-09T16:30:00+08:00",
+    "dateModified": "2026-07-09T16:30:00+08:00",
+    "inLanguage": "zh-Hant-HK",
+    "author": {
+      "@type": "Organization",
+      "name": "FreeRider",
+      "url": "https://www.freerider.hk/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "FreeRider",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.freerider.hk/assets/og-image.png"
+      }
+    }
+  }
+  </script>
+
 
   <style>
     body {
@@ -177,6 +262,23 @@
       border-radius: 999px;
     }
 
+    .updated-stamp {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 4px 14px;
+      background: #ecfdf5;
+      color: #047857;
+      border: 1px solid #a7f3d0;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 600;
+    }
+    footer .footer-meta {
+      margin-top: 8px;
+      font-size: 0.78rem;
+      color: #9ca3af;
+    }
+
     footer {
       margin-top: 32px;
       text-align: center;
@@ -215,20 +317,22 @@
     </nav>
 
     <header>
-      <h1>路線總覽</h1>
+      <h1>路線總覽（29 條熱門路線）</h1>
       <p class="tagline">
-        呢度集合 FreeRider 各種熱門路線頁：跨境（深圳）、去機場、通勤、週末玩樂等。
+        呢度集合 FreeRider 各種熱門路線頁：跨境（深圳羅湖/皇崗/深圳灣/蓮塘）、去機場、通勤、週末玩樂等。
         入到去每條路線頁，你會見到發佈行程貼士、上車點建議同 FAQ，方便你更快搵到同路人。
       </p>
 
       <div class="chips" aria-label="keywords">
         <span class="chip">香港 順風車</span>
         <span class="chip">夾車 路線</span>
-        <span class="chip">深圳 羅湖/福田/南山</span>
+        <span class="chip">深圳 羅湖/皇崗/深圳灣/蓮塘</span>
         <span class="chip">去機場</span>
         <span class="chip">返工 通勤</span>
         <span class="chip">週末 出去玩</span>
       </div>
+
+      <p class="updated-stamp">🟢 最後更新：2026年7月9日 · 新增 12 條皇崗/深圳灣/蓮塘/屯元沙大上 機場線</p>
 
       <div class="badges">
         <a href="https://apps.apple.com/us/app/freerider-%E9%A0%86%E9%A2%A8%E8%BB%8A%E7%A4%BE%E7%BE%A4%E5%B9%B3%E5%8F%B0/id6755711097"
@@ -260,99 +364,139 @@
       <div class="routes-grid">
         <div class="route-card">
           <h3 class="route-title">
-            <a href="/routes/tko-to-luohu.html">將軍澳 → 羅湖：順風車／夾車路線建議</a>
+            <a href="/routes/tseung-kwan-o-to-luohu/">將軍澳 → 羅湖：順風車／夾車路線建議</a>
           </h3>
           <p class="route-desc">北上辦事/探親/週末去玩；含中途站建議、上車點同 FAQ。</p>
         </div>
-
         <div class="route-card">
           <h3 class="route-title">
-            <span class="disabled">將軍澳 → 福田（準備中）</span>
+            <a href="/routes/yuen-long-to-islands/">元朗 → 離島（東涌／機場）</a>
           </h3>
-          <p class="route-desc">返工返大陸熱門方向；建議寫時間窗＋口岸偏好提升配對。</p>
-        </div>
-
-        <div class="route-card">
-          <h3 class="route-title">
-            <span class="disabled">將軍澳 → 南山（準備中）</span>
-          </h3>
-          <p class="route-desc">南山/科技園方向；適合見客或週末探店。</p>
-        </div>
-
-        <div class="route-card">
-          <h3 class="route-title">
-            <span class="disabled">東九龍 → 羅湖（準備中）</span>
-          </h3>
-          <p class="route-desc">觀塘/九龍灣/彩虹一帶北上；方便加中途站集合。</p>
-        </div>
-
-        <div class="route-card">
-          <h3 class="route-title">
-            <span class="disabled">東九龍 → 福田（準備中）</span>
-          </h3>
-          <p class="route-desc">適合返工/見客；可寫清楚「最遲出發時間」減少放飛機。</p>
-        </div>
-
-        <div class="route-card">
-          <h3 class="route-title">
-            <span class="disabled">東九龍 → 南山（準備中）</span>
-          </h3>
-          <p class="route-desc">適合週末玩樂/探店；可接受中途站會更易配對。</p>
+          <p class="route-desc">元朗出發去東涌站／香港國際機場，順路可去迪士尼。社群實證 5 trips。</p>
         </div>
       </div>
-      <p class="hero-note">相關指南：<a href="/guides/cross-border-carpool.html">返大陸指南</a></p>
+      <p class="hero-note">相關指南：<a href="/guides/cross-border-carpool.html">返大陸完整指南</a></p>
+    </section>
+
+    <section class="section" id="yuen-long-hub">
+      <h2>🔥 元朗拼車線（社群實證 #1 熱門）</h2>
+      <p class="hero-note" style="text-align:left; margin: 0 0 12px 0;">根據 FreeRider 過去 60 日 trip data，元朗係壓倒性嘅 #1 拼車 origin——5 條 top route 入面有 4 條由元朗出發。</p>
+      <div class="routes-grid">
+        <div class="route-card">
+          <h3 class="route-title"><a href="/routes/yuen-long-to-tai-po/">元朗 → 大埔</a></h3>
+          <p class="route-desc">5 trips 實證；新界內陸走廊，行山/探親/食嘢首選。</p>
+        </div>
+        <div class="route-card">
+          <h3 class="route-title"><a href="/routes/yuen-long-to-yau-tsim-mong/">元朗 → 油尖旺</a></h3>
+          <p class="route-desc">5 trips 實證；返工/購物/尖沙咀都夾到。</p>
+        </div>
+        <div class="route-card">
+          <h3 class="route-title"><a href="/routes/yuen-long-to-kwun-tong/">元朗 → 觀塘（九龍東）</a></h3>
+          <p class="route-desc">5 trips 實證；IT/金融人返 apm/九龍灣必睇。</p>
+        </div>
+        <div class="route-card">
+          <h3 class="route-title"><a href="/routes/yuen-long-to-kowloon-city/">元朗 → 九龍城（啟德/土瓜灣）</a></h3>
+          <p class="route-desc">4 trips 實證；啟德跑道區返工/返學適用。</p>
+        </div>
+        <div class="route-card">
+          <h3 class="route-title"><a href="/routes/yuen-long-to-kowloon-east/">元朗 → 九龍東</a></h3>
+          <p class="route-desc">新界西返九東；可配 觀塘/牛頭角/九龍灣。</p>
+        </div>
+        <div class="route-card">
+          <h3 class="route-title"><a href="/routes/yuen-long-to-airport/">元朗 → 香港國際機場（HKG）</a></h3>
+          <p class="route-desc">接送/出差/返機場上班；車程 30-40 分鐘直達。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="cross-district">
+      <h2>跨區通勤（沙田/荃灣/屯門 → 九龍東）</h2>
+      <div class="routes-grid">
+        <div class="route-card">
+          <h3 class="route-title"><a href="/routes/sha-tin-to-kwun-tong/">沙田 → 觀塘</a></h3>
+          <p class="route-desc">4 trips 實證；新界東返九東，比東鐵轉車慳 20-30 分鐘。</p>
+        </div>
+        <div class="route-card">
+          <h3 class="route-title"><a href="/routes/tsuen-wan-to-kwun-tong/">荃灣 → 觀塘</a></h3>
+          <p class="route-desc">4 trips 實證；新界西返九東，車程短好易夾。</p>
+        </div>
+        <div class="route-card">
+          <h3 class="route-title"><a href="/routes/tuen-mun-to-eastern/">屯門 → 東區（港島東）</a></h3>
+          <p class="route-desc">4 trips 實證；西北返鰂魚涌/太古/北角返工。</p>
+        </div>
+      </div>
     </section>
 
     <section class="section" id="popular-commute">
-      <h2>香港通勤熱門</h2>
+      <h2>港島 CBD 通勤熱門</h2>
       <div class="routes-grid">
-<div class="route-card">
-  <h3 class="route-title">
-    <a href="/routes/tko-to-central-admiralty.html">將軍澳 → 中環/金鐘</a>
-  </h3>
-  <p class="route-desc">通勤核心線；適合用「觀塘/九龍灣中途站」。</p>
-</div>
+        <div class="route-card">
+          <h3 class="route-title"><a href="/routes/tseung-kwan-o-to-central-and-western/">將軍澳 → 中環/金鐘</a></h3>
+          <p class="route-desc">通勤核心線；適合用「觀塘/九龍灣中途站」。</p>
+        </div>
+        <div class="route-card">
+          <h3 class="route-title"><a href="/routes/tseung-kwan-o-to-quarry-bay/">將軍澳 → 鰂魚涌/太古</a></h3>
+          <p class="route-desc">港島東通勤；可寫明「是否接受跨海隧道/路費分擔」。</p>
+        </div>
+        <div class="route-card">
+          <h3 class="route-title"><a href="/routes/sha-tin-to-central-and-western/">沙田 → 中環/金鐘</a></h3>
+          <p class="route-desc">新界東通勤；可設 1–2 個上車點減少兜路。</p>
+        </div>
+        <div class="route-card">
+          <h3 class="route-title"><a href="/routes/tsuen-wan-to-central-and-western/">荃灣 → 中環/金鐘</a></h3>
+          <p class="route-desc">西區通勤；適合朝早固定時間窗配對。</p>
+        </div>
+        <div class="route-card">
+          <h3 class="route-title"><a href="/routes/east-kowloon-to-wan-chai/">東九龍 → 灣仔/銅鑼灣</a></h3>
+          <p class="route-desc">跨海通勤；事前講清楚「隧道費點分」最重要。</p>
+        </div>
+      </div>
+    </section>
 
-<div class="route-card">
-  <h3 class="route-title">
-    <a href="/routes/tko-to-quarrybay-taikoo.html">將軍澳 → 鰂魚涌/太古</a>
-  </h3>
-  <p class="route-desc">港島東通勤；可寫明「是否接受跨海隧道/路費分擔」。</p>
-</div>
+    <section class="section" id="cross-border-huanggang">
+      <h2>🔥 跨境 24 小時 — 皇崗口岸（邊檢公佈日均 4.79 萬人次）</h2>
+      <p class="hero-note" style="text-align:left; margin: 0 0 12px 0;">皇崗口岸係香港唯一 24 小時通關嘅陸路口岸。深夜返港/朝早返大陸都啱，4 條主要直通巴路線都有 FreeRider 替代方案。</p>
+      <div class="routes-grid">
+        <div class="route-card">
+          <h3 class="route-title"><a href="/routes/yuen-long-to-huanggang/">元朗 → 皇崗口岸</a></h3>
+          <p class="route-desc">24小時直通巴替代；錦上路站/元朗出發，深夜返港更平。</p>
+        </div>
+        <div class="route-card">
+          <h3 class="route-title"><a href="/routes/wan-chai-to-huanggang/">灣仔 → 皇崗口岸</a></h3>
+          <p class="route-desc">灣仔碼頭/會展出發；24小時通宵班次，比直通巴更彈性。</p>
+        </div>
+        <div class="route-card">
+          <h3 class="route-title"><a href="/routes/mong-kok-to-huanggang/">旺角 → 皇崗口岸</a></h3>
+          <p class="route-desc">旺角維景酒店/西洋菜街出發；避開東鐵尾班車限制。</p>
+        </div>
+        <div class="route-card">
+          <h3 class="route-title"><a href="/routes/kwun-tong-to-huanggang/">觀塘 → 皇崗口岸</a></h3>
+          <p class="route-desc">觀塘 apm/藍田匯景出發；IT/金融人返大陸首選。</p>
+        </div>
+      </div>
+    </section>
 
-<div class="route-card">
-  <h3 class="route-title">
-    <a href="/routes/tsw-yuenlong-to-kowloon-east.html">元朗/天水圍 → 九龍東</a>
-  </h3>
-  <p class="route-desc">新界西通勤；建議用固定星期一至五 post 建立長期圈。</p>
-</div>
-
-<div class="route-card">
-  <h3 class="route-title">
-    <a href="/routes/sha-tin-to-central-admiralty.html">沙田 → 金鐘/中環</a>
-  </h3>
-  <p class="route-desc">新界東通勤；可設 1–2 個上車點減少兜路。</p>
-</div>
-
-<div class="route-card">
-  <h3 class="route-title">
-    <a href="/routes/tsuen-wan-to-central-admiralty.html">荃灣 → 中環/金鐘</a>
-  </h3>
-  <p class="route-desc">西區通勤；適合朝早固定時間窗配對。</p>
-</div>
-
-<div class="route-card">
-  <h3 class="route-title">
-    <a href="/routes/east-kowloon-to-wanchai-causewaybay.html">東九龍 → 灣仔/銅鑼灣</a>
-  </h3>
-  <p class="route-desc">跨海通勤；事前講清楚「隧道費點分」最重要。</p>
-</div>
-
+    <section class="section" id="cross-border-other">
+      <h2>跨境 — 其他口岸（深圳灣/蓮塘/北區→羅湖）</h2>
+      <div class="routes-grid">
+        <div class="route-card">
+          <h3 class="route-title"><a href="/routes/tuen-mun-to-shenzhen-bay/">屯門 → 深圳灣口岸</a></h3>
+          <p class="route-desc">深圳灣日均 14.38 萬人次；屯門出發去深圳南山/前海。</p>
+        </div>
+        <div class="route-card">
+          <h3 class="route-title"><a href="/routes/yuen-long-to-liantang/">元朗 → 蓮塘／香園圍口岸</a></h3>
+          <p class="route-desc">蓮塘日均 10.06 萬人次；2024 同比 +63%，去深圳鹽田/龍崗最快。</p>
+        </div>
+        <div class="route-card">
+          <h3 class="route-title"><a href="/routes/sheung-shui-to-luohu/">上水／粉嶺 → 羅湖</a></h3>
+          <p class="route-desc">北區 5 分鐘直達羅湖；羅湖 2025 年 7000 萬人次全國最忙。</p>
+        </div>
       </div>
     </section>
 
     <section class="section" id="airport">
       <h2>去機場（HKG）</h2>
+      <p class="hero-note" style="text-align:left; margin: 0 0 12px 0;">2025 年香港機場全年 6100 萬人次，返工/接送/出差都係大需求。E33/E34/E41/E42 巴士以外嘅彈性選擇。</p>
       <div class="routes-grid">
         <div class="route-card">
           <h3 class="route-title">
@@ -360,15 +504,29 @@
           </h3>
           <p class="route-desc">早機/夜機出發貼士、行李位溝通、點加中途站更易配對。</p>
         </div>
-
         <div class="route-card">
-          <h3 class="route-title"><span class="disabled">將軍澳 → 機場（準備中）</span></h3>
-          <p class="route-desc">建議寫到達機場目標時間 + 行李數量，更易配對。</p>
+          <h3 class="route-title"><a href="/routes/tuen-mun-to-airport/">屯門 → 機場（HKG）</a></h3>
+          <p class="route-desc">替代 E33/E34 巴士線；30-40 分鐘直達。</p>
         </div>
-
         <div class="route-card">
-          <h3 class="route-title"><span class="disabled">東九龍 → 機場（準備中）</span></h3>
-          <p class="route-desc">可加「九龍灣/葵芳」作中途站，提升可 join 人數。</p>
+          <h3 class="route-title"><a href="/routes/yuen-long-to-airport/">元朗 → 機場（HKG）</a></h3>
+          <p class="route-desc">元朗/朗屏/天水圍出發直達；接送/返工。</p>
+        </div>
+        <div class="route-card">
+          <h3 class="route-title"><a href="/routes/tseung-kwan-o-to-airport/">將軍澳 → 機場（HKG）</a></h3>
+          <p class="route-desc">將軍澳站/坑口站/寶琳站/康城站出發；接送/出差。</p>
+        </div>
+        <div class="route-card">
+          <h3 class="route-title"><a href="/routes/tai-po-to-airport/">大埔 → 機場（HKG）</a></h3>
+          <p class="route-desc">替代 E41 巴士線；大埔墟/太和出發。</p>
+        </div>
+        <div class="route-card">
+          <h3 class="route-title"><a href="/routes/sha-tin-to-airport/">沙田 → 機場（HKG）</a></h3>
+          <p class="route-desc">替代 E42 巴士線；沙田/大圍/第一城出發。</p>
+        </div>
+        <div class="route-card">
+          <h3 class="route-title"><a href="/routes/sheung-shui-to-airport/">上水/粉嶺 → 機場（HKG）</a></h3>
+          <p class="route-desc">北區無直達機場巴士；FreeRider 係除的士外最方便嘅選擇。</p>
         </div>
       </div>
     </section>
@@ -386,7 +544,7 @@
     </section>
 
     <section class="section" id="weekend">
-      <h2>週末玩樂（建議先做）</h2>
+      <h2>週末玩樂</h2>
       <div class="routes-grid">
         <div class="route-card">
           <h3 class="route-title">
@@ -394,20 +552,13 @@
           </h3>
           <p class="route-desc">教你點樣開週末行程、用時間窗＋中途站提升配對率。</p>
         </div>
-
         <div class="route-card">
-          <h3 class="route-title"><span class="disabled">九龍 → 西貢（準備中）</span></h3>
-          <p class="route-desc">週末郊遊熱門；建議講清楚集合點同回程大約時間。</p>
+          <h3 class="route-title"><a href="/routes/sai-kung-to-central/">西貢 → 中環/金鐘</a></h3>
+          <p class="route-desc">週末行山/海鮮/水上活動；30-45 分鐘直達港島 CBD。</p>
         </div>
-
         <div class="route-card">
-          <h3 class="route-title"><span class="disabled">市區 → 大澳（準備中）</span></h3>
-          <p class="route-desc">一日遊常見；可寫「chill 行程」吸引同路人。</p>
-        </div>
-
-        <div class="route-card">
-          <h3 class="route-title"><span class="disabled">市區 → 赤柱/淺水灣（準備中）</span></h3>
-          <p class="route-desc">打卡/海邊路線；適合開「下午出發」時間窗。</p>
+          <h3 class="route-title"><a href="/routes/yuen-long-to-islands/">元朗 → 離島（迪士尼／東涌）</a></h3>
+          <p class="route-desc">週末親子/朋友出遊；可以順路去昂坪 360。</p>
         </div>
       </div>
     </section>
@@ -419,6 +570,8 @@
         <a href="/privacy.html">私隱政策</a> ·
         <a href="/delete-account.html">刪除帳戶</a>
       </div>
+      <p class="footer-meta">最後更新：2026年7月9日 · 持續更新中</p>
+      <p class="footer-meta">最後更新：2026年7月9日 · 29 條路線 · 持續更新中</p>
       <p>© FreeRider · Hong Kong Community Carpool App</p>
     </footer>
   </div>
