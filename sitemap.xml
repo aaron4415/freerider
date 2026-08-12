@@ -262,4 +262,38 @@
     <priority>0.2</priority>
   </url>
 
+
+  <!-- Routes hub (en-HK) -->
+  <url>
+    <loc>https://www.freerider.hk/en/routes/</loc>
+    <lastmod>2026-07-09T16:30:00+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog hub -->
+  <url>
+    <loc>https://www.freerider.hk/blog/</loc>
+    <lastmod>2026-08-13T01:00:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.freerider.hk/blog/hk-tunnel-tolls-2026.html</loc>
+    <lastmod>2026-08-13T01:00:00+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.freerider.hk/blog/tseung-kwan-o-commute-cost-comparison.html</loc>
+    <lastmod>2026-08-13T01:00:00+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.freerider.hk/blog/p-plate-carpool-hk.html</loc>
+    <lastmod>2026-08-13T01:00:00+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>

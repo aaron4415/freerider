@@ -1,0 +1,207 @@
+================================================================
+FREERIDER 使用條款 / TERMS OF SERVICE
+================================================================
+最後更新日期 / Last Updated: 2026 年 8 月 9 日 / 9 August 2026
+
+
+------------------------------------------------------------
+1. 接受條款 / Acceptance of Terms
+------------------------------------------------------------
+
+歡迎使用 FreeRider(「本 App」)。安裝、登入或使用本 App,即表示你同意受本使用條款約束。如你不同意本條款,請不要使用本 App。
+
+Welcome to FreeRider ("the App"). By installing, signing in, or using the App, you agree to be bound by these Terms of Service. If you do not agree, please do not use the App.
+
+
+------------------------------------------------------------
+2. 服務簡介 / Nature of Service
+------------------------------------------------------------
+
+FreeRider 是一個社群順風車平台,讓司機及乘客自行發佈和尋找順風車、夾車或共乘行程。本 App 只提供配對及通訊工具,並不參與實際交通服務、代客安排行程或收取任何車費或佣金。
+
+FreeRider is a community carpooling platform that lets drivers and passengers publish and find shared rides, joint trips, and carpool arrangements. The App only provides matching and communication tools; it does not engage in actual transportation services, arrange trips on users' behalf, or collect any fares or commissions.
+
+
+------------------------------------------------------------
+3. 用戶帳戶 / User Accounts
+------------------------------------------------------------
+
+你有責任保管好登入資料及裝置,並確保所提供的資料真實、準確及最新。如發現未經授權使用帳戶,你應盡快停止使用及刪除帳戶。
+
+You are responsible for safeguarding your login credentials and device, and for ensuring that the information you provide is true, accurate, and current. If you detect unauthorized use of your account, you should stop using the App and delete your account as soon as possible.
+
+
+------------------------------------------------------------
+4. 可接受使用及禁止行為 / Acceptable Use & Prohibited Conduct
+------------------------------------------------------------
+
+使用 FreeRider 時,你同意不會:
+
+- 以任何非法、欺詐或違反香港法律的方式使用本 App。
+- 在行程描述或聊天中發佈虛假、誤導、冒犯、騷擾或歧視性內容。
+- 用本 App 作任何商業載客、白牌車、未獲牌照的出租汽車服務或其他受規管活動。
+- 收集或濫用其他用戶的個人資料。
+- 試圖入侵、干擾或破壞本 App 或伺服器的運作。
+
+如你違反本條款,FreeRider 有權在不作另行通知的情況下限制或終止你對本 App 的使用。
+
+By using FreeRider, you agree NOT to:
+
+- Use the App in any manner that is illegal, fraudulent, or in violation of Hong Kong law.
+- Post false, misleading, offensive, harassing, or discriminatory content in trip descriptions or chat.
+- Use the App for any commercial passenger transport, "Pak Pai" (unlicensed taxi) operations, unlicensed hire-car services, or any other regulated activity.
+- Collect or misuse other users' personal data.
+- Attempt to hack, interfere with, or disrupt the operation of the App or its servers.
+
+If you violate these terms, FreeRider reserves the right to restrict or terminate your use of the App without prior notice.
+
+
+------------------------------------------------------------
+5. 司機與乘客之間的關係 / Driver-Passenger Relationship
+------------------------------------------------------------
+
+所有行程均由用戶自行安排及同意,包括上車地點、時間、路線及車費分擔方式。司機及乘客之間的關係純屬私人安排,並非由 FreeRider 僱用或代理。
+
+你應自行評估任何行程的風險(包括安全、合法性及費用),並在需要時作出適當保障,例如購買合適保險。
+
+All trips are arranged and agreed upon by the users themselves, including pickup location, time, route, and how the cost is shared. The relationship between drivers and passengers is a private arrangement and is not an employment or agency relationship with FreeRider.
+
+You are responsible for assessing the risks of any trip (including safety, legality, and cost) and for taking appropriate precautions, such as purchasing suitable insurance, where needed.
+
+
+------------------------------------------------------------
+6. 費用及付款 / Fees & Payments
+------------------------------------------------------------
+
+FreeRider 目前不向用戶收取使用費或佣金。司機和乘客之間的任何車費或費用分擔,由雙方自行協商及結算。FreeRider 不處理或代收任何款項,亦不就任何款項糾紛負責。
+
+(付費訂閱 FreeRider Pro 之付款及續訂安排,請參閱本條款第 12 節。)
+
+FreeRider does not currently charge users any usage fee or commission. Any fare or cost-sharing between drivers and passengers is negotiated and settled between the parties themselves. FreeRider does not process or collect any payments, and is not responsible for any payment disputes.
+
+(For payment and renewal terms of the paid FreeRider Pro subscription, please see Section 12 of these terms.)
+
+
+------------------------------------------------------------
+7. 免責聲明及責任限制 / Disclaimer & Limitation of Liability
+------------------------------------------------------------
+
+本 App 以「現況」及「可用」基礎提供,不保證服務不會中斷、沒有錯誤、或完全安全。FreeRider 不對以下事項負責:任何行程、交通意外、人身傷害、財物損失、時間損失或因使用本 App 或無法使用本 App 所引致的損失。
+
+在適用法律允許的最大範圍內,FreeRider 對你就本 App 所承擔的總責任,將限制於你於相關期間內就本 App 所支付的費用總額(如目前為全免費服務,則為零)。
+
+The App is provided on an "as-is" and "as-available" basis, without warranty that the service will be uninterrupted, error-free, or completely secure. FreeRider is not liable for any trip, traffic accident, personal injury, property damage, loss of time, or any other loss arising from use of, or inability to use, the App.
+
+To the maximum extent permitted by applicable law, FreeRider's total liability to you for the App is limited to the total amount you have paid for the App during the relevant period (which is zero if the App is currently free of charge).
+
+
+------------------------------------------------------------
+8. 知識產權 / Intellectual Property
+------------------------------------------------------------
+
+本 App 及其內容(包括名稱、標誌、介面設計及程式碼等)的所有權及知識產權,均屬 FreeRider 或其授權人所有。未經書面同意,你不得複製、修改、分發或建立衍生作品。
+
+All ownership and intellectual property rights in the App and its contents (including name, logo, interface design, and code) belong to FreeRider or its licensors. You may not copy, modify, distribute, or create derivative works without prior written consent.
+
+
+------------------------------------------------------------
+9. 條款修改 / Modifications
+------------------------------------------------------------
+
+FreeRider 可不時更新本使用條款。更新後的條款會發佈於本頁並標示最新日期。你繼續使用本 App,即視為接受更新後的條款。
+
+FreeRider may update these Terms of Service from time to time. Updated terms will be posted on this page with a revised "Last Updated" date. Your continued use of the App constitutes acceptance of the updated terms.
+
+
+------------------------------------------------------------
+10. 適用法律及爭議解決 / Governing Law & Dispute Resolution
+------------------------------------------------------------
+
+本使用條款受香港特別行政區的法律管轄,並按其解釋。如有任何爭議,你同意首先嘗試以友好方式解決,如未能解決,則提交香港法院專屬管轄。
+
+These Terms of Service are governed by the laws of the Hong Kong Special Administrative Region and shall be construed in accordance with them. In the event of any dispute, you agree to first attempt to resolve it amicably; if that fails, you submit to the exclusive jurisdiction of the courts of Hong Kong.
+
+
+------------------------------------------------------------
+11. 聯絡我們 / Contact Us
+------------------------------------------------------------
+
+如對本使用條款或本 App 有任何問題,請透過 App 內回報功能或電郵與我們聯絡:freeriderhk2025@gmail.com。
+
+If you have any questions about these Terms of Service or the App, please contact us via the in-app reporting feature or by email: freeriderhk2025@gmail.com.
+
+
+------------------------------------------------------------
+12. FreeRider Pro 訂閱條款 / Subscription Terms
+------------------------------------------------------------
+
+FreeRider 提供付費訂閱服務「FreeRider Pro」,透過 Apple App Store 及 Google Play 的應用程式內購買 (IAP) 提供。當你訂閱 FreeRider Pro,即表示你同意以下條款。
+
+FreeRider offers a paid subscription called "FreeRider Pro" via in-app purchase (IAP) on Apple App Store and Google Play. By subscribing, you agree to the terms below.
+
+
+12.1 訂閱方案 / Plans & Pricing
+
+- 月費計劃 / Monthly:HK$18 / 月 per month (auto-renewable)
+- 年費計劃 / Yearly:HK$180 / 年 per year (auto-renewable, 較月費省 2 個月 saves 2 months vs monthly)
+
+實際價格可能因你所在的地區、Apple ID 或 Google Play 帳戶設定的貨幣而有所不同;以你訂閱頁面顯示為準。
+
+Actual prices may vary by region and the currency of your Apple ID or Google Play account; refer to the price shown on the in-app subscription screen at the time of purchase.
+
+
+12.2 自動續訂 / Auto-Renewal
+
+訂閱將自動續訂,除非你在當期結束前至少 24 小時取消。續訂費用會在當期結束前 24 小時內從你的 Apple ID 或 Google Play 帳戶扣款。
+
+Subscriptions automatically renew unless you cancel at least 24 hours before the end of the current billing period. Your Apple ID or Google Play account will be charged for renewal within 24 hours prior to the end of the current period.
+
+
+12.3 取消訂閱 / How to Cancel
+
+你可以隨時取消訂閱。請透過系統設定處理,FreeRider 無法代為取消。
+
+- iOS:「設定」→ [你的名稱] →「訂閱」→ 選擇「FreeRider Pro」→「取消訂閱」。
+- Android:Google Play Store →「付款與訂閱」→「訂閱」→ 選擇「FreeRider Pro」→「取消訂閱」。
+
+取消後,你仍可在當期結束前繼續使用 Pro 功能;取消不會就當期退款。
+
+You can cancel at any time. Cancellations are managed through the platform's subscription settings — FreeRider cannot cancel on your behalf.
+
+- iOS: Settings → [Your Name] → Subscriptions → select "FreeRider Pro" → tap "Cancel Subscription".
+- Android: Google Play Store → Payments & subscriptions → Subscriptions → select "FreeRider Pro" → tap "Cancel subscription".
+
+After cancellation, you retain Pro access until the end of the current billing period. No partial-period refund is provided.
+
+
+12.4 退款政策 / Refund Policy
+
+所有銷售最終。除非適用法律另有規定,我們不提供退款。退款申請由 Apple 及 Google 按其各自退款政策處理,可於 reportaproblem.apple.com 或 Google Play 退款表單提出。
+
+All sales are final. Refunds are not provided except as required by applicable law. Refund requests are handled by Apple and Google under their respective refund policies; you can request a refund via reportaproblem.apple.com or the Google Play refund form.
+
+
+12.5 價格變更 / Price Changes
+
+我們可能不時調整訂閱價格,新價格適用於下一個續訂週期。我們會在變更生效前至少 30 日透過 App 內通知及電郵通知你。
+
+We may change subscription prices from time to time. New prices apply to the next renewal period. We will notify you at least 30 days before any change via in-app notification and email.
+
+
+12.6 免費試用 / Free Trial
+
+FreeRider Pro 目前不提供免費試用。日後如推出試用,試用期長度及轉為付費之條款會於啟用前向你披露,並符合平台規則。
+
+FreeRider Pro does not currently offer a free trial. If we introduce one in the future, the trial duration and conversion terms will be disclosed before activation and per platform rules.
+
+
+12.7 平台條款 / Platform Terms
+
+訂閱透過 Apple App Store 或 Google Play 購買,交易亦受其 Apple 標準 EULA (https://www.apple.com/legal/internet-services/itunes/dev/stdeula/) 及 Google Play 服務條款 (https://play.google.com/intl/en_us/about/play-terms.html) 約束。
+
+Subscriptions are purchased through Apple App Store or Google Play and are also subject to the Apple Standard EULA (https://www.apple.com/legal/internet-services/itunes/dev/stdeula/) and Google Play Terms of Service (https://play.google.com/intl/en_us/about/play-terms.html).
+
+
+================================================================
+END OF TERMS / 條款完
+================================================================

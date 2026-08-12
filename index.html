@@ -11,6 +11,9 @@
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- TODO: Replace with actual verification codes after Google Search Console / Bing Webmaster signup -->
+  <meta name="google-site-verification" content="REPLACE_WITH_GSC_CODE" />
+  <meta name="msvalidate.01" content="REPLACE_WITH_BING_CODE" />
   <meta name="theme-color" content="#0a0a0a" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -48,12 +51,33 @@
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     "name": "FreeRider",
+    "alternateName": "FreeRider 香港拼車",
     "applicationCategory": "TravelApplication",
-    "operatingSystem": "iOS, Android",
-    "description": "香港拼車/順風車/共乘返工 App，支援行程發佈、加入、內置聊天室協調集合點。",
+    "applicationSubCategory": "Carpooling & Ridesharing App",
+    "operatingSystem": "iOS 14.0+, Android 9.0+",
+    "description": "FreeRider is a Hong Kong local carpooling, ridesharing, and commute-matching app. Post or join trips, coordinate meetup points via built-in chat.",
     "url": "https://www.freerider.hk/",
     "image": "https://www.freerider.hk/assets/og-image.png",
+    "screenshot": [
+      "https://www.freerider.hk/assets/screenshot-home.png",
+      "https://www.freerider.hk/assets/screenshot-route.png",
+      "https://www.freerider.hk/assets/screenshot-list.png",
+      "https://www.freerider.hk/assets/screenshot-chat.png"
+    ],
+    "featureList": [
+      "Four ride modes: driver seeks passengers, driver swaps with driver, passenger seeks driver, split Taxi/Uber",
+      "Built-in chat for meetup points, fare split, and ETAs",
+      "No phone number exchange required",
+      "Hong Kong popular commute routes preset",
+      "Cross-border, airport, and weekend trip guides"
+    ],
     "offers": { "@type": "Offer", "price": 0, "priceCurrency": "HKD" },
+    "downloadUrl": "https://apps.apple.com/us/app/freerider-%E9%A0%86%E9%A2%A8%E8%BB%8A%E7%A4%BE%E7%BE%A4%E5%B9%B3%E5%8F%B0/id6755711097",
+    "installUrl": "https://play.google.com/store/apps/details?id=com.aaron.freerider_front",
+    "softwareVersion": "1.0.0",
+    "datePublished": "2026-06-30",
+    "author": { "@type": "Person", "@id": "https://www.freerider.hk/#author", "name": "Cheung King Laam", "url": "https://www.freerider.hk/" },
+    "publisher": { "@type": "Organization", "@id": "https://www.freerider.hk/#org", "name": "FreeRider", "url": "https://www.freerider.hk/" },
     "sameAs": [
       "https://apps.apple.com/us/app/freerider-%E9%A0%86%E9%A2%A8%E8%BB%8A%E7%A4%BE%E7%BE%A4%E5%B9%B3%E5%8F%B0/id6755711097",
       "https://play.google.com/store/apps/details?id=com.aaron.freerider_front",
@@ -68,15 +92,12 @@
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
+    "@id": "https://www.freerider.hk/#website",
     "name": "FreeRider",
     "alternateName": "FreeRider 香港拼車",
     "url": "https://www.freerider.hk/",
     "inLanguage": "zh-Hant-HK",
-    "publisher": {
-      "@type": "Organization",
-      "name": "FreeRider",
-      "url": "https://www.freerider.hk/"
-    }
+    "publisher": { "@id": "https://www.freerider.hk/#org" }
   }
   </script>
 
@@ -171,24 +192,47 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "FreeRider 香港拼車 App",
-    "datePublished": "2026-07-09T16:30:00+08:00",
-    "dateModified": "2026-07-09T16:30:00+08:00",
+    "@type": "WebPage",
+    "@id": "https://www.freerider.hk/#webpage",
+    "name": "FreeRider 香港拼車・順風車・共乘返工 App",
+    "url": "https://www.freerider.hk/",
     "inLanguage": "zh-Hant-HK",
-    "author": {
-      "@type": "Organization",
-      "name": "FreeRider",
-      "url": "https://www.freerider.hk/"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "FreeRider",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://www.freerider.hk/assets/og-image.png"
-      }
-    }
+    "isPartOf": { "@id": "https://www.freerider.hk/#website" },
+    "dateModified": "2026-07-09T16:30:00+08:00",
+    "primaryImageOfPage": { "@type": "ImageObject", "url": "https://www.freerider.hk/assets/og-image.png" },
+    "description": "FreeRider 係香港本地拼車、順風車、共乘返工 App。100% 免費、無廣告、無抽佣。",
+    "author": { "@type": "Person", "@id": "https://www.freerider.hk/#author" },
+    "publisher": { "@type": "Organization", "@id": "https://www.freerider.hk/#org" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://www.freerider.hk/#author",
+    "name": "Cheung King Laam",
+    "alternateName": "Aaron Cheung",
+    "url": "https://www.freerider.hk/",
+    "jobTitle": "Founder & Independent Developer",
+    "worksFor": { "@type": "Organization", "@id": "https://www.freerider.hk/#org" },
+    "sameAs": [
+      "https://github.com/aaron4415",
+      "https://cheung-king-laam-08b1b7277"
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://www.freerider.hk/#org",
+    "name": "FreeRider",
+    "alternateName": "FreeRider 香港拼車",
+    "url": "https://www.freerider.hk/",
+    "logo": { "@type": "ImageObject", "url": "https://www.freerider.hk/assets/og-image.png" },
+    "founder": { "@type": "Person", "@id": "https://www.freerider.hk/#author" },
+    "foundingDate": "2026-06-30",
+    "areaServed": { "@type": "Country", "name": "Hong Kong" }
   }
   </script>
 
@@ -1063,6 +1107,7 @@
       <li><a href="#modes">夾車模式</a></li>
       <li><a href="#how">點樣用</a></li>
       <li><a href="#guides">使用指南</a></li>
+      <li><a href="/blog/">部落格</a></li>
       <li><a href="/en/" lang="en" hreflang="en-HK" class="lang">EN</a></li>
     </ul>
 
@@ -1080,6 +1125,7 @@
     <a href="#modes" onclick="closeDrawer()">夾車模式</a>
     <a href="#how" onclick="closeDrawer()">點樣用</a>
     <a href="#guides" onclick="closeDrawer()">使用指南</a>
+    <a href="/blog/" onclick="closeDrawer()">部落格</a>
     <a href="#screenshots" onclick="closeDrawer()">App 截圖</a>
     <a href="#social" onclick="closeDrawer()">關注我哋</a>
     <a href="#faq" onclick="closeDrawer()">常見問題</a>
@@ -1556,6 +1602,35 @@
           </details>
 
         </div>
+      </div>
+    </section>
+    <hr class="section-divider" />
+
+    <!-- 08 — LATEST ARTICLES -->
+    <section class="why-section" aria-label="最新文章">
+      <div class="section">
+        <div class="section-header">
+          <span class="section-number">BLOG</span>
+          <h2 class="section-title">最新<em>攻略</em></h2>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:8px">
+          <a href="/blog/hk-tunnel-tolls-2026.html" style="display:block;background:#fff;border:1.5px solid #e5e7eb;border-radius:14px;padding:22px;text-decoration:none;color:inherit;transition:border-color .2s,transform .2s,box-shadow .2s" onmouseover="this.style.borderColor='#111827';this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 20px rgba(0,0,0,.06)'" onmouseout="this.style.borderColor='#e5e7eb';this.style.transform='translateY(0)';this.style.boxShadow='none'">
+            <p style="font-size:.74rem;font-weight:700;letter-spacing:1.5px;color:#6b7280;text-transform:uppercase;margin:0 0 8px">攻略</p>
+            <h3 style="font-size:1.05rem;font-weight:800;margin:0 0 8px;line-height:1.35">2026 香港隧道費攻略：返工慳錢夾車必睇</h3>
+            <p style="font-size:.88rem;color:#6b7280;margin:0">2026 全港隧道費表 + 分擔計算公式 + 聊天室溝通模板。</p>
+          </a>
+          <a href="/blog/tseung-kwan-o-commute-cost-comparison.html" style="display:block;background:#fff;border:1.5px solid #e5e7eb;border-radius:14px;padding:22px;text-decoration:none;color:inherit;transition:border-color .2s,transform .2s,box-shadow .2s" onmouseover="this.style.borderColor='#111827';this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 20px rgba(0,0,0,.06)'" onmouseout="this.style.borderColor='#e5e7eb';this.style.transform='translateY(0)';this.style.boxShadow='none'">
+            <p style="font-size:.74rem;font-weight:700;letter-spacing:1.5px;color:#6b7280;text-transform:uppercase;margin:0 0 8px">成本比較</p>
+            <h3 style="font-size:1.05rem;font-weight:800;margin:0 0 8px;line-height:1.35">自駕 vs 地鐵 vs 順風車 每月成本比較</h3>
+            <p style="font-size:.88rem;color:#6b7280;margin:0">2026 數據版：自駕 HK$11,751、港鐵 HK$686、順風車 HK$884。</p>
+          </a>
+          <a href="/blog/p-plate-carpool-hk.html" style="display:block;background:#fff;border:1.5px solid #e5e7eb;border-radius:14px;padding:22px;text-decoration:none;color:inherit;transition:border-color .2s,transform .2s,box-shadow .2s" onmouseover="this.style.borderColor='#111827';this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 20px rgba(0,0,0,.06)'" onmouseout="this.style.borderColor='#e5e7eb';this.style.transform='translateY(0)';this.style.boxShadow='none'">
+            <p style="font-size:.74rem;font-weight:700;letter-spacing:1.5px;color:#6b7280;text-transform:uppercase;margin:0 0 8px">法律與實務</p>
+            <h3 style="font-size:1.05rem;font-weight:800;margin:0 0 8px;line-height:1.35">P 牌可唔可以 Join 順風車？</h3>
+            <p style="font-size:.88rem;color:#6b7280;margin:0">P 牌做乘客 OK、做司機要小心嘅法律界線。</p>
+          </a>
+        </div>
+        <p style="text-align:center;margin-top:24px;font-size:.92rem"><a href="/blog/" style="color:#f59e0b;font-weight:600;text-decoration:none">睇晒所有攻略 →</a></p>
       </div>
     </section>
   </main>

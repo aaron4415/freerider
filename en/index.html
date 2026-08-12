@@ -11,6 +11,9 @@
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- TODO: Replace with actual verification codes after Google Search Console / Bing Webmaster signup -->
+  <meta name="google-site-verification" content="REPLACE_WITH_GSC_CODE" />
+  <meta name="msvalidate.01" content="REPLACE_WITH_BING_CODE" />
   <meta name="theme-color" content="#0a0a0a" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -48,12 +51,34 @@
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     "name": "FreeRider",
+    "alternateName": "FreeRider Hong Kong Carpool",
     "applicationCategory": "TravelApplication",
-    "operatingSystem": "iOS, Android",
-    "description": "Hong Kong carpooling & ridesharing app. Post or join trips, coordinate meetup points via built-in chat.",
+    "applicationSubCategory": "Carpooling & Ridesharing App",
+    "operatingSystem": "iOS 14.0+, Android 9.0+",
+    "description": "FreeRider is Hong Kong's local carpooling, ridesharing, and commute-matching app. Post or join trips, coordinate meetup points via built-in chat.",
     "url": "https://www.freerider.hk/en/",
     "image": "https://www.freerider.hk/assets/og-image.png",
+    "screenshot": [
+      "https://www.freerider.hk/assets/screenshot-home.png",
+      "https://www.freerider.hk/assets/screenshot-route.png",
+      "https://www.freerider.hk/assets/screenshot-list.png",
+      "https://www.freerider.hk/assets/screenshot-chat.png"
+    ],
+    "featureList": [
+      "Four ride modes: driver seeks passengers, driver swaps with driver, passenger seeks driver, split Taxi/Uber",
+      "Built-in chat for meetup points, fare split, and ETAs",
+      "No phone number exchange required",
+      "Hong Kong popular commute routes preset",
+      "Cross-border, airport, and weekend trip guides"
+    ],
     "offers": { "@type": "Offer", "price": 0, "priceCurrency": "HKD" },
+    "downloadUrl": "https://apps.apple.com/us/app/freerider-%E9%A0%86%E9%A2%A8%E8%BB%8A%E7%A4%BE%E7%BE%A4%E5%B9%B3%E5%8F%B0/id6755711097",
+    "installUrl": "https://play.google.com/store/apps/details?id=com.aaron.freerider_front",
+    "softwareVersion": "1.0.0",
+    "datePublished": "2026-06-30",
+    "inLanguage": "en-HK",
+    "author": { "@type": "Person", "@id": "https://www.freerider.hk/#author", "name": "Cheung King Laam", "url": "https://www.freerider.hk/" },
+    "publisher": { "@type": "Organization", "@id": "https://www.freerider.hk/#org", "name": "FreeRider", "url": "https://www.freerider.hk/en/" },
     "sameAs": [
       "https://apps.apple.com/us/app/freerider-%E9%A0%86%E9%A2%A8%E8%BB%8A%E7%A4%BE%E7%BE%A4%E5%B9%B3%E5%8F%B0/id6755711097",
       "https://play.google.com/store/apps/details?id=com.aaron.freerider_front",
@@ -68,15 +93,12 @@
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
+    "@id": "https://www.freerider.hk/#website",
     "name": "FreeRider",
     "alternateName": "FreeRider Hong Kong Carpool",
     "url": "https://www.freerider.hk/en/",
     "inLanguage": "en-HK",
-    "publisher": {
-      "@type": "Organization",
-      "name": "FreeRider",
-      "url": "https://www.freerider.hk/en/"
-    }
+    "publisher": { "@id": "https://www.freerider.hk/#org" }
   }
   </script>
 
@@ -115,24 +137,45 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "FreeRider 香港拼車 App",
-    "datePublished": "2026-07-09T16:30:00+08:00",
+    "@type": "WebPage",
+    "@id": "https://www.freerider.hk/en/#webpage",
+    "name": "FreeRider — Hong Kong Carpooling & Ridesharing App",
+    "url": "https://www.freerider.hk/en/",
+    "inLanguage": "en-HK",
+    "isPartOf": { "@id": "https://www.freerider.hk/#website" },
     "dateModified": "2026-07-09T16:30:00+08:00",
-    "inLanguage": "zh-Hant-HK",
-    "author": {
-      "@type": "Organization",
-      "name": "FreeRider",
-      "url": "https://www.freerider.hk/"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "FreeRider",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://www.freerider.hk/assets/og-image.png"
-      }
-    }
+    "primaryImageOfPage": { "@type": "ImageObject", "url": "https://www.freerider.hk/assets/og-image.png" },
+    "description": "Hong Kong's local carpooling, ridesharing, and commute-matching app. 100% free, indie-built, no ads, no commission."
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://www.freerider.hk/#author",
+    "name": "Cheung King Laam",
+    "alternateName": "Aaron Cheung",
+    "url": "https://www.freerider.hk/",
+    "jobTitle": "Founder & Independent Developer",
+    "worksFor": { "@type": "Organization", "@id": "https://www.freerider.hk/#org" },
+    "sameAs": [
+      "https://github.com/aaron4415",
+      "https://cheung-king-laam-08b1b7277"
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://www.freerider.hk/#org",
+    "name": "FreeRider",
+    "alternateName": "FreeRider Hong Kong Carpool",
+    "url": "https://www.freerider.hk/en/",
+    "logo": { "@type": "ImageObject", "url": "https://www.freerider.hk/assets/og-image.png" },
+    "founder": { "@type": "Person", "@id": "https://www.freerider.hk/#author" },
+    "foundingDate": "2026-06-30",
+    "areaServed": { "@type": "Country", "name": "Hong Kong" }
   }
   </script>
 
@@ -530,6 +573,61 @@
     .intro-section p:last-child { margin-bottom: 0; }
     .intro-section strong { color: var(--black); font-weight: 700; }
 
+    /* ===================== WHY FREERIDER STRIP ===================== */
+    .why-section {
+      background: linear-gradient(180deg, #fafaf9 0%, #f5f5f4 100%);
+      border-top: 1px solid var(--gray-300);
+      border-bottom: 1px solid var(--gray-300);
+    }
+    .why-section .section {
+      padding-top: 64px;
+      padding-bottom: 64px;
+    }
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 36px 32px;
+      margin-top: 8px;
+    }
+    .why-card {
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+    }
+    .why-icon {
+      width: 48px;
+      height: 48px;
+      flex-shrink: 0;
+      border-radius: 14px;
+      background: linear-gradient(135deg, #fef3c7 0%, #fcd34d 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 8px rgba(245, 158, 11, 0.15);
+    }
+    .why-icon svg {
+      width: 26px;
+      height: 26px;
+      stroke: var(--black);
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .why-text { flex: 1; }
+    .why-title {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--black);
+      margin-bottom: 6px;
+      letter-spacing: -0.3px;
+    }
+    .why-desc {
+      font-size: 0.93rem;
+      color: var(--gray-500);
+      line-height: 1.6;
+    }
+
     /* ===================== FAQ (people-also-ask, AI Overviews) ===================== */
     .faq-list {
       max-width: 860px;
@@ -922,6 +1020,7 @@
       <li><a href="#modes">Ride Modes</a></li>
       <li><a href="#how">How It Works</a></li>
       <li><a href="#guides">Guides</a></li>
+      <li><a href="/blog/">Blog</a></li>
       <li><a href="/" lang="zh-Hant-HK" hreflang="zh-Hant-HK" class="lang">中文</a></li>
     </ul>
 
@@ -939,6 +1038,7 @@
     <a href="#modes" onclick="closeDrawer()">Ride Modes</a>
     <a href="#how" onclick="closeDrawer()">How It Works</a>
     <a href="#guides" onclick="closeDrawer()">Guides</a>
+    <a href="/blog/" onclick="closeDrawer()">Blog</a>
     <a href="#screenshots" onclick="closeDrawer()">App Screenshots</a>
     <a href="#social" onclick="closeDrawer()">Follow Us</a>
     <a href="#faq" onclick="closeDrawer()">FAQ</a>
@@ -987,7 +1087,7 @@
       <div class="hero-badges" data-store-btns></div>
 
       <p class="hero-note">Indie-built · 100% Free · No Ads · No Commission</p>
-      <p class="updated-stamp">🟢 最後更新：2026年7月9日</p>
+      <p class="updated-stamp">🟢 Last updated: 9 July 2026</p>
     </div>
 
     <div class="scroll-indicator" aria-hidden="true">
@@ -1012,7 +1112,24 @@
 
     <hr class="section-divider" />
 
-    <!-- 01 — MODES -->
+    <!-- 01b WHY -->
+    <section class="why-section" aria-label="Why FreeRider">
+      <div class="section">
+        <div class="section-header">
+          <span class="section-number">WHY</span>
+          <h2 class="section-title">Why <em>FreeRider?</em></h2>
+        </div>
+        <div class="why-grid">
+          <div class="why-card"><div class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83 0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg></div><div class="why-text"><div class="why-title">100 percent free</div><p class="why-desc">FreeRider is a community project run by a Hong Kong developer.</p></div></div>
+          <div class="why-card"><div class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg></div><div class="why-text"><div class="why-title">No Phone Number Required</div><p class="why-desc">All coordination happens in the built-in chat. You keep a full conversation record for your reference.</p></div></div>
+          <div class="why-card"><div class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg></div><div class="why-text"><div class="why-title">Flexible Route Matching</div><p class="why-desc">Driver, passenger, or split-Taxi mode. You choose who to match with, on any route, any time.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- 01 - MODES -->
     <section id="modes" aria-labelledby="title-modes">
       <div class="section">
         <div class="section-header">
@@ -1102,32 +1219,32 @@
         <div class="routes-grid">
           <div class="route-card">
             <div class="route-arrow">ROUTE →</div>
-            <h3><a href="/routes/tko-to-central-admiralty.html">Tseung Kwan O → Central / Admiralty</a></h3>
+            <h3><a href="/routes/tseung-kwan-o-to-central-and-western/">Tseung Kwan O → Central / Admiralty</a></h3>
             <p>Core commuter corridor; works well with a time window and optional stops at Kwun Tong / Kowloon Bay.</p>
           </div>
           <div class="route-card">
             <div class="route-arrow">ROUTE →</div>
-            <h3><a href="/routes/tko-to-quarrybay-taikoo.html">Tseung Kwan O → Quarry Bay / Tai Koo</a></h3>
+            <h3><a href="/routes/tseung-kwan-o-to-quarry-bay/">Tseung Kwan O → Quarry Bay / Tai Koo</a></h3>
             <p>Island East commute; specify upfront whether you're OK with cross-harbour tunnel toll sharing.</p>
           </div>
           <div class="route-card">
             <div class="route-arrow">ROUTE →</div>
-            <h3><a href="/routes/tsw-yuenlong-to-kowloon-east.html">Yuen Long / Tin Shui Wai → Kowloon East</a></h3>
+            <h3><a href="/routes/yuen-long-to-kowloon-east/">Yuen Long / Tin Shui Wai → Kowloon East</a></h3>
             <p>New Territories West commute; posting Monday–Friday recurring trips builds a reliable carpool circle.</p>
           </div>
           <div class="route-card">
             <div class="route-arrow">ROUTE →</div>
-            <h3><a href="/routes/sha-tin-to-central-admiralty.html">Sha Tin → Admiralty / Central</a></h3>
+            <h3><a href="/routes/sha-tin-to-central-and-western/">Sha Tin → Admiralty / Central</a></h3>
             <p>New Territories East commute; set 1–2 fixed pickup points to minimise detours.</p>
           </div>
           <div class="route-card">
             <div class="route-arrow">ROUTE →</div>
-            <h3><a href="/routes/tsuen-wan-to-central-admiralty.html">Tsuen Wan → Central / Admiralty</a></h3>
+            <h3><a href="/routes/tsuen-wan-to-central-and-western/">Tsuen Wan → Central / Admiralty</a></h3>
             <p>Western corridor commute; a fixed morning time window makes matching faster.</p>
           </div>
           <div class="route-card">
             <div class="route-arrow">ROUTE →</div>
-            <h3><a href="/routes/east-kowloon-to-wanchai-causewaybay.html">East Kowloon → Wan Chai / Causeway Bay</a></h3>
+            <h3><a href="/routes/east-kowloon-to-wan-chai/">East Kowloon → Wan Chai / Causeway Bay</a></h3>
             <p>Cross-harbour commute; agree on tunnel toll split before you set off.</p>
           </div>
         </div>
@@ -1317,6 +1434,35 @@
           </details>
 
         </div>
+      </div>
+    </section>
+    <hr class="section-divider" />
+
+    <!-- 08 — LATEST ARTICLES -->
+    <section class="why-section" aria-label="Latest from Blog">
+      <div class="section">
+        <div class="section-header">
+          <span class="section-number">BLOG</span>
+          <h2 class="section-title">Latest <em>guides</em></h2>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:8px">
+          <a href="/blog/hk-tunnel-tolls-2026.html" style="display:block;background:#fff;border:1.5px solid #e5e7eb;border-radius:14px;padding:22px;text-decoration:none;color:inherit;transition:border-color .2s,transform .2s,box-shadow .2s" onmouseover="this.style.borderColor='#111827';this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 20px rgba(0,0,0,.06)'" onmouseout="this.style.borderColor='#e5e7eb';this.style.transform='translateY(0)';this.style.boxShadow='none'">
+            <p style="font-size:.74rem;font-weight:700;letter-spacing:1.5px;color:#6b7280;text-transform:uppercase;margin:0 0 8px">GUIDE</p>
+            <h3 style="font-size:1.05rem;font-weight:800;margin:0 0 8px;line-height:1.35">2026 HK Tunnel Tolls Guide</h3>
+            <p style="font-size:.88rem;color:#6b7280;margin:0">Full 2026 tunnel fee table, fare-split formulas, and chat-room templates.</p>
+          </a>
+          <a href="/blog/tseung-kwan-o-commute-cost-comparison.html" style="display:block;background:#fff;border:1.5px solid #e5e7eb;border-radius:14px;padding:22px;text-decoration:none;color:inherit;transition:border-color .2s,transform .2s,box-shadow .2s" onmouseover="this.style.borderColor='#111827';this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 20px rgba(0,0,0,.06)'" onmouseout="this.style.borderColor='#e5e7eb';this.style.transform='translateY(0)';this.style.boxShadow='none'">
+            <p style="font-size:.74rem;font-weight:700;letter-spacing:1.5px;color:#6b7280;text-transform:uppercase;margin:0 0 8px">COST</p>
+            <h3 style="font-size:1.05rem;font-weight:800;margin:0 0 8px;line-height:1.35">Drive vs MTR vs Carpool monthly cost</h3>
+            <p style="font-size:.88rem;color:#6b7280;margin:0">Drive HK$11,751, MTR HK$686, Carpool HK$884 per month.</p>
+          </a>
+          <a href="/blog/p-plate-carpool-hk.html" style="display:block;background:#fff;border:1.5px solid #e5e7eb;border-radius:14px;padding:22px;text-decoration:none;color:inherit;transition:border-color .2s,transform .2s,box-shadow .2s" onmouseover="this.style.borderColor='#111827';this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 20px rgba(0,0,0,.06)'" onmouseout="this.style.borderColor='#e5e7eb';this.style.transform='translateY(0)';this.style.boxShadow='none'">
+            <p style="font-size:.74rem;font-weight:700;letter-spacing:1.5px;color:#6b7280;text-transform:uppercase;margin:0 0 8px">LEGAL</p>
+            <h3 style="font-size:1.05rem;font-weight:800;margin:0 0 8px;line-height:1.35">P-plate drivers and carpooling</h3>
+            <p style="font-size:.88rem;color:#6b7280;margin:0">Legal lines for P-plate passengers vs drivers, and insurance claims.</p>
+          </a>
+        </div>
+        <p style="text-align:center;margin-top:24px;font-size:.92rem"><a href="/blog/" style="color:#f59e0b;font-weight:600;text-decoration:none">View all guides →</a></p>
       </div>
     </section>
   </main>
