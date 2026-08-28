@@ -398,6 +398,7 @@
     .hero-content {
       position: relative;
       z-index: 2;
+      width: 100%;                       /* 鎖住，唔好畀 children 撐闊 */
       text-align: center;
       padding: 0 24px;
       max-width: 860px;
@@ -480,6 +481,7 @@
       align-items: stretch;
       width: 100%;
       max-width: 760px;
+      min-width: 0;
       margin: 4px auto 28px;
       overflow: hidden;
       background: linear-gradient(90deg, #0a0a0a 0%, #151515 50%, #0a0a0a 100%);
@@ -489,6 +491,9 @@
       font-size: 0.88rem;
       box-shadow: 0 8px 28px rgba(0,0,0,0.35);
       contain: layout paint;
+      touch-action: pan-y;
+      -webkit-tap-highlight-color: transparent;
+      user-select: none;
     }
     .ticker::before,
     .ticker::after {
@@ -503,6 +508,9 @@
     .ticker::before {
       left: 170px; /* right after label */
       background: linear-gradient(90deg, #151515 0%, transparent 100%);
+    }
+    @media (max-width: 340px) {
+      .ticker::before { left: 76px; }
     }
     .ticker::after {
       right: 0;
@@ -524,6 +532,8 @@
       flex-shrink: 0;
       width: 170px;
     }
+    .ticker-label-text-short { display: none; }
+    .ticker-label-text-full  { display: inline; }
     .ticker-label-dot {
       width: 8px;
       height: 8px;
@@ -537,7 +547,8 @@
       50%      { opacity: 0.35; transform: scale(0.7); }
     }
     .ticker-viewport {
-      flex: 1;
+      flex: 1 1 0;
+      min-width: 0;
       overflow: hidden;
       padding: 11px 0;
       position: relative;
@@ -553,9 +564,11 @@
       to   { transform: translateX(-50%); }
     }
     .ticker:hover .ticker-track,
-    .ticker:focus-within .ticker-track {
+    .ticker:focus-within .ticker-track,
+    .ticker.is-paused .ticker-track {
       animation-play-state: paused;
     }
+    .ticker.is-paused { cursor: pointer; }
     .ticker-item {
       display: inline-flex;
       align-items: center;
@@ -601,11 +614,23 @@
       font-size: 0.85rem;
     }
     @media (max-width: 600px) {
-      .ticker { font-size: 0.82rem; border-radius: 12px; }
-      .ticker-label { width: 130px; padding: 0 12px; font-size: 0.66rem; letter-spacing: 0.8px; }
-      .ticker::before { left: 130px; width: 24px; }
-      .ticker-item { padding: 0 18px; gap: 7px; }
+      .ticker { font-size: 0.82rem; border-radius: 12px; margin: 4px auto 22px; }
+      .ticker-label { width: 138px; padding: 0 10px; font-size: 0.64rem; letter-spacing: 0.5px; }
+      .ticker::before { left: 138px; width: 20px; }
+      .ticker-item { padding: 0 16px; gap: 7px; }
       .ticker-time { font-size: 0.72rem; padding: 2px 7px; }
+      .ticker-date { display: none; }   /* mobile: hide date, keep time */
+    }
+    @media (max-width: 340px) {
+      /* iPhone SE 1st gen / very narrow */
+      .ticker { font-size: 0.76rem; border-radius: 10px; }
+      .ticker-label { width: 76px; padding: 0 6px; font-size: 0.6rem; letter-spacing: 0.2px; }
+      .ticker::before { left: 76px; width: 12px; }
+      .ticker-item { padding: 0 12px; gap: 5px; }
+      .ticker-place { font-size: 0.78rem; }
+      .ticker-time { font-size: 0.66rem; padding: 1px 5px; }
+      .ticker-label-text-full { display: none; }
+      .ticker-label-text-short { display: inline; }
     }
     @media (prefers-reduced-motion: reduce) {
       .ticker-track { animation: none !important; }
@@ -1268,7 +1293,8 @@
       <section class="ticker" id="liveTicker" aria-label="Latest rides">
         <div class="ticker-label" aria-hidden="true">
           <span class="ticker-label-dot"></span>
-          <span>Live · Latest Rides</span>
+          <span class="ticker-label-text-short">Live</span>
+          <span class="ticker-label-text-full">Live · Latest Rides</span>
         </div>
         <div class="ticker-viewport">
           <div class="ticker-track" id="tickerTrack" data-ticker-track role="list" aria-live="polite">
@@ -1879,9 +1905,11 @@
         timeLabel = escapeHtml(h.selectedTime || '');
       }
       const timeClass = isRecurring ? 'ticker-time ticker-recurring' : 'ticker-time';
+      const dateSpan = dateLabel ? `<span class="ticker-date">${dateLabel}</span>` : '';
+      const sep = (dateLabel && timeLabel) ? ' · ' : '';
       return `
         <span class="ticker-item" role="listitem">
-          <span class="${timeClass}">${dateLabel}${dateLabel && timeLabel ? ' · ' : ''}${timeLabel}</span>
+          <span class="${timeClass}">${dateSpan}${sep}${timeLabel}</span>
           <span class="ticker-place">${from}</span>
           <span class="ticker-arrow" aria-hidden="true">→</span>
           <span class="ticker-place">${to}</span>
@@ -1889,14 +1917,33 @@
     }
 
     function setTickerAnimationEn(trackEl, itemCount) {
-      const pxPerSec = 45;
+      const isMobile = window.matchMedia('(max-width: 600px)').matches;
+      const pxPerSec = isMobile ? 30 : 45;
       const approxWidth = itemCount * 320;
       const seconds = Math.max(20, Math.round(approxWidth / pxPerSec));
       trackEl.style.animationDuration = seconds + 's';
     }
 
+    function bindTickerTouchEn(el) {
+      if (!el) return;
+      let sx = 0, sy = 0;
+      el.addEventListener('touchstart', (e) => {
+        const t = e.touches[0];
+        sx = t.clientX; sy = t.clientY;
+      }, { passive: true });
+      el.addEventListener('touchend', (e) => {
+        const t = e.changedTouches[0];
+        const dx = Math.abs(t.clientX - sx);
+        const dy = Math.abs(t.clientY - sy);
+        if (dx < 10 && dy < 10) el.classList.toggle('is-paused');
+      }, { passive: true });
+    }
+
     (function renderTicker() {
       if (!tickerTrack) return;
+      const tickerEl = document.getElementById('liveTicker');
+      bindTickerTouchEn(tickerEl);
+
       const ctrl = new AbortController();
       const tid = setTimeout(() => ctrl.abort(), 8000);
       fetch(`${API_BASE}/public/hitchhike/weekly-new`, { signal: ctrl.signal, cache: 'no-store' })

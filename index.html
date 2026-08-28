@@ -461,9 +461,10 @@
     .hero-content {
       position: relative;
       z-index: 2;
-      text-align: center;
+      width: 100%;                       /* 鎖住，唔好畀 children 撐闊 */
+      max-width: 980px;
       padding: 0 24px;
-      max-width: 860px;
+      text-align: center;
       animation: fadeUp 1.2s ease both;
     }
 
@@ -543,6 +544,7 @@
       align-items: stretch;
       width: 100%;
       max-width: 760px;
+      min-width: 0;                 /* 唔好畀 track 內容撐闊 */
       margin: 4px auto 28px;
       overflow: hidden;
       background: linear-gradient(90deg, #0a0a0a 0%, #151515 50%, #0a0a0a 100%);
@@ -552,6 +554,9 @@
       font-size: 0.88rem;
       box-shadow: 0 8px 28px rgba(0,0,0,0.35);
       contain: layout paint;
+      touch-action: pan-y;            /* 唔好搶咗垂直 swipe */
+      -webkit-tap-highlight-color: transparent;
+      user-select: none;
     }
     .ticker::before,
     .ticker::after {
@@ -566,6 +571,9 @@
     .ticker::before {
       left: 140px; /* right after label */
       background: linear-gradient(90deg, #151515 0%, transparent 100%);
+    }
+    @media (max-width: 340px) {
+      .ticker::before { left: 70px; }
     }
     .ticker::after {
       right: 0;
@@ -587,6 +595,8 @@
       flex-shrink: 0;
       width: 140px;
     }
+    .ticker-label-text-short { display: none; }
+    .ticker-label-text-full  { display: inline; }
     .ticker-label-dot {
       width: 8px;
       height: 8px;
@@ -600,7 +610,8 @@
       50%      { opacity: 0.35; transform: scale(0.7); }
     }
     .ticker-viewport {
-      flex: 1;
+      flex: 1 1 0;
+      min-width: 0;                 /* 關鍵：畀 viewport 縮到比 track 內容細 */
       overflow: hidden;
       padding: 11px 0;
       position: relative;
@@ -616,9 +627,11 @@
       to   { transform: translateX(-50%); }
     }
     .ticker:hover .ticker-track,
-    .ticker:focus-within .ticker-track {
+    .ticker:focus-within .ticker-track,
+    .ticker.is-paused .ticker-track {
       animation-play-state: paused;
     }
+    .ticker.is-paused { cursor: pointer; }
     .ticker-item {
       display: inline-flex;
       align-items: center;
@@ -664,11 +677,23 @@
       font-size: 0.85rem;
     }
     @media (max-width: 600px) {
-      .ticker { font-size: 0.82rem; border-radius: 12px; }
-      .ticker-label { width: 110px; padding: 0 12px; font-size: 0.68rem; letter-spacing: 0.8px; }
-      .ticker::before { left: 110px; width: 24px; }
-      .ticker-item { padding: 0 18px; gap: 7px; }
+      .ticker { font-size: 0.82rem; border-radius: 12px; margin: 4px auto 22px; }
+      .ticker-label { width: 96px; padding: 0 10px; font-size: 0.66rem; letter-spacing: 0.6px; }
+      .ticker::before { left: 96px; width: 20px; }
+      .ticker-item { padding: 0 16px; gap: 7px; }
       .ticker-time { font-size: 0.72rem; padding: 2px 7px; }
+      .ticker-date { display: none; }   /* mobile: 只顯示時間，日期可省 */
+    }
+    @media (max-width: 340px) {
+      /* iPhone SE 1st gen / very narrow */
+      .ticker { font-size: 0.76rem; border-radius: 10px; }
+      .ticker-label { width: 70px; padding: 0 6px; font-size: 0.62rem; letter-spacing: 0.3px; }
+      .ticker::before { left: 70px; width: 14px; }
+      .ticker-item { padding: 0 12px; gap: 5px; }
+      .ticker-place { font-size: 0.78rem; }
+      .ticker-time { font-size: 0.66rem; padding: 1px 5px; }
+      .ticker-label-text-full { display: none; }
+      .ticker-label-text-short { display: inline; }
     }
     @media (prefers-reduced-motion: reduce) {
       .ticker-track { animation: none !important; }
@@ -1360,11 +1385,12 @@
     </p>
 
     <!-- ===== LIVE HITCHHIKE TICKER (public/weekly-new) ===== -->
-    <section class="ticker" id="liveTicker" aria-label="最新拼車貼示">
-      <div class="ticker-label" aria-hidden="true">
-        <span class="ticker-label-dot"></span>
-        <span>即時 · 最新拼車</span>
-      </div>
+      <section class="ticker" id="liveTicker" aria-label="最新拼車貼示">
+        <div class="ticker-label" aria-hidden="true">
+          <span class="ticker-label-dot"></span>
+          <span class="ticker-label-text-short">Live</span>
+          <span class="ticker-label-text-full">即時 · 最新拼車</span>
+        </div>
       <div class="ticker-viewport">
         <div class="ticker-track" id="tickerTrack" data-ticker-track role="list" aria-live="polite">
           <span class="ticker-empty">載入最新拼車貼示⋯</span>
@@ -1981,7 +2007,7 @@
     // 整段句子由 JS 動態產生（API 唔只控制 number，仲控制 prefix/suffix）
     function buildSentence(num, suffix) {
       const formatted = num.toLocaleString('en-US');
-      return `FreeRider 係香港本地夾車配對平台 ，已有 <span class="user-count" data-user-count>0</span> 位香港用戶加入`
+      return `FreeRider 係香港本地順風車夾車配對平台 ，已有 <span class="user-count" data-user-count>0</span> 位香港用戶加入`
         .replace('<span class="user-count" data-user-count>0</span>',
                  `<span class="user-count" data-user-count>${escapeHtml(formatted + suffix)}</span>`);
     }
@@ -2073,9 +2099,12 @@
       timeLabel = escapeHtml(h.selectedTime || '');
     }
     const timeClass = isRecurring ? 'ticker-time ticker-recurring' : 'ticker-time';
+    // Date part 喺 span 內，mobile CSS 自動 hide
+    const dateSpan = dateLabel ? `<span class="ticker-date">${dateLabel}</span>` : '';
+    const sep = (dateLabel && timeLabel) ? ' · ' : '';
     return `
       <span class="ticker-item" role="listitem">
-        <span class="${timeClass}">${dateLabel}${dateLabel && timeLabel ? ' · ' : ''}${timeLabel}</span>
+        <span class="${timeClass}">${dateSpan}${sep}${timeLabel}</span>
         <span class="ticker-place">${from}</span>
         <span class="ticker-arrow" aria-hidden="true">→</span>
         <span class="ticker-place">${to}</span>
@@ -2083,16 +2112,39 @@
   }
 
   function setTickerAnimation(trackEl, itemCount) {
-    // 速度 ~ 50px / 秒；5 個 item ≈ 35-50s
-    const pxPerSec = 45;
+    // mobile 慢啲好讀；desktop 順啲
+    const isMobile = window.matchMedia('(max-width: 600px)').matches;
+    const pxPerSec = isMobile ? 30 : 45;
     const approxWidth = itemCount * 320; // 估算每 item ~320px
     const seconds = Math.max(20, Math.round(approxWidth / pxPerSec));
     trackEl.style.animationDuration = seconds + 's';
   }
 
+  // ── Tap-to-pause for touch devices (hover 唔 work) ──
+  function bindTickerTouch(el) {
+    if (!el) return;
+    let sx = 0, sy = 0;
+    el.addEventListener('touchstart', (e) => {
+      const t = e.touches[0];
+      sx = t.clientX; sy = t.clientY;
+    }, { passive: true });
+    el.addEventListener('touchend', (e) => {
+      const t = e.changedTouches[0];
+      const dx = Math.abs(t.clientX - sx);
+      const dy = Math.abs(t.clientY - sy);
+      // 移動 < 10px 當 tap（唔係 swipe）
+      if (dx < 10 && dy < 10) {
+        el.classList.toggle('is-paused');
+      }
+    }, { passive: true });
+  }
+
   // ── Render weekly-new ticker (主要) ──
   (function renderTicker() {
     if (!tickerTrack) return;
+    const tickerEl = document.getElementById('liveTicker');
+    bindTickerTouch(tickerEl);
+
     const ctrl = new AbortController();
     const tid = setTimeout(() => ctrl.abort(), 8000);
     fetch(`${API_BASE}/public/hitchhike/weekly-new`, { signal: ctrl.signal, cache: 'no-store' })
