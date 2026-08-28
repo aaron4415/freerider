@@ -492,11 +492,188 @@
     .hero-title span { color: var(--accent); }
 
     .hero-subtitle {
-      font-size: clamp(1rem, 2.2vw, 1.3rem);
-      color: rgba(255,255,255,0.78);
-      max-width: 52ch;
-      margin: 0 auto 36px;
-      line-height: 1.65;
+      font-size: clamp(0.95rem, 2vw, 1.2rem);
+      color: rgba(255,255,255,0.85);
+      max-width: 100%;
+      margin: 0 auto 24px;
+      line-height: 1.5;
+      white-space: nowrap;          /* desktop: 1 row */
+    }
+    .hero-subtitle .user-count {
+      display: inline-block;
+      font-size: clamp(1.45rem, 2.9vw, 1.85rem);
+      font-weight: 900;
+      color: var(--accent);
+      letter-spacing: -0.5px;
+      line-height: 1;
+      vertical-align: -0.14em;
+      margin: 0 3px;
+      text-shadow: 0 2px 10px rgba(245, 158, 11, 0.32);
+      font-variant-numeric: tabular-nums;
+    }
+    .hero-subtitle .user-count-skeleton {
+      display: inline-block;
+      min-width: 4.5ch;
+      background: rgba(255,255,255,0.18);
+      color: transparent;
+      border-radius: 6px;
+      animation: userCountPulse 1.4s ease-in-out infinite;
+      vertical-align: -0.14em;
+      line-height: 1;
+    }
+    @keyframes userCountPulse {
+      0%, 100% { opacity: 0.5; }
+      50%      { opacity: 0.9; }
+    }
+    @media (max-width: 640px) {
+      /* mobile: allow wrap, drop nowrap, scale number down */
+      .hero-subtitle { white-space: normal; }
+      .hero-subtitle .user-count,
+      .hero-subtitle .user-count-skeleton {
+        font-size: 1.4em;
+        vertical-align: baseline;
+        margin: 0 2px;
+      }
+    }
+
+    /* ===================== LIVE HITCHHIKE TICKER ===================== */
+    .ticker {
+      position: relative;
+      display: flex;
+      align-items: stretch;
+      width: 100%;
+      max-width: 760px;
+      margin: 4px auto 28px;
+      overflow: hidden;
+      background: linear-gradient(90deg, #0a0a0a 0%, #151515 50%, #0a0a0a 100%);
+      border: 1px solid rgba(245, 158, 11, 0.28);
+      border-radius: 14px;
+      color: #fff;
+      font-size: 0.88rem;
+      box-shadow: 0 8px 28px rgba(0,0,0,0.35);
+      contain: layout paint;
+    }
+    .ticker::before,
+    .ticker::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 36px;
+      z-index: 3;
+      pointer-events: none;
+    }
+    .ticker::before {
+      left: 140px; /* right after label */
+      background: linear-gradient(90deg, #151515 0%, transparent 100%);
+    }
+    .ticker::after {
+      right: 0;
+      background: linear-gradient(270deg, #0a0a0a 0%, transparent 100%);
+    }
+    .ticker-label {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 0 16px;
+      background: var(--accent);
+      color: var(--black);
+      font-weight: 800;
+      font-size: 0.74rem;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      white-space: nowrap;
+      flex-shrink: 0;
+      width: 140px;
+    }
+    .ticker-label-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--black);
+      animation: tickerDot 1.6s ease-in-out infinite;
+      flex-shrink: 0;
+    }
+    @keyframes tickerDot {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50%      { opacity: 0.35; transform: scale(0.7); }
+    }
+    .ticker-viewport {
+      flex: 1;
+      overflow: hidden;
+      padding: 11px 0;
+      position: relative;
+    }
+    .ticker-track {
+      display: inline-flex;
+      white-space: nowrap;
+      will-change: transform;
+      animation: ticker-scroll 50s linear infinite;
+    }
+    @keyframes ticker-scroll {
+      from { transform: translateX(0); }
+      to   { transform: translateX(-50%); }
+    }
+    .ticker:hover .ticker-track,
+    .ticker:focus-within .ticker-track {
+      animation-play-state: paused;
+    }
+    .ticker-item {
+      display: inline-flex;
+      align-items: center;
+      padding: 0 24px;
+      gap: 9px;
+      flex-shrink: 0;
+    }
+    .ticker-item + .ticker-item {
+      border-left: 1px solid rgba(255,255,255,0.12);
+    }
+    .ticker-time {
+      display: inline-flex;
+      align-items: center;
+      padding: 3px 9px;
+      border-radius: 999px;
+      background: rgba(245, 158, 11, 0.18);
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 0.76rem;
+      letter-spacing: 0.3px;
+      font-variant-numeric: tabular-nums;
+      white-space: nowrap;
+    }
+    .ticker-recurring {
+      background: rgba(96, 165, 250, 0.18);
+      color: #93c5fd;
+    }
+    .ticker-place {
+      font-weight: 600;
+      color: #fff;
+    }
+    .ticker-arrow {
+      color: var(--accent);
+      font-weight: 900;
+      font-size: 1rem;
+    }
+    .ticker-empty,
+    .ticker-error {
+      display: inline-flex;
+      align-items: center;
+      padding: 0 24px;
+      color: rgba(255,255,255,0.55);
+      font-size: 0.85rem;
+    }
+    @media (max-width: 600px) {
+      .ticker { font-size: 0.82rem; border-radius: 12px; }
+      .ticker-label { width: 110px; padding: 0 12px; font-size: 0.68rem; letter-spacing: 0.8px; }
+      .ticker::before { left: 110px; width: 24px; }
+      .ticker-item { padding: 0 18px; gap: 7px; }
+      .ticker-time { font-size: 0.72rem; padding: 2px 7px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .ticker-track { animation: none !important; }
+      .ticker-label-dot { animation: none !important; }
+      .hero-subtitle .user-count-skeleton { animation: none !important; }
     }
 
     /* ── Store Buttons: solid black ── */
@@ -1178,9 +1355,22 @@
     <h1 class="hero-title">
       每一程，<br>都可以<span>夾住去</span>。
     </h1>
-    <p class="hero-subtitle">
-      FreeRider 係香港本地夾車配對平台。
+    <p class="hero-subtitle" data-hero-subtitle aria-live="polite">
+      <span class="user-count-skeleton">&nbsp;&nbsp;&nbsp;&nbsp;</span>
     </p>
+
+    <!-- ===== LIVE HITCHHIKE TICKER (public/weekly-new) ===== -->
+    <section class="ticker" id="liveTicker" aria-label="最新拼車貼示">
+      <div class="ticker-label" aria-hidden="true">
+        <span class="ticker-label-dot"></span>
+        <span>即時 · 最新拼車</span>
+      </div>
+      <div class="ticker-viewport">
+        <div class="ticker-track" id="tickerTrack" data-ticker-track role="list" aria-live="polite">
+          <span class="ticker-empty">載入最新拼車貼示⋯</span>
+        </div>
+      </div>
+    </section>
 
     <div class="hero-badges" data-store-btns></div>
 
@@ -1762,6 +1952,167 @@
 
   // 安全網：reduced-motion 用戶 1.5 秒；一般用戶 6 秒(縮短,因為 poster 已有 fallback)
   setTimeout(hideLoader, prefersReducedMotion ? 1500 : 6000);
+
+  // ─────────────────────────────────────────────────────────────
+  // LIVE TICKER: /public/user/count + /public/hitchhike/weekly-new
+  // ─────────────────────────────────────────────────────────────
+  const API_BASE = 'https://freerider-backend-v107-662288321477.asia-east2.run.app';
+  const tickerTrack = document.getElementById('tickerTrack');
+
+  // ── Render user count: build 整個 subtitle + count-up animation ──
+  (function renderUserCount() {
+    const subtitleEl = document.querySelector('[data-hero-subtitle]');
+    if (!subtitleEl) return;
+
+    // 預設 fallback label
+    const FALLBACK_LABEL = '4,700+';
+    const FALLBACK_NUM   = 4700;
+    const SUFFIX         = '+';
+
+    function escapeHtml(s) {
+      return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    }
+
+    function parseNumber(label) {
+      const n = parseInt(String(label).replace(/[^\d]/g, ''), 10);
+      return Number.isFinite(n) ? n : null;
+    }
+
+    // 整段句子由 JS 動態產生（API 唔只控制 number，仲控制 prefix/suffix）
+    function buildSentence(num, suffix) {
+      const formatted = num.toLocaleString('en-US');
+      return `FreeRider 係香港本地夾車配對平台 ，已有 <span class="user-count" data-user-count>0</span> 位香港用戶加入`
+        .replace('<span class="user-count" data-user-count>0</span>',
+                 `<span class="user-count" data-user-count>${escapeHtml(formatted + suffix)}</span>`);
+    }
+
+    // Count-up 動畫：0 → num，~1.4s，easeOutCubic
+    function animateCount(num, suffix) {
+      const el = subtitleEl.querySelector('[data-user-count]');
+      if (!el || !Number.isFinite(num)) return;
+      const duration = 1400;
+      const start = performance.now();
+      function tick(now) {
+        const t = Math.min((now - start) / duration, 1);
+        const eased = 1 - Math.pow(1 - t, 3);
+        const cur = Math.floor(num * eased);
+        el.textContent = cur.toLocaleString('en-US') + suffix;
+        if (t < 1) requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+    }
+
+    function applyLabel(label) {
+      const num = parseNumber(label) ?? FALLBACK_NUM;
+      const suf = String(label).includes('+') ? SUFFIX : '';
+      subtitleEl.innerHTML = buildSentence(num, suf);
+      animateCount(num, suf);
+    }
+
+    const ctrl = new AbortController();
+    const tid = setTimeout(() => ctrl.abort(), 6000);
+    fetch(`${API_BASE}/public/user/count`, { signal: ctrl.signal, cache: 'no-store' })
+      .then(r => r.ok ? r.json() : Promise.reject(new Error(`HTTP ${r.status}`)))
+      .then(json => {
+        const label = (json && json.data && (json.data.displayedAs || json.data.userCount)) ?? FALLBACK_LABEL;
+        applyLabel(String(label));
+      })
+      .catch(() => {
+        // fallback — keep a safe social-proof number so layout 唔會空
+        applyLabel(FALLBACK_LABEL);
+      })
+      .finally(() => clearTimeout(tid));
+  })();
+
+  // ── Format helpers ──
+  const ZH_DAY = { monday: '一', tuesday: '二', wednesday: '三', thursday: '四', friday: '五', saturday: '六', sunday: '日' };
+  const ZH_MONTH = ['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月'];
+
+  function pickZhName(loc) {
+    if (!loc) return '—';
+    const ln = loc.locationName || {};
+    return ln.zh || loc.location || '—';
+  }
+
+  function formatDateLabel(iso) {
+    if (!iso) return '';
+    const d = new Date(iso);
+    if (isNaN(d)) return '';
+    const today = new Date(); today.setHours(0,0,0,0);
+    const target = new Date(d); target.setHours(0,0,0,0);
+    const diffDays = Math.round((target - today) / 86400000);
+    if (diffDays === 0) return '今日';
+    if (diffDays === 1) return '聽日';
+    if (diffDays >= 2 && diffDays <= 6) return `${ZH_DAY[[ 'sunday','monday','tuesday','wednesday','thursday','friday','saturday'][target.getDay()]]}日`;
+    return `${ZH_MONTH[d.getMonth()]}${d.getDate()}日`;
+  }
+
+  function formatDaysLabel(days) {
+    if (!Array.isArray(days) || days.length === 0) return '';
+    const map = { monday: '一', tuesday: '二', wednesday: '三', thursday: '四', friday: '五', saturday: '六', sunday: '日' };
+    const sorted = [...days].sort((a,b)=>['monday','tuesday','wednesday','thursday','friday','saturday','sunday'].indexOf(a)-['monday','tuesday','wednesday','thursday','friday','saturday','sunday'].indexOf(b));
+    if (sorted.length === 5 && sorted.every(d => ['monday','tuesday','wednesday','thursday','friday'].includes(d))) return '逢一至五';
+    if (sorted.length === 7) return '每日';
+    if (sorted.length === 2 && sorted.includes('saturday') && sorted.includes('sunday')) return '週末';
+    return '逢' + sorted.map(d => map[d]).join('、');
+  }
+
+  function escapeHtml(s) {
+    return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  }
+
+  function buildTickerItem(h) {
+    const from = escapeHtml(pickZhName(h.firstStop));
+    const to   = escapeHtml(pickZhName(h.lastStop));
+    const isRecurring = h.dateOption === 'recurring';
+    const dateLabel = escapeHtml(isRecurring ? formatDaysLabel(h.selectedDays) : formatDateLabel(h.selectedDate));
+    let timeLabel = '';
+    if (h.timeOption === 'range' && h.startTime && h.endTime) {
+      timeLabel = `${escapeHtml(h.startTime)} – ${escapeHtml(h.endTime)}`;
+    } else {
+      timeLabel = escapeHtml(h.selectedTime || '');
+    }
+    const timeClass = isRecurring ? 'ticker-time ticker-recurring' : 'ticker-time';
+    return `
+      <span class="ticker-item" role="listitem">
+        <span class="${timeClass}">${dateLabel}${dateLabel && timeLabel ? ' · ' : ''}${timeLabel}</span>
+        <span class="ticker-place">${from}</span>
+        <span class="ticker-arrow" aria-hidden="true">→</span>
+        <span class="ticker-place">${to}</span>
+      </span>`;
+  }
+
+  function setTickerAnimation(trackEl, itemCount) {
+    // 速度 ~ 50px / 秒；5 個 item ≈ 35-50s
+    const pxPerSec = 45;
+    const approxWidth = itemCount * 320; // 估算每 item ~320px
+    const seconds = Math.max(20, Math.round(approxWidth / pxPerSec));
+    trackEl.style.animationDuration = seconds + 's';
+  }
+
+  // ── Render weekly-new ticker (主要) ──
+  (function renderTicker() {
+    if (!tickerTrack) return;
+    const ctrl = new AbortController();
+    const tid = setTimeout(() => ctrl.abort(), 8000);
+    fetch(`${API_BASE}/public/hitchhike/weekly-new`, { signal: ctrl.signal, cache: 'no-store' })
+      .then(r => r.ok ? r.json() : Promise.reject(new Error(`HTTP ${r.status}`)))
+      .then(json => {
+        const list = (json && json.data && Array.isArray(json.data.hitchhikes)) ? json.data.hitchhikes : [];
+        if (list.length === 0) {
+          tickerTrack.innerHTML = '<span class="ticker-empty">暫時未有最新拼車 — 開 App 開第一個 post 🚀</span>';
+          return;
+        }
+        const items = list.map(buildTickerItem).join('');
+        // Duplicate for seamless infinite loop
+        tickerTrack.innerHTML = items + items;
+        setTickerAnimation(tickerTrack, list.length);
+      })
+      .catch(() => {
+        tickerTrack.innerHTML = '<span class="ticker-error">最新拼車貼示暫時未能載入，稍後再嚟睇下 👀</span>';
+      })
+      .finally(() => clearTimeout(tid));
+  })();
 </script>
 
 </body>
