@@ -134,7 +134,7 @@
 | **英文 brand** | `FreeRider` (brand 為主) | `FreeRider 香港拼車App` (加 disambiguator) |
 | **中文 brand** | 冇強調「香港拼車App」標籤 | `FreeRider 香港拼車App / 順風車App` |
 | **App Store title** | `FreeRider` | `FreeRider - 香港拼車・順風車` (30 chars) |
-| **App Store subtitle** | 唔肯定 | `24hr 共乘返工・夾Uber・Tunnel費AA` (30 chars) |
+| **App Store subtitle** | 唔肯定 | `共乘返工・夾Uber・Tunnel費AA` (30 chars) |
 
 **點解**：`freerider` 個字喺 Google 結果頁同時出現：
 - 🚴 Free Rider 單車遊戲 (Steam, iOS, Android)
@@ -255,7 +255,7 @@ Section 5: FAQ (用 Schema FAQPage)
 
 **改做**：
 ```html
-<title>FreeRider 香港拼車App｜順風車・共乘返工・24hr 過關 (免費無抽佣)</title>
+<title>FreeRider 香港拼車App｜順風車・共乘返工・免費無抽佣</title>
 <meta name="description" content="FreeRider 香港拼車App：本地司機/乘客即時配對，返工、去機場、過關返大陸、夾 Taxi/Uber 分擔隧道費。24 小時有車、無廣告、無抽佣、100% 免費。" />
 ```
 
