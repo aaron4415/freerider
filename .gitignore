@@ -1,0 +1,149 @@
+# ============================================================
+# FreeRider.hk .gitignore
+# Last updated: 2026-09-22
+# Static HTML site (no build process)
+# ============================================================
+
+# ============================================================
+# OS junk
+# ============================================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# ============================================================
+# Editor / IDE temp files
+# ============================================================
+# Vim / vi
+*.swp
+*.swo
+*.vim
+.vimrc.swp
+
+# Emacs
+\#*\#
+.\#*
+
+# Sublime
+*.sublime-project
+*.sublime-workspace
+
+# JetBrains / IntelliJ
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# VS Code (recommend .vscode/settings.json committed, but ignore transient)
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# Cursor
+.cursor/
+
+# ============================================================
+# Project working docs (internal, not for commit)
+# ============================================================
+# SEO working files (now done, kept locally as reference but not in git)
+SEO-AUDIT-*.md
+SEO-STRATEGY.md
+*audit*.md
+*strategy*.md
+
+# Internal planning notes
+NOTES.md
+TASKS.md
+TODO.md
+
+# ============================================================
+# Build artifacts (none currently, but safety net for future)
+# ============================================================
+node_modules/
+dist/
+build/
+.cache/
+
+# Python (if user runs scripts)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+
+# ============================================================
+# Logs and temp
+# ============================================================
+*.log
+logs/
+*.tmp
+*.bak
+*.swp
+
+# ============================================================
+# Environment files (never commit secrets)
+# ============================================================
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+secrets/
+credentials/
+
+# ============================================================
+# Backup files
+# ============================================================
+*.orig
+*.rej
+*.old
+
+# ============================================================
+# Testing (none currently, but safety net)
+# ============================================================
+coverage/
+.nyc_output/
+*.lcov
+
+# ============================================================
+# Custom: assets/test/ (committed by mistake, no longer needed)
+# ============================================================
+assets/test/
+
+# ============================================================
+# Custom: plain text versions of legal pages (drafts, not for prod)
+# ============================================================
+terms-plain.txt
+privacy-plain.txt
+
+# ============================================================
+# Custom: scratchpads and temp agent scripts (in workspace)
+# Keep if you work with Mavis agent
+# ============================================================
+*.scratchpad/
+scratchpads/
+
+# ============================================================
+# Custom: local AI/agent working files
+# ============================================================
+.agent-tmp/
+.agent-cache/
+.mavis-scratchpad/
+
+# ============================================================
+# Custom: backup directories
+# ============================================================
+backup-*/
+.bak-*/
