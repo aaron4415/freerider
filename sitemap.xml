@@ -1,299 +1,494 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
-
-  <!-- ── Home (zh-Hant-HK) ── -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
     <loc>https://www.freerider.hk/</loc>
-    <lastmod>2026-07-09T16:30:00+08:00</lastmod>
+    <lastmod>2026-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="zh-Hant-HK" href="https://www.freerider.hk/" />
-    <xhtml:link rel="alternate" hreflang="en-HK"     href="https://www.freerider.hk/en/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.freerider.hk/" />
+    <image:image>
+      <image:loc>https://www.freerider.hk/assets/og-image.png</image:loc>
+      <image:title>FreeRider 香港拼車App｜順風車・共乘返工・24hr 過關 (免費無抽佣)</image:title>
+      <image:caption>FreeRider 香港拼車App｜順風車・共乘返工・24hr 過關 (免費無抽佣)</image:caption>
+    </image:image>
   </url>
-
-  <!-- ── Home (en-HK) ── -->
   <url>
     <loc>https://www.freerider.hk/en/</loc>
-    <lastmod>2026-07-09T16:30:00+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="zh-Hant-HK" href="https://www.freerider.hk/" />
-    <xhtml:link rel="alternate" hreflang="en-HK"     href="https://www.freerider.hk/en/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.freerider.hk/" />
-  </url>
-
-  <!-- ── Routes hub (zh only) ── -->
-  <url>
-    <loc>https://www.freerider.hk/routes/</loc>
-    <lastmod>2026-07-09T16:30:00+08:00</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-  </url>
-
-  <!-- ── Yuen Long hub (data-driven top routes) ── -->
-  <url>
-    <loc>https://www.freerider.hk/routes/yuen-long-to-tai-po/</loc>
-    <lastmod>2026-07-09T16:30:00+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.freerider.hk/routes/yuen-long-to-yau-tsim-mong/</loc>
-    <lastmod>2026-07-09T16:30:00+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.freerider.hk/routes/yuen-long-to-kwun-tong/</loc>
-    <lastmod>2026-07-09T16:30:00+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.freerider.hk/routes/yuen-long-to-kowloon-city/</loc>
-    <lastmod>2026-07-09T16:30:00+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.freerider.hk/routes/yuen-long-to-islands/</loc>
-    <lastmod>2026-07-09T16:30:00+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.freerider.hk/routes/yuen-long-to-kowloon-east/</loc>
-    <lastmod>2026-07-09T16:30:00+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- ── Cross-border / 24h Huanggang routes (NEW — from GovHK 邊檢 data) ── -->
-  <url>
-    <loc>https://www.freerider.hk/routes/yuen-long-to-huanggang/</loc>
-    <lastmod>2026-07-09T16:30:00+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.freerider.hk/routes/wan-chai-to-huanggang/</loc>
-    <lastmod>2026-07-09T16:30:00+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.freerider.hk/routes/mong-kok-to-huanggang/</loc>
-    <lastmod>2026-07-09T16:30:00+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.freerider.hk/routes/kwun-tong-to-huanggang/</loc>
-    <lastmod>2026-07-09T16:30:00+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.freerider.hk/routes/tuen-mun-to-shenzhen-bay/</loc>
-    <lastmod>2026-07-09T16:30:00+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.freerider.hk/routes/yuen-long-to-liantang/</loc>
-    <lastmod>2026-07-09T16:30:00+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.freerider.hk/routes/sheung-shui-to-luohu/</loc>
-    <lastmod>2026-07-09T16:30:00+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- ── Airport routes (NEW — from 城巴 E33/E34/E41/E42 data) ── -->
-  <url>
-    <loc>https://www.freerider.hk/routes/tseung-kwan-o-to-airport/</loc>
-    <lastmod>2026-07-09T16:30:00+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.freerider.hk/routes/yuen-long-to-airport/</loc>
-    <lastmod>2026-07-09T16:30:00+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.freerider.hk/routes/tuen-mun-to-airport/</loc>
-    <lastmod>2026-07-09T16:30:00+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.freerider.hk/routes/tai-po-to-airport/</loc>
-    <lastmod>2026-07-09T16:30:00+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.freerider.hk/routes/sha-tin-to-airport/</loc>
-    <lastmod>2026-07-09T16:30:00+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.freerider.hk/routes/sheung-shui-to-airport/</loc>
-    <lastmod>2026-07-09T16:30:00+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- ── Weekend / 新界路線 ── -->
-  <url>
-    <loc>https://www.freerider.hk/routes/sai-kung-to-central/</loc>
-    <lastmod>2026-07-09T16:30:00+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.freerider.hk/routes/tuen-mun-to-eastern/</loc>
-    <lastmod>2026-07-09T16:30:00+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.freerider.hk/routes/sha-tin-to-kwun-tong/</loc>
-    <lastmod>2026-07-09T16:30:00+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.freerider.hk/routes/tsuen-wan-to-kwun-tong/</loc>
-    <lastmod>2026-07-09T16:30:00+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- ── Migrated classic routes (港島 CBD 通勤) ── -->
-  <url>
-    <loc>https://www.freerider.hk/routes/tseung-kwan-o-to-central-and-western/</loc>
-    <lastmod>2026-07-09T16:30:00+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.freerider.hk/routes/tseung-kwan-o-to-quarry-bay/</loc>
-    <lastmod>2026-07-09T16:30:00+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.freerider.hk/routes/tseung-kwan-o-to-luohu/</loc>
-    <lastmod>2026-07-09T16:30:00+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.freerider.hk/routes/tsuen-wan-to-central-and-western/</loc>
-    <lastmod>2026-07-09T16:30:00+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.freerider.hk/routes/sha-tin-to-central-and-western/</loc>
-    <lastmod>2026-07-09T16:30:00+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.freerider.hk/assets/og-image.png</image:loc>
+      <image:title>FreeRider Hong Kong Carpool App | Rideshare &amp; Commute Matchi</image:title>
+      <image:caption>FreeRider Hong Kong Carpool App | Rideshare &amp; Commute Matching (Free)</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.freerider.hk/routes/east-kowloon-to-wan-chai/</loc>
-    <lastmod>2026-07-09T16:30:00+08:00</lastmod>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.freerider.hk/assets/og-image.png</image:loc>
+      <image:title>東九龍 去 灣仔/銅鑼灣：地鐵/巴士/拼車App 比較＋時間表 (2026)｜FreeRider 香港拼車App</image:title>
+      <image:caption>東九龍 去 灣仔/銅鑼灣：地鐵/巴士/拼車App 比較＋時間表 (2026)｜FreeRider 香港拼車App</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.freerider.hk/routes/kwun-tong-to-huanggang/</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.freerider.hk/assets/og-image.png</image:loc>
+      <image:title>觀塘 去 皇崗口岸：直通巴/巴士/拼車App 比較＋時間表 (2026)｜FreeRider 香港拼車App</image:title>
+      <image:caption>觀塘 去 皇崗口岸：直通巴/巴士/拼車App 比較＋時間表 (2026)｜FreeRider 香港拼車App</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.freerider.hk/routes/mong-kok-to-huanggang/</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.freerider.hk/assets/og-image.png</image:loc>
+      <image:title>旺角 去 皇崗口岸：直通巴/巴士/拼車App 比較＋時間表 (2026)｜FreeRider 香港拼車App</image:title>
+      <image:caption>旺角 去 皇崗口岸：直通巴/巴士/拼車App 比較＋時間表 (2026)｜FreeRider 香港拼車App</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.freerider.hk/routes/sai-kung-to-central/</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.freerider.hk/assets/og-image.png</image:loc>
+      <image:title>西貢 去 中環/金鐘：小巴/巴士/拼車App 比較＋時間表 (2026)｜FreeRider 香港拼車App</image:title>
+      <image:caption>西貢 去 中環/金鐘：小巴/巴士/拼車App 比較＋時間表 (2026)｜FreeRider 香港拼車App</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.freerider.hk/routes/sha-tin-to-airport/</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.freerider.hk/assets/og-image.png</image:loc>
+      <image:title>沙田 去 機場 HKG：的士/機鐵/拼車App 比較＋時間表 (2026)｜FreeRider 香港拼車App</image:title>
+      <image:caption>沙田 去 機場 HKG：的士/機鐵/拼車App 比較＋時間表 (2026)｜FreeRider 香港拼車App</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.freerider.hk/routes/sha-tin-to-central-and-western/</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.freerider.hk/assets/og-image.png</image:loc>
+      <image:title>沙田 去 中環/金鐘：地鐵/巴士/拼車App 比較＋時間表 (2026)｜FreeRider 香港拼車App</image:title>
+      <image:caption>沙田 去 中環/金鐘：地鐵/巴士/拼車App 比較＋時間表 (2026)｜FreeRider 香港拼車App</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.freerider.hk/routes/sha-tin-to-kwun-tong/</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.freerider.hk/assets/og-image.png</image:loc>
+      <image:title>沙田 去 觀塘（九龍東）：地鐵/巴士/拼車App 比較＋時間表 (2026)｜FreeRider 香港拼車App</image:title>
+      <image:caption>沙田 去 觀塘（九龍東）：地鐵/巴士/拼車App 比較＋時間表 (2026)｜FreeRider 香港拼車App</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.freerider.hk/routes/sheung-shui-to-airport/</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.freerider.hk/assets/og-image.png</image:loc>
+      <image:title>上水/粉嶺 去 機場 HKG：的士/機鐵/拼車App 比較＋時間表 (2026)｜FreeRider 香港拼車App</image:title>
+      <image:caption>上水/粉嶺 去 機場 HKG：的士/機鐵/拼車App 比較＋時間表 (2026)｜FreeRider 香港拼車App</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.freerider.hk/routes/sheung-shui-to-luohu/</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.freerider.hk/assets/og-image.png</image:loc>
+      <image:title>上水/粉嶺 去 羅湖口岸：直通巴/巴士/拼車App 比較＋時間表 (2026)｜FreeRider 香港拼車App</image:title>
+      <image:caption>上水/粉嶺 去 羅湖口岸：直通巴/巴士/拼車App 比較＋時間表 (2026)｜FreeRider 香港拼車App</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.freerider.hk/routes/tai-po-to-airport/</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.freerider.hk/assets/og-image.png</image:loc>
+      <image:title>大埔 去 機場 HKG：的士/機鐵/拼車App 比較＋時間表 (2026)｜FreeRider 香港拼車App</image:title>
+      <image:caption>大埔 去 機場 HKG：的士/機鐵/拼車App 比較＋時間表 (2026)｜FreeRider 香港拼車App</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.freerider.hk/routes/tseung-kwan-o-to-airport/</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.freerider.hk/assets/og-image.png</image:loc>
+      <image:title>將軍澳 去 機場 HKG：的士/機鐵/拼車App 比較＋時間表 (2026)｜FreeRider 香港拼車App</image:title>
+      <image:caption>將軍澳 去 機場 HKG：的士/機鐵/拼車App 比較＋時間表 (2026)｜FreeRider 香港拼車App</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.freerider.hk/routes/tseung-kwan-o-to-central-and-western/</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.freerider.hk/assets/og-image.png</image:loc>
+      <image:title>將軍澳 去 中環/金鐘：地鐵/巴士/拼車App 比較＋時間表 (2026)｜FreeRider 香港拼車App</image:title>
+      <image:caption>將軍澳 去 中環/金鐘：地鐵/巴士/拼車App 比較＋時間表 (2026)｜FreeRider 香港拼車App</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.freerider.hk/routes/tseung-kwan-o-to-luohu/</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.freerider.hk/assets/og-image.png</image:loc>
+      <image:title>將軍澳 去 羅湖口岸：直通巴/巴士/拼車App 比較＋時間表 (2026)｜FreeRider 香港拼車App</image:title>
+      <image:caption>將軍澳 去 羅湖口岸：直通巴/巴士/拼車App 比較＋時間表 (2026)｜FreeRider 香港拼車App</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.freerider.hk/routes/tseung-kwan-o-to-quarry-bay/</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.freerider.hk/assets/og-image.png</image:loc>
+      <image:title>將軍澳 去 鰂魚涌/太古：地鐵/巴士/拼車App 比較＋時間表 (2026)｜FreeRider 香港拼車App</image:title>
+      <image:caption>將軍澳 去 鰂魚涌/太古：地鐵/巴士/拼車App 比較＋時間表 (2026)｜FreeRider 香港拼車App</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.freerider.hk/routes/tsuen-wan-to-central-and-western/</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.freerider.hk/assets/og-image.png</image:loc>
+      <image:title>荃灣 去 中環/金鐘：地鐵/巴士/拼車App 比較＋時間表 (2026)｜FreeRider 香港拼車App</image:title>
+      <image:caption>荃灣 去 中環/金鐘：地鐵/巴士/拼車App 比較＋時間表 (2026)｜FreeRider 香港拼車App</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.freerider.hk/routes/tsuen-wan-to-kwun-tong/</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.freerider.hk/assets/og-image.png</image:loc>
+      <image:title>荃灣 去 觀塘（九龍東）：地鐵/巴士/拼車App 比較＋時間表 (2026)｜FreeRider 香港拼車App</image:title>
+      <image:caption>荃灣 去 觀塘（九龍東）：地鐵/巴士/拼車App 比較＋時間表 (2026)｜FreeRider 香港拼車App</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.freerider.hk/routes/tuen-mun-to-airport/</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.freerider.hk/assets/og-image.png</image:loc>
+      <image:title>屯門 去 機場 HKG：的士/機鐵/拼車App 比較＋時間表 (2026)｜FreeRider 香港拼車App</image:title>
+      <image:caption>屯門 去 機場 HKG：的士/機鐵/拼車App 比較＋時間表 (2026)｜FreeRider 香港拼車App</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.freerider.hk/routes/tuen-mun-to-eastern/</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.freerider.hk/assets/og-image.png</image:loc>
+      <image:title>屯門 去 東區（鰂魚涌/太古/北角）：地鐵/巴士/拼車App 比較＋時間表 (2026)｜FreeRider 香港拼車A</image:title>
+      <image:caption>屯門 去 東區（鰂魚涌/太古/北角）：地鐵/巴士/拼車App 比較＋時間表 (2026)｜FreeRider 香港拼車App</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.freerider.hk/routes/tuen-mun-to-shenzhen-bay/</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.freerider.hk/assets/og-image.png</image:loc>
+      <image:title>屯門 去 深圳灣口岸：直通巴/巴士/拼車App 比較＋時間表 (2026)｜FreeRider 香港拼車App</image:title>
+      <image:caption>屯門 去 深圳灣口岸：直通巴/巴士/拼車App 比較＋時間表 (2026)｜FreeRider 香港拼車App</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.freerider.hk/routes/wan-chai-to-huanggang/</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.freerider.hk/assets/og-image.png</image:loc>
+      <image:title>灣仔 去 皇崗口岸：直通巴/巴士/拼車App 比較＋時間表 (2026)｜FreeRider 香港拼車App</image:title>
+      <image:caption>灣仔 去 皇崗口岸：直通巴/巴士/拼車App 比較＋時間表 (2026)｜FreeRider 香港拼車App</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.freerider.hk/routes/yuen-long-to-airport/</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.freerider.hk/assets/og-image.png</image:loc>
+      <image:title>元朗 去 機場 HKG：的士/機鐵/拼車App 比較＋時間表 (2026)｜FreeRider 香港拼車App</image:title>
+      <image:caption>元朗 去 機場 HKG：的士/機鐵/拼車App 比較＋時間表 (2026)｜FreeRider 香港拼車App</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.freerider.hk/routes/yuen-long-to-huanggang/</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.freerider.hk/assets/og-image.png</image:loc>
+      <image:title>元朗 去 皇崗口岸：直通巴/巴士/拼車App 比較＋時間表 (2026)｜FreeRider 香港拼車App</image:title>
+      <image:caption>元朗 去 皇崗口岸：直通巴/巴士/拼車App 比較＋時間表 (2026)｜FreeRider 香港拼車App</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.freerider.hk/routes/yuen-long-to-islands/</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.freerider.hk/assets/og-image.png</image:loc>
+      <image:title>元朗 去 離島（東涌/機場/迪士尼）：地鐵/巴士/拼車App 比較＋時間表 (2026)｜FreeRider 香港拼車A</image:title>
+      <image:caption>元朗 去 離島（東涌/機場/迪士尼）：地鐵/巴士/拼車App 比較＋時間表 (2026)｜FreeRider 香港拼車App</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.freerider.hk/routes/yuen-long-to-kowloon-city/</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.freerider.hk/assets/og-image.png</image:loc>
+      <image:title>元朗 去 九龍城（啟德/土瓜灣）：地鐵/巴士/拼車App 比較＋時間表 (2026)｜FreeRider 香港拼車App</image:title>
+      <image:caption>元朗 去 九龍城（啟德/土瓜灣）：地鐵/巴士/拼車App 比較＋時間表 (2026)｜FreeRider 香港拼車App</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.freerider.hk/routes/yuen-long-to-kowloon-east/</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.freerider.hk/assets/og-image.png</image:loc>
+      <image:title>元朗 去 九龍東：地鐵/巴士/拼車App 比較＋時間表 (2026)｜FreeRider 香港拼車App</image:title>
+      <image:caption>元朗 去 九龍東：地鐵/巴士/拼車App 比較＋時間表 (2026)｜FreeRider 香港拼車App</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.freerider.hk/routes/yuen-long-to-kwun-tong/</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.freerider.hk/assets/og-image.png</image:loc>
+      <image:title>元朗 去 觀塘（九龍東）：地鐵/巴士/拼車App 比較＋時間表 (2026)｜FreeRider 香港拼車App</image:title>
+      <image:caption>元朗 去 觀塘（九龍東）：地鐵/巴士/拼車App 比較＋時間表 (2026)｜FreeRider 香港拼車App</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.freerider.hk/routes/yuen-long-to-liantang/</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.freerider.hk/assets/og-image.png</image:loc>
+      <image:title>元朗 去 蓮塘/香園圍口岸：直通巴/巴士/拼車App 比較＋時間表 (2026)｜FreeRider 香港拼車App</image:title>
+      <image:caption>元朗 去 蓮塘/香園圍口岸：直通巴/巴士/拼車App 比較＋時間表 (2026)｜FreeRider 香港拼車App</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.freerider.hk/routes/yuen-long-to-tai-po/</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.freerider.hk/assets/og-image.png</image:loc>
+      <image:title>元朗 去 大埔：巴士/小巴/拼車App 比較＋時間表 (2026)｜FreeRider 香港拼車App</image:title>
+      <image:caption>元朗 去 大埔：巴士/小巴/拼車App 比較＋時間表 (2026)｜FreeRider 香港拼車App</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.freerider.hk/routes/yuen-long-to-yau-tsim-mong/</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.freerider.hk/assets/og-image.png</image:loc>
+      <image:title>元朗 去 油尖旺（佐敦/尖沙咀/旺角）：地鐵/巴士/拼車App 比較＋時間表 (2026)｜FreeRider 香港拼車</image:title>
+      <image:caption>元朗 去 油尖旺（佐敦/尖沙咀/旺角）：地鐵/巴士/拼車App 比較＋時間表 (2026)｜FreeRider 香港拼車App</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.freerider.hk/routes/</loc>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.freerider.hk/assets/og-image.png</image:loc>
+      <image:title>路線總覽｜29 條香港拼車／順風車路線（社群實證 + 政府公開數據）｜FreeRider</image:title>
+      <image:caption>路線總覽｜29 條香港拼車／順風車路線（社群實證 + 政府公開數據）｜FreeRider</image:caption>
+    </image:image>
   </url>
-
-  <!-- ── Guide pages ── -->
   <url>
     <loc>https://www.freerider.hk/guides/airport-carpool.html</loc>
-    <lastmod>2026-07-09T16:30:00+08:00</lastmod>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.freerider.hk/guides/taxi-uber-split.html</loc>
-    <lastmod>2026-07-09T16:30:00+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.freerider.hk/assets/og-image.png</image:loc>
+      <image:title>香港機場接送拼車攻略：凌晨夾車＋行李分擔＋24hr 有車 (2026)｜FreeRider 香港拼車App</image:title>
+      <image:caption>香港機場接送拼車攻略：凌晨夾車＋行李分擔＋24hr 有車 (2026)｜FreeRider 香港拼車App</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.freerider.hk/guides/cross-border-carpool.html</loc>
-    <lastmod>2026-07-09T16:30:00+08:00</lastmod>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.freerider.hk/assets/og-image.png</image:loc>
+      <image:title>將軍澳去羅湖順風車攻略：集合點＋時間窗＋跨境過關 buffer (2026)｜FreeRider 香港拼車App</image:title>
+      <image:caption>將軍澳去羅湖順風車攻略：集合點＋時間窗＋跨境過關 buffer (2026)｜FreeRider 香港拼車App</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.freerider.hk/guides/hk-carpool-2026.html</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.freerider.hk/assets/og-image.png</image:loc>
+      <image:title>香港拼車 2026 終極攻略：順風車・共乘・夾 Uber・返大陸全包 (2026)｜FreeRider 香港拼車App</image:title>
+      <image:caption>香港拼車 2026 終極攻略：順風車・共乘・夾 Uber・返大陸全包 (2026)｜FreeRider 香港拼車App</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.freerider.hk/guides/taxi-uber-split.html</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.freerider.hk/assets/og-image.png</image:loc>
+      <image:title>夾 Taxi/Uber 點分車費：3 種公平分法＋App 配對攻略 (2026)｜FreeRider 香港拼車App</image:title>
+      <image:caption>夾 Taxi/Uber 點分車費：3 種公平分法＋App 配對攻略 (2026)｜FreeRider 香港拼車App</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.freerider.hk/guides/weekend-fun-rides.html</loc>
-    <lastmod>2026-07-09T16:30:00+08:00</lastmod>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.freerider.hk/assets/og-image.png</image:loc>
+      <image:title>週末行山郊遊夾車：西貢/離島/迪士尼 App 配對攻略 (2026)｜FreeRider 香港拼車App</image:title>
+      <image:caption>週末行山郊遊夾車：西貢/離島/迪士尼 App 配對攻略 (2026)｜FreeRider 香港拼車App</image:caption>
+    </image:image>
   </url>
-
-  <!-- ── Legal / utility pages ── -->
+  <url>
+    <loc>https://www.freerider.hk/blog/hk-tunnel-tolls-2026.html</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.freerider.hk/assets/og-image.png</image:loc>
+      <image:title>2026 香港隧道費攻略：返工慳錢夾車必睇（附分擔計算機）| FreeRider 部落格</image:title>
+      <image:caption>2026 香港隧道費攻略：返工慳錢夾車必睇（附分擔計算機）| FreeRider 部落格</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.freerider.hk/blog/p-plate-carpool-hk.html</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.freerider.hk/assets/og-image.png</image:loc>
+      <image:title>P 牌可以 Join 拼車嗎？實測、攻略、保險 (2026)｜FreeRider 部落格</image:title>
+      <image:caption>P 牌可以 Join 拼車嗎？實測、攻略、保險 (2026)｜FreeRider 部落格</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.freerider.hk/blog/p-plate-rideshare-hk-2026.html</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.freerider.hk/assets/og-image.png</image:loc>
+      <image:title>P 牌 2026 完整攻略：可以載人？可做 Uber？順風車犯法嗎？（律師解答）| FreeRider 部落格</image:title>
+      <image:caption>P 牌 2026 完整攻略：可以載人？可做 Uber？順風車犯法嗎？（律師解答）| FreeRider 部落格</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.freerider.hk/blog/tseung-kwan-o-commute-cost-comparison.html</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.freerider.hk/assets/og-image.png</image:loc>
+      <image:title>將軍澳返工：自駕 vs 巴士 vs 拼車 一個月成本比較（2026 數據）| FreeRider 部落格</image:title>
+      <image:caption>將軍澳返工：自駕 vs 巴士 vs 拼車 一個月成本比較（2026 數據）| FreeRider 部落格</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.freerider.hk/blog/</loc>
+    <lastmod>2026-09-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.freerider.hk/assets/og-image.png</image:loc>
+      <image:title>FreeRider 部落格｜香港拼車攻略、隧道費解析、共乘實戰 | FreeRider</image:title>
+      <image:caption>FreeRider 部落格｜香港拼車攻略、隧道費解析、共乘實戰 | FreeRider</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.freerider.hk/dev-log.html</loc>
+    <lastmod>2026-09-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://www.freerider.hk/assets/og-image.png</image:loc>
+      <image:title>FreeRider 開發日誌 (2026)：App + Website 更新記錄｜FreeRider 香港拼車App</image:title>
+      <image:caption>FreeRider 開發日誌 (2026)：App + Website 更新記錄｜FreeRider 香港拼車App</image:caption>
+    </image:image>
+  </url>
   <url>
     <loc>https://www.freerider.hk/terms.html</loc>
-    <lastmod>2026-07-09T16:30:00+08:00</lastmod>
+    <lastmod>2026-09-22</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://www.freerider.hk/privacy.html</loc>
-    <lastmod>2026-07-09T16:30:00+08:00</lastmod>
+    <lastmod>2026-09-22</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://www.freerider.hk/delete-account.html</loc>
-    <lastmod>2026-07-09T16:30:00+08:00</lastmod>
+    <lastmod>2026-09-22</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.2</priority>
-  </url>
-
-
-  <!-- Routes hub (en-HK) -->
-  <url>
-    <loc>https://www.freerider.hk/en/routes/</loc>
-    <lastmod>2026-07-09T16:30:00+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Blog hub -->
-  <url>
-    <loc>https://www.freerider.hk/blog/</loc>
-    <lastmod>2026-08-13T01:00:00+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.freerider.hk/blog/hk-tunnel-tolls-2026.html</loc>
-    <lastmod>2026-08-13T01:00:00+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.freerider.hk/blog/tseung-kwan-o-commute-cost-comparison.html</loc>
-    <lastmod>2026-08-13T01:00:00+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.freerider.hk/blog/p-plate-carpool-hk.html</loc>
-    <lastmod>2026-08-13T01:00:00+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.3</priority>
   </url>
 </urlset>
