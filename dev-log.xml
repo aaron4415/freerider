@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>FreeRider 開發日誌</title>
+    <link>https://www.freerider.hk/dev-log.html</link>
+    <atom:link href="https://www.freerider.hk/dev-log.xml" rel="self" type="application/rss+xml"/>
+    <description>FreeRider 香港拼車App 同 marketing website 嘅所有更新記錄——每個版本嘅功能、改善、修正一目了然。</description>
+    <language>zh-Hant-HK</language>
+    <managingEditor>team@freerider.hk (FreeRider Team)</managingEditor>
+    <webMaster>team@freerider.hk (FreeRider Team)</webMaster>
+    <lastBuildDate>Tue, 22 Sep 2026 15:53:20 +0800</lastBuildDate>
+    <generator>FreeRider Manual</generator>
+    <item>
+      <title>FreeRider v1.0.8：收藏路線 + Liquid Glass 全新介面</title>
+      <link>https://www.freerider.hk/dev-log.html#v1.0.8</link>
+      <guid isPermaLink="false">freerider-devlog-2026-09-18-v1.0.8</guid>
+      <pubDate>Fri, 18 Sep 2026 15:00:00 +0800</pubDate>
+      <description><![CDATA[<p>主要更新：</p>
+
+<h4>新增功能</h4>
+<ul>
+<li><strong>收藏路線</strong>：儲存你常用嘅路線，有新貼合嘅共乘會自動通知你</li>
+<li><strong>Liquid Glass 底部導航</strong>：採用 iOS 26 風格玻璃材質導航列，操作更流暢</li>
+<li><strong>聊天室升級</strong>：支援全螢幕睇圖</li>
+<li><strong>搜尋紀錄 &amp; 地點自動建議</strong>：近期搜尋同地點推薦更準確</li>
+</ul>
+
+<h4>改善</h4>
+<ul><li><strong>統一錯誤訊息</strong>：出現問題時嘅提示更清晰易明</li></ul>]]></description>
+      <category>App</category><category>Release</category>
+    </item>
+    <item>
+      <title>FreeRider v1.0.7：Pro 會員訂閱 + 義載專區 + 即將出發</title>
+      <link>https://www.freerider.hk/dev-log.html#v1.0.7</link>
+      <guid isPermaLink="false">freerider-devlog-2026-08-21-v1.0.7</guid>
+      <pubDate>Fri, 21 Aug 2026 15:00:00 +0800</pubDate>
+      <description><![CDATA[<p>8月22日發佈。</p>
+
+<h4>新增功能</h4>
+<ul>
+<li>全新 <strong>Pro 會員訂閱系統</strong>，解鎖專屬功能</li>
+<li>首頁新增橫幅顯示，掌握最新資訊及優惠</li>
+<li>首頁新增 <strong>「義載專區」</strong>及 <strong>「即將出發」</strong> 分類</li>
+</ul>
+
+<h4>改善</h4>
+<ul>
+<li>個人資料頁面 UI 全新升級</li>
+<li>登入頁面 UI 優化</li>
+<li>新增建立、更新及聯絡用戶次數限制，防止濫用及垃圾訊息</li>
+<li>應用程式啟動流程更流暢</li>
+<li>全新建立順風車流程，資訊填寫更詳盡直觀</li>
+</ul>]]></description>
+      <category>App</category><category>Release</category>
+    </item>
+    <item>
+      <title>freerider.hk SEO 升級完成（40 file / 334 FAQ Q&amp;As）</title>
+      <link>https://www.freerider.hk/dev-log.html#website-seo-v1.0</link>
+      <guid isPermaLink="false">freerider-devlog-2026-08-31-Website SEO v1.0</guid>
+      <pubDate>Mon, 31 Aug 2026 15:00:00 +0800</pubDate>
+      <description><![CDATA[<p>marketing website 大規模 SEO 升級——主要針對中文 long-tail keywords（順風車app、香港拼車App 等）。</p>
+
+<h4>新增功能</h4>
+<ul>
+<li><strong>首頁 disambiguator</strong>：「FreeRider 香港拼車App」加入 title / meta，解決「freerider = 單車遊戲」嘅 search 污染問題</li>
+<li><strong>29 條拼車路線頁</strong>各加 10 條 unique FAQ Q&amp;A（290 條總計）</li>
+<li>新寫 <strong>2 個 pillar 頁</strong>：hk-carpool-2026.html（3000+ words）+ p-plate-rideshare-hk-2026.html（9 條 P 牌 query）</li>
+<li>4 個 guides + 3 個 blog post 全部加 keywords meta + JSON-LD schema</li>
+</ul>
+
+<h4>改善</h4>
+<ul>
+<li><strong>0% CTR → 預期 5-10%</strong>：brand query title 加 disambiguator</li>
+<li><strong>Route page CTR 1% → 4-6%</strong>：description 改 answer-first</li>
+</ul>
+
+<p><strong>預期 4 週後 impact：</strong>整站 CTR 由 1.62% → 3-4%，FAQ rich result 出現率 70-90%。</p>]]></description>
+      <category>Website</category><category>SEO</category>
+    </item>
+    <item>
+      <title>FreeRider v1.0.6：行程分享、油費估算、聊天升級</title>
+      <link>https://www.freerider.hk/dev-log.html#v1.0.6</link>
+      <guid isPermaLink="false">freerider-devlog-2026-04-01-v1.0.6</guid>
+      <pubDate>Wed, 01 Apr 2026 15:00:00 +0800</pubDate>
+      <description><![CDATA[<h4>新增功能</h4>
+<ul>
+<li>收藏喜愛的行程，隨時查閱</li>
+<li>一鍵將行程分享至 Instagram、Facebook 及 Threads</li>
+<li>用家頭像現已顯示於個人頁面及行程卡片</li>
+<li>出發前顯示預估油費</li>
+<li>同步顯示的士參考車費</li>
+<li>路線配對更精準，搜尋涵蓋中途站點</li>
+</ul>]]></description>
+      <category>App</category><category>Release</category>
+    </item>
+    <item>
+      <title>FreeRider v1.0.5：智能路線搜尋 + 配對百分比 + 路線地圖</title>
+      <link>https://www.freerider.hk/dev-log.html#v1.0.5</link>
+      <guid isPermaLink="false">freerider-devlog-2026-03-05-v1.0.5</guid>
+      <pubDate>Thu, 05 Mar 2026 15:00:00 +0800</pubDate>
+      <description><![CDATA[<p>全新智能路線搜尋。</p>
+
+<h4>新增功能</h4>
+<ul>
+<li>搜尋升級！輸入上落點自動配對所有經過該路線的行程（中途站配對）</li>
+<li>每個搜尋結果顯示<strong>配對百分比、預計行車時間、上車點及目的地步行距離</strong></li>
+<li>小地圖及大地圖均顯示<strong>實際行車路線</strong></li>
+<li>主頁新增<strong>「最新行程」版塊</strong></li>
+</ul>]]></description>
+      <category>App</category><category>Release</category>
+    </item>
+    <item>
+      <title>FreeRider v1.0.4：標籤拖動 Bug 修復</title>
+      <link>https://www.freerider.hk/dev-log.html#v1.0.4</link>
+      <guid isPermaLink="false">freerider-devlog-2026-02-27-v1.0.4</guid>
+      <pubDate>Fri, 27 Feb 2026 15:00:00 +0800</pubDate>
+      <description><![CDATA[<h4>修正</h4>
+<ul><li>修正標籤／地區欄位的拖動問題，現可在欄位任意位置長按以重新排列</li></ul>]]></description>
+      <category>App</category><category>Release</category><category>Bugfix</category>
+    </item>
+    <item>
+      <title>FreeRider v1.0.3：全新介面 + 自家搜尋引擎</title>
+      <link>https://www.freerider.hk/dev-log.html#v1.0.3</link>
+      <guid isPermaLink="false">freerider-devlog-2026-02-26-v1.0.3</guid>
+      <pubDate>Thu, 26 Feb 2026 15:00:00 +0800</pubDate>
+      <description><![CDATA[<h4>新增功能</h4>
+<ul>
+<li>重新設計搜尋流程</li>
+<li>搜尋結果現由 <strong>FreeRider 自家引擎</strong> 驅動——速度更快、更智能，專為香港路線而設</li>
+</ul>
+
+<h4>改善</h4>
+<ul><li>優化整體視覺</li><li>修復多項問題</li></ul>]]></description>
+      <category>App</category><category>Release</category>
+    </item>
+    <item>
+      <title>FreeRider v1.0.2：Tag 搜尋功能上線</title>
+      <link>https://www.freerider.hk/dev-log.html#v1.0.2</link>
+      <guid isPermaLink="false">freerider-devlog-2026-02-06-v1.0.2</guid>
+      <pubDate>Fri, 06 Feb 2026 15:00:00 +0800</pubDate>
+      <description><![CDATA[<h4>新增功能</h4>
+<ul>
+<li><strong>Tag 搜尋</strong>：新建行程時加 tag（最多 5 個），搜尋時點 tag 即刻睇晒相關行程</li>
+<li>熱門 tags 自動推薦</li>
+</ul>
+
+<h4>改善</h4>
+<ul><li>重新設計行程卡佈局</li><li>改進用戶資料區，顯示評分及評價</li><li>優化聊天室列表效能</li></ul>]]></description>
+      <category>App</category><category>Release</category>
+    </item>
+    <item>
+      <title>FreeRider v1.0.1：評論評分 + 行程地圖 + 智能搜尋</title>
+      <link>https://www.freerider.hk/dev-log.html#v1.0.1</link>
+      <guid isPermaLink="false">freerider-devlog-2026-01-08-v1.0.1</guid>
+      <pubDate>Thu, 08 Jan 2026 15:00:00 +0800</pubDate>
+      <description><![CDATA[<h4>新增功能</h4>
+<ul>
+<li><strong>評論與評分系統</strong>：建立社群信任！為您的拼車體驗評分留言</li>
+<li>行程詳情頁<strong>地圖顯示</strong></li>
+<li><strong>智能搜尋列</strong>：按地點、時間或路線篩選</li>
+<li>用戶<strong>個人頁面</strong>：查看評論與評分</li>
+</ul>
+
+<h4>改善</h4>
+<ul><li>簡化價格顯示：移除價格欄位，讓司機與乘客保持彈性協商空間</li></ul>]]></description>
+      <category>App</category><category>Release</category>
+    </item>
+    <item>
+      <title>freerider.hk 正式上線 + 29 條拼車路線</title>
+      <link>https://www.freerider.hk/dev-log.html#website-launch</link>
+      <guid isPermaLink="false">freerider-devlog-2026-06-01-Website Launch</guid>
+      <pubDate>Mon, 01 Jun 2026 15:00:00 +0800</pubDate>
+      <description><![CDATA[<p>marketing website 正式 launch。</p>
+
+<h4>新增功能</h4>
+<ul>
+<li>網站 freerider.hk 正式上線</li>
+<li>29 條香港拼車路線頁（返工 / 跨境 / 機場 / 週末行山）</li>
+<li>4 個攻略頁 + 3 個部落格文章</li>
+<li>中文 + 英文 homepage（i18n via hreflang）</li>
+</ul>]]></description>
+      <category>Website</category><category>Launch</category>
+    </item>
+  </channel>
+</rss>

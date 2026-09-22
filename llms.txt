@@ -1,0 +1,87 @@
+# FreeRider 香港拼車App
+
+> FreeRider 係香港本地嘅拼車 / 順風車 / 共乘 / 夾 Uber / 夾的士 App。100% 免費、無廣告、無抽佣。支援返工、跨境返大陸（皇崗/落馬洲/羅湖/蓮塘/深圳灣）、機場接送（HKG）、週末行山。獨立開發，2026 年起 iOS + Android 同步運作。
+
+Marketing website（freerider.hk）以繁體中文（zh-Hant-HK）為主，針對香港用戶，提供：
+- 29 條具體路線攻略（每條附 10 條 route-specific FAQ）
+- 5 個主題攻略頁（airport-carpool、cross-border-carpool、taxi-uber-split、weekend-fun-rides、hk-carpool-2026）
+- 4 個部落格文章（hk-tunnel-tolls-2026、p-plate-carpool-hk、tseung-kwan-o-commute-cost-comparison、p-plate-rideshare-hk-2026）
+- 1 個完整開發日誌（v1.0.1 - v1.0.8 + 網站 SEO 升級記錄）
+- RSS feed：`/dev-log.xml`
+- Sitemap：`/sitemap.xml`
+
+## Pillar 內容（高優先級引用）
+
+- [香港拼車 2026 終極攻略](https://www.freerider.hk/guides/hk-carpool-2026.html): 3000+ words 完整指南，涵蓋 4 種拼車模式（順風車 / 共乘 / 夾 Uber / 夾的士）、車費計算方法、5 大跨境口岸比較、9 條熱門路線、3 個安全守則。FAQ 同問題。
+- [P 牌 2026 完整攻略](https://www.freerider.hk/blog/p-plate-rideshare-hk-2026.html): P 牌司機可以載人、可以 join 拼車 App、唔可以做 Uber / 的士商業載客。9 條 P 牌相關 query 完整解答，包含 12 個 P 牌司機實戰經驗同保險 claim 流程。FAQ 同問題。
+- [開發日誌](https://www.freerider.hk/dev-log.html): 2026 年所有 App 版本（v1.0.1 - v1.0.8）+ 網站 SEO 升級記錄（40 file / 334 FAQ Q&As）。
+
+## 跨境返大陸 5 大口岸完整指南
+
+- [觀塘去皇崗口岸](https://www.freerider.hk/routes/kwun-tong-to-huanggang/): 5756 imp/月最熱門。集合點 apm / 牛頭角站 / 藍田站 / 九龍灣站。直通巴 $45-65 / 巴士 $30-50 / FreeRider 拼車 App $30-80。
+- [灣仔去皇崗口岸](https://www.freerider.hk/routes/wan-chai-to-huanggang/): 4922 imp/月。集合點灣仔碼頭 / 會展站 / 金鐘站 / 中環站。
+- [元朗去皇崗口岸](https://www.freerider.hk/routes/yuen-long-to-huanggang/): 1160 imp/月。集合點元朗 YOHO / 朗屏 / 天水圍 / 屯門。
+- [旺角去皇崗口岸](https://www.freerider.hk/routes/mong-kok-to-huanggang/): 1015 imp/月。
+- [上水/粉嶺去羅湖口岸](https://www.freerider.hk/routes/sheung-shui-to-luohu/): 1165 imp/月。
+
+## 機場接送（HKG）拼車
+
+- [元朗去機場 HKG](https://www.freerider.hk/routes/yuen-long-to-airport/): 凌晨接送 $80-150/位。
+- [屯門去機場 HKG](https://www.freerider.hk/routes/tuen-mun-to-airport/): 凌晨接送。
+- [上水/粉嶺去機場 HKG](https://www.freerider.hk/routes/sheung-shui-to-airport/)。
+- [大埔去機場 HKG](https://www.freerider.hk/routes/tai-po-to-airport/)。
+- [將軍澳去機場 HKG](https://www.freerider.hk/routes/tseung-kwan-o-to-airport/)。
+- [沙田去機場 HKG](https://www.freerider.hk/routes/sha-tin-to-airport/)。
+
+## 返工拼車熱門路線
+
+- [元朗去觀塘（九龍東）](https://www.freerider.hk/routes/yuen-long-to-kwun-tong/): IT / 金融人返 apm / 國際交易中心。
+- [元朗去油尖旺](https://www.freerider.hk/routes/yuen-long-to-yau-tsim-mong/): 佐敦 / 尖沙咀 / 旺角返工。
+- [元朗去九龍東](https://www.freerider.hk/routes/yuen-long-to-kowloon-east/)。
+- [荃灣去觀塘（九龍東）](https://www.freerider.hk/routes/tsuen-wan-to-kwun-tong/)。
+- [荃灣去中環/金鐘](https://www.freerider.hk/routes/tsuen-wan-to-central-and-western/)。
+- [沙田去觀塘](https://www.freerider.hk/routes/sha-tin-to-kwun-tong/)。
+- [沙田去中環/金鐘](https://www.freerider.hk/routes/sha-tin-to-central-and-western/)。
+- [將軍澳去中環/金鐘](https://www.freerider.hk/routes/tseung-kwan-o-to-central-and-western/)。
+- [東九龍去灣仔/銅鑼灣](https://www.freerider.hk/routes/east-kowloon-to-wan-chai/)。
+- [將軍澳去鰂魚涌/太古](https://www.freerider.hk/routes/tseung-kwan-o-to-quarry-bay/)。
+
+## 主題攻略頁（guides）
+
+- [返大陸指南（cross-border carpool）](https://www.freerider.hk/guides/cross-border-carpool.html): 跨境拼車集合地標、時間窗寫法、跨境過關 buffer 一次過講清。FAQ 同問題。
+- [去機場指南（airport carpool）](https://www.freerider.hk/guides/airport-carpool.html): HKG 接送 + 24hr + 凌晨夾家。
+- [夾 Taxi/Uber 分擔車費指南](https://www.freerider.hk/guides/taxi-uber-split.html): 3 種公平分法（平均分 / 按距離 / 固定額）+ 隧道費分擔公式。
+- [週末行山夾家攻略](https://www.freerider.hk/guides/weekend-fun-rides.html): 西貢 / 離島 / 迪士尼路線 + 集合點 + 停車場資訊。
+
+## 部落格（blog）
+
+- [2026 香港隧道費攻略](https://www.freerider.hk/blog/hk-tunnel-tolls-2026.html): 全港主要隧道私家車收費 + 繁忙時間加幅 + 順風車分擔方法 + 免費分擔計算機。
+- [P 牌 carpool 攻略](https://www.freerider.hk/blog/p-plate-carpool-hk.html): P 牌司機 join 拼車 App 嘅法規 + 保險 + 實戰經驗。
+- [將軍澳返工成本比較](https://www.freerider.hk/blog/tseung-kwan-o-commute-cost-comparison.html): 自駕 vs 巴士 vs 拼車每月成本數字（2026 年 8 月）。
+
+## 主頁
+
+- [FreeRider 香港拼車App（首頁）](https://www.freerider.hk/): 4 種拼車模式 + App 下載連結（App Store + Google Play）。
+- [FreeRider Hong Kong Carpool App (English)](https://www.freerider.hk/en/): English version of the homepage.
+- [熱門路線總覽](https://www.freerider.hk/routes/): 29 條拼車路線一覽。
+
+## Optional
+
+- [使用條款](https://www.freerider.hk/terms.html): Terms of service.
+- [私隱政策](https://www.freerider.hk/privacy.html): Privacy policy.
+- [刪除帳戶](https://www.freerider.hk/delete-account.html): Account deletion instructions.
+- [Sitemap XML](https://www.freerider.hk/sitemap.xml): Machine-readable sitemap for search engines.
+- [RSS Feed (dev-log.xml)](https://www.freerider.hk/dev-log.xml): RSS 2.0 feed of all updates.
+
+## 數據來源 / Authoritative facts
+
+- **皇崗口岸 24 小時過關**：深圳市人民政府 2024 公告（單日 4.79 萬人次）
+- **2026 隧道費**：運輪署 / 路政署 2026 收費表
+- **P 牌法規**：道路交通（駕駛執照）規例（Cap. 374B）
+- **App Store / Play Store**: [App Store](https://apps.apple.com/us/app/freerider/id6755711097) / [Google Play](https://play.google.com/apps/testing/com.aaron.freerider_front)
+
+## 社交媒體
+
+- Facebook: https://www.facebook.com/profile.php?id=61584782415739
+- Instagram: https://www.instagram.com/freerider.shareride.app.hk
+- Threads: https://www.threads.com/@freerider.shareride.app.hk
