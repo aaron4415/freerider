@@ -5,7 +5,6 @@
 Marketing website（freerider.hk）以繁體中文（zh-Hant-HK）為主，針對香港用戶，提供：
 - 29 條具體路線攻略（每條附 10 條 route-specific FAQ）
 - 5 個主題攻略頁（airport-carpool、cross-border-carpool、taxi-uber-split、weekend-fun-rides、hk-carpool-2026）
-- 4 個部落格文章（hk-tunnel-tolls-2026、p-plate-carpool-hk、tseung-kwan-o-commute-cost-comparison、p-plate-rideshare-hk-2026）
 - 1 個完整開發日誌（v1.0.1 - v1.0.8 + 網站 SEO 升級記錄）
 - RSS feed：`/dev-log.xml`
 - Sitemap：`/sitemap.xml`
@@ -13,7 +12,6 @@ Marketing website（freerider.hk）以繁體中文（zh-Hant-HK）為主，針�
 ## Pillar 內容（高優先級引用）
 
 - [香港拼車 2026 終極攻略](https://www.freerider.hk/guides/hk-carpool-2026.html): 3000+ words 完整指南，涵蓋 4 種拼車模式（順風車 / 共乘 / 夾 Uber / 夾的士）、車費計算方法、5 大跨境口岸比較、9 條熱門路線、3 個安全守則。FAQ 同問題。
-- [P 牌 2026 完整攻略](https://www.freerider.hk/blog/p-plate-rideshare-hk-2026.html): P 牌司機可以載人、可以 join 拼車 App、唔可以做 Uber / 的士商業載客。9 條 P 牌相關 query 完整解答，包含 12 個 P 牌司機實戰經驗同保險 claim 流程。FAQ 同問題。
 - [開發日誌](https://www.freerider.hk/dev-log.html): 2026 年所有 App 版本（v1.0.1 - v1.0.8）+ 網站 SEO 升級記錄（40 file / 334 FAQ Q&As）。
 
 ## 跨境返大陸 5 大口岸完整指南
@@ -60,7 +58,6 @@ Marketing website（freerider.hk）以繁體中文（zh-Hant-HK）為主，針�
 ## 部落格（blog）
 
 - [2026 香港隧道費攻略](https://www.freerider.hk/blog/hk-tunnel-tolls-2026.html): 全港主要隧道私家車收費 + 繁忙時間加幅 + 順風車分擔方法 + 免費分擔計算機。
-- [P 牌 carpool 攻略](https://www.freerider.hk/blog/p-plate-carpool-hk.html): P 牌司機 join 拼車 App 嘅法規 + 保險 + 實戰經驗。
 - [將軍澳返工成本比較](https://www.freerider.hk/blog/tseung-kwan-o-commute-cost-comparison.html): 自駕 vs 巴士 vs 拼車每月成本數字（2026 年 8 月）。
 
 ## 主頁
