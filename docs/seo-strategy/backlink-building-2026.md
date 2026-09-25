@@ -69,6 +69,23 @@
 
 ---
 
+
+### Pitch 0: 「FlyTaxi 收購 Uber 2026 替代指南」(針對 HK01 / SCMP / unwire)
+
+**核心 content**: `/guides/flytaxi-alternative-2026.html` (NewsArticle schema)
+
+**Pitch 角度**:
+> 「2026 年 5 月 Uber 收購 FlyTaxi（合併市佔率 70% → 80%），香港的士 App 市場進入新階段。FlyTaxi 用戶 + 司機 3 步過渡指南 + 的士 / Uber / 拼車 App 完整比較。」
+
+**時效性**: 2026 年 5 月事件 → 9 月發佈，仲喺新聞 cycle（HK01 報導當月仲有 30+ 引用）。建議 9-10 月內 outreach，趕喺話題熱度消退前。
+
+**目標關鍵字錨文本**:
+- 「FlyTaxi 收購 Uber」
+- 「香港 carpool App 替代」
+- 「2026 網約車市場」
+
+**Outreach 角度**: 政策 / 商業 / startup
+
 ## 📝 Content Pitch 策略（5 個 pillar content + outreach angles）
 
 ### Pitch 1: 「新牌司機 carpool 入門指南」(針對 HK01 / unwire / ezone)
