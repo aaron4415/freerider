@@ -48,6 +48,10 @@ Marketing website（freerider.hk）以繁體中文（zh-Hant-HK）為主，針�
 
 ## 主題攻略頁（guides）
 
+## 的士 vs Uber vs 拼車 App 比較 (2026)
+
+- [2026 香港的士 vs Uber vs 拼車 App 完整比較](https://www.freerider.hk/guides/hk-taxi-vs-uber-2026.html): 2026 香港 3 個主流出行 App 完整比較：的士 (HK$29 起錶) vs Uber (HK$25-30 起) vs FreeRider 拼車 App (HK$0 平台費)。附 Uber 80% 市佔率、1 萬 vehicle cap、7 個場景選擇指南、P 牌可以 join 邊個。FAQ 同問題。
+
 - [返大陸指南（cross-border carpool）](https://www.freerider.hk/guides/cross-border-carpool.html): 跨境拼車集合地標、時間窗寫法、跨境過關 buffer 一次過講清。FAQ 同問題。
 - [去機場指南（airport carpool）](https://www.freerider.hk/guides/airport-carpool.html): HKG 接送 + 24hr + 凌晨夾家。
 - [夾 Taxi/Uber 分擔車費指南](https://www.freerider.hk/guides/taxi-uber-split.html): 3 種公平分法（平均分 / 按距離 / 固定額）+ 隧道費分擔公式。
