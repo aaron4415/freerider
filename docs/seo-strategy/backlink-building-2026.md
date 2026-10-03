@@ -131,7 +131,7 @@ FreeRider.hk
 
 ### Pitch 2: 「1 萬 vehicle cap 對 HK carpool 影響」(針對 SCMP / RTHK / HK Gov News)
 
-**核心 content**: 引用即將寫嘅 `/guides/hk-taxi-vs-uber-2026.html`
+**核心 content**: 引用即將寫嘅 `/blog/hk-taxi-vs-uber-2026.html`
 
 **Pitch 角度**:
 > 「1 萬 vehicle cap 唔包 carpool。HK 嘅 carpool 市場係真正未被監管嘅 segment。Uber 收購 FlyTaxi 達 80% 市佔，但 carpool 仲係 open field。」
@@ -307,7 +307,7 @@ Cheung
 
 ### 1. 內部 cross-link 強化（30 分鐘）
 - 將 `/blog/p-plate-rideshare-hk-2026.html` 嘅所有 新牌 FAQ 加 internal link 去 `/routes/`
-- 將 `/guides/hk-taxi-vs-uber-2026.html`（即將寫）互相 link 去 `/blog/hk-tunnel-tolls-2026.html`
+- 將 `/blog/hk-taxi-vs-uber-2026.html`（即將寫）互相 link 去 `/blog/hk-tunnel-tolls-2026.html`
 
 ### 2. 註冊 + 完善 profiles
 - [ ] Crunchbase: FreeRider profile + claim
@@ -361,7 +361,7 @@ Cheung
 ## 📋 立即行動 checklist
 
 ### 今個禮拜
-- [ ] 寫完 `/guides/hk-taxi-vs-uber-2026.html` pillar (R8)
+- [ ] 寫完 `/blog/hk-taxi-vs-uber-2026.html` pillar (R8)
 - [ ] 拍 5 分鐘 FreeRider demo video
 - [ ] 寫 Medium founder essay
 - [ ] LinkedIn Article 寫 新牌 carpool 攻略
@@ -385,7 +385,7 @@ Cheung
   - `/blog/p-plate-rideshare-hk-2026.html` (新牌 9 條 FAQ + 律師 review)
   - `/blog/hk-tunnel-tolls-2026.html` (隧道費 11 條 FAQ)
   - `/guides/hk-carpool-2026.html` (拼車攻略 18 條 FAQ)
-  - 即將: `/guides/hk-taxi-vs-uber-2026.html` (R8)
+  - 即將: `/blog/hk-taxi-vs-uber-2026.html` (R8)
 
 **Tools**:
 - Ahrefs / SEMRush (backlink tracking) — 用 free trial
