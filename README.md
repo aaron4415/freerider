@@ -218,15 +218,6 @@ git ls-files '*.html' | ForEach-Object { ... }
 
 ---
 
-## 相關 repo
-
-| Repo | 內容 |
-|---|---|
-| `freerider_front` | Flutter App（iOS + Android）|
-| `fb-crawler-go` | Go + MongoDB 後端 / crawler |
-
----
-
 ## License
 
 未指定。All rights reserved。
