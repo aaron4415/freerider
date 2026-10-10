@@ -79,7 +79,6 @@ Marketing website（freerider.hk）以繁體中文（zh-Hant-HK）為主，針�
 
 - **皇崗口岸 24 小時過關**：深圳市人民政府 2024 公告（單日 4.79 萬人次）
 - **2026 隧道費**：運輪署 / 路政署 2026 收費表
-- **P 牌法規**：道路交通（駕駛執照）規例（Cap. 374B）
 - **App Store / Play Store**: [App Store](https://apps.apple.com/us/app/freerider/id6755711097) / [Google Play](https://play.google.com/apps/testing/com.aaron.freerider_front)
 
 ## 社交媒體
