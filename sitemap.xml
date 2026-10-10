@@ -353,6 +353,17 @@
     </image:image>
   </url>
   <url>
+    <loc>https://www.freerider.hk/guides/</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.freerider.hk/assets/og-image.png</image:loc>
+      <image:title>使用指南｜香港拼車、機場、跨境 完整攻略 (6 個主題 pillar)｜FreeRider HK Carpool App</image:title>
+      <image:caption>6 個主題攻略涵蓋返工、跨境、機場、週末行山、Uber 分擔所有場景。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://www.freerider.hk/guides/airport-carpool.html</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
@@ -419,17 +430,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.freerider.hk/blog/p-plate-carpool-hk.html</loc>
-    <lastmod>2026-08-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://www.freerider.hk/assets/og-image.png</image:loc>
-      <image:title>P 牌可以 Join 拼車嗎？實測、攻略、保險 (2026)｜FreeRider 部落格</image:title>
-      <image:caption>P 牌可以 Join 拼車嗎？實測、攻略、保險 (2026)｜FreeRider 部落格</image:caption>
-    </image:image>
-  </url>
-  <url>
     <loc>https://www.freerider.hk/blog/tseung-kwan-o-commute-cost-comparison.html</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
@@ -488,7 +488,7 @@
     <image:image>
       <image:loc>https://www.freerider.hk/assets/og-image.png</image:loc>
       <image:title>2026 香港的士 vs Uber vs 拼車 App 完整比較</image:title>
-      <image:caption>的士 vs Uber vs FreeRider 拼車 App 邊個最化算？附 2026 市場數據、場景選擇指南、P 牌可以 join 邊個。</image:caption>
+      <image:caption>的士 vs Uber vs FreeRider 拼車 App 邊個最化算？附 2026 市場數據、7 個場景選擇指南。</image:caption>
     </image:image>
   </url>
   <url>
